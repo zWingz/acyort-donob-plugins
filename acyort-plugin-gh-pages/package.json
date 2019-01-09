@@ -1,0 +1,15 @@
+{
+  "name": "acyort-plugin-ghpages",
+  "version": "1.0.0",
+  "description": "Acyort-plugin-ghpages",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "export NODE_DEBUG=gh-pages node ./test/index.js"
+  },
+  "dependencies": {
+    "acyort": "^3.0.10",
+    "gh-pages": "^2.0.1",
+    "ora": "^3.0.0"
+  }
+}
