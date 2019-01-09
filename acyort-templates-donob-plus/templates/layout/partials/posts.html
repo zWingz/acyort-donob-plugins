@@ -1,0 +1,21 @@
+{% macro render(page) %}
+
+<div id="posts" class="center">
+  <h2>Archives</h2>
+
+  {% for archive in page.archives %}
+
+  <p class="year">{{ archive.year }}</p>
+  {% for post in archive.posts %}
+    <div class="entry">
+      <a href="{{ _url(post.url) }}">{{ post.title }}</a>
+      <span>{{ _time(post.created, 'MMMM DD') }}</span>
+    </div>
+
+    {% endfor %}
+  {% endfor %}
+
+
+</div>
+
+{% endmacro %}

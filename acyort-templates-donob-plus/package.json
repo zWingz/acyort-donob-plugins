@@ -1,0 +1,10 @@
+{
+  "name": "acyort-templates-donob-plus",
+  "version": "1.0.0",
+  "description": "acyort-templates",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhengzwing@gmail.com",
+  "license": "ISC"
+}

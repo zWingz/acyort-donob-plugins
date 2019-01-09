@@ -1,0 +1,21 @@
+{% macro render(page) %}
+{% set pagination = page.pagination %}
+<div id="pagination" class="center">
+  <div>
+    {% if pagination.prevPage %}
+    <a rel="prev" href="{{ _url(pagination.prevPage) }}">{{ __('prev') }}</a>
+    {% else %}
+    <a class="disabled">{{ __('prev') }}</a>
+    {% endif %}
+
+    <!-- {{ _paginator(pagination) }} -->
+
+    {% if pagination.nextPage %}
+    <a rel="next" href="{{ _url(pagination.nextPage) }}">{{ __('next') }}</a>
+    {% else %}
+    <a rel="next" class="disabled">{{ __('next') }}</a>
+    {% endif %}
+  </div>
+</div>
+
+{% endmacro %}

@@ -1,0 +1,21 @@
+{
+  "name": "acyort-fetch",
+  "version": "1.0.0",
+  "dependencies": {
+    "@octokit/rest": "^16.5.0",
+    "acyort": "^3.0.10",
+    "log-symbols": "^2.2.0",
+    "nodemon": "^1.18.9",
+    "ora": "^3.0.0"
+  },
+  "scripts": {
+    "dev": "export NODE_ENV=dev && nodemon ./test/index.js"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "nodemonConfig": {
+    "ignore": [
+      "issues.json"
+    ]
+  }
+}
