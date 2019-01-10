@@ -20,8 +20,8 @@ module.exports = function ayrortDonobRenderer(acyort) {
       symbol: logSymbols.success,
       text: 'Succeed to render issues',
     })
-    spinner.start('Staring to copy source...')
+    spinner.start('Staring to copy source...\n')
     acyort.copySource()
-    spinner.succeed('Succeed to copy source')
+    spinner.succeed('Succeed to copy source\n')
   })
 }
