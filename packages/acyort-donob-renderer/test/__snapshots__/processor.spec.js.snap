@@ -1,0 +1,293 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `Array []`;
+
+exports[`test processor test snapshot test archives snapshot: archives 1`] = `
+Array [
+  Object {
+    "data": Array [
+      Object {
+        "posts": Array [
+          Object {
+            "created": "2018-11-20T11:07:18Z",
+            "id": 1,
+            "title": "issus-1 title",
+            "url": "/fdsaf/1.html",
+          },
+          Object {
+            "created": "2018-10-19T11:07:18Z",
+            "id": 2,
+            "title": "issus-2 title",
+            "url": "/fdsaf/2.html",
+          },
+        ],
+        "year": "2018",
+      },
+    ],
+    "pagination": Object {
+      "currentPage": 1,
+      "items": Array [
+        Object {
+          "active": true,
+          "page": 1,
+          "url": "/fdsafd",
+        },
+        Object {
+          "active": false,
+          "page": 2,
+          "url": "/fdsafd/page/2",
+        },
+      ],
+      "nextPage": "/fdsafd/page/2",
+      "prevPage": "",
+    },
+    "path": "/fdsafd/index.html",
+  },
+  Object {
+    "data": Array [
+      Object {
+        "posts": Array [
+          Object {
+            "created": "2017-10-19T11:07:18Z",
+            "id": 3,
+            "title": "issus-3 title",
+            "url": "/fdsaf/3.html",
+          },
+        ],
+        "year": "2017",
+      },
+      Object {
+        "posts": Array [
+          Object {
+            "created": "2016-10-19T11:07:18Z",
+            "id": 4,
+            "title": "issus-4 title",
+            "url": "/fdsaf/4.html",
+          },
+        ],
+        "year": "2016",
+      },
+    ],
+    "pagination": Object {
+      "currentPage": 2,
+      "items": Array [
+        Object {
+          "active": false,
+          "page": 1,
+          "url": "/fdsafd",
+        },
+        Object {
+          "active": true,
+          "page": 2,
+          "url": "/fdsafd/page/2",
+        },
+      ],
+      "nextPage": "",
+      "prevPage": "/fdsafd",
+    },
+    "path": "/fdsafd/page/2/index.html",
+  },
+]
+`;
+
+exports[`test processor test snapshot test index snapshot: index 1`] = `
+Array [
+  Object {
+    "data": Array [
+      Object {
+        "created": "2018-11-20T11:07:18Z",
+        "id": 1,
+        "title": "issus-1 title",
+        "url": "/fdsaf/1.html",
+      },
+      Object {
+        "created": "2018-10-19T11:07:18Z",
+        "id": 2,
+        "title": "issus-2 title",
+        "url": "/fdsaf/2.html",
+      },
+    ],
+    "pagination": Object {
+      "currentPage": 1,
+      "items": Array [
+        Object {
+          "active": true,
+          "page": 1,
+          "url": "/",
+        },
+        Object {
+          "active": false,
+          "page": 2,
+          "url": "/page/2",
+        },
+      ],
+      "nextPage": "/page/2",
+      "prevPage": "",
+    },
+    "path": "/index.html",
+  },
+  Object {
+    "data": Array [
+      Object {
+        "created": "2017-10-19T11:07:18Z",
+        "id": 3,
+        "title": "issus-3 title",
+        "url": "/fdsaf/3.html",
+      },
+      Object {
+        "created": "2016-10-19T11:07:18Z",
+        "id": 4,
+        "title": "issus-4 title",
+        "url": "/fdsaf/4.html",
+      },
+    ],
+    "pagination": Object {
+      "currentPage": 2,
+      "items": Array [
+        Object {
+          "active": false,
+          "page": 1,
+          "url": "/",
+        },
+        Object {
+          "active": true,
+          "page": 2,
+          "url": "/page/2",
+        },
+      ],
+      "nextPage": "",
+      "prevPage": "/",
+    },
+    "path": "/page/2/index.html",
+  },
+]
+`;
+
+exports[`test processor test snapshot test posts snapshot: posts 1`] = `
+Array [
+  Object {
+    "body": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues1 Content\\" id=\\"Issues1 Content\\" class=\\"heading\\"></a>Issues1 Content
+            </h3>
+          ",
+    "created": "2018-11-20T11:07:18Z",
+    "id": 1,
+    "labels": Array [
+      Object {
+        "id": "label-1",
+        "name": "label-name-1",
+        "url": "/12fds/label-1",
+      },
+    ],
+    "number": 101,
+    "path": "/fdsaf/1.html",
+    "raw": "## Header 
+ ### Issues1 Content",
+    "title": "issus-1 title",
+    "updated": "2018-11-20T08:25:34Z",
+    "url": "/fdsaf/1.html",
+    "user": Object {
+      "avatar": "avatar_url",
+      "homePage": "html_url",
+    },
+  },
+  Object {
+    "body": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues2 Content\\" id=\\"Issues2 Content\\" class=\\"heading\\"></a>Issues2 Content
+            </h3>
+          ",
+    "created": "2018-10-19T11:07:18Z",
+    "id": 2,
+    "labels": Array [
+      Object {
+        "id": "label-1",
+        "name": "label-name-1",
+        "url": "/12fds/label-1",
+      },
+    ],
+    "number": 102,
+    "path": "/fdsaf/2.html",
+    "raw": "## Header 
+ ### Issues2 Content",
+    "title": "issus-2 title",
+    "updated": "2018-10-19T08:25:34Z",
+    "url": "/fdsaf/2.html",
+    "user": Object {
+      "avatar": "avatar_url",
+      "homePage": "html_url",
+    },
+  },
+  Object {
+    "body": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues3 Content\\" id=\\"Issues3 Content\\" class=\\"heading\\"></a>Issues3 Content
+            </h3>
+          ",
+    "created": "2017-10-19T11:07:18Z",
+    "id": 3,
+    "labels": Array [
+      Object {
+        "id": "label-1",
+        "name": "label-name-1",
+        "url": "/12fds/label-1",
+      },
+    ],
+    "number": 103,
+    "path": "/fdsaf/3.html",
+    "raw": "## Header 
+ ### Issues3 Content",
+    "title": "issus-3 title",
+    "updated": "2017-10-19T08:25:34Z",
+    "url": "/fdsaf/3.html",
+    "user": Object {
+      "avatar": "avatar_url",
+      "homePage": "html_url",
+    },
+  },
+  Object {
+    "body": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues4 Content\\" id=\\"Issues4 Content\\" class=\\"heading\\"></a>Issues4 Content
+            </h3>
+          ",
+    "created": "2016-10-19T11:07:18Z",
+    "id": 4,
+    "labels": Array [
+      Object {
+        "id": "label-1",
+        "name": "label-name-1",
+        "url": "/12fds/label-1",
+      },
+    ],
+    "number": 104,
+    "path": "/fdsaf/4.html",
+    "raw": "## Header 
+ ### Issues4 Content",
+    "title": "issus-4 title",
+    "updated": "2016-10-19T08:25:34Z",
+    "url": "/fdsaf/4.html",
+    "user": Object {
+      "avatar": "avatar_url",
+      "homePage": "html_url",
+    },
+  },
+]
+`;

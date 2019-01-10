@@ -1,17 +1,15 @@
 const path = require('path')
 const config = require('acyort/lib/config')
-const fetch = require('acyort-plugin-fetch')
-const renderer = require('..')
+// const acyort = require('acyort')(config(path.resolve(__dirname, 'fixtures')))
+// const renderer = require('..')
+// const issues = require('./fixtures/issues')
 
-const acyort = require('acyort')(config(path.resolve(__dirname)))
+// acyort.store.set('fetch:issues', Promise.resolve(issues))
+// renderer(acyort)
 
-fetch(acyort)
-renderer(acyort)
-
-acyort.process()
-// acyort.copyS
-// acyort.
-
-// const data = processor(issues, acyort)
-// render(data, acyort)
-// acyort.copySource()
+// acyort.process()
+describe('', () => {
+  it('', () => {
+    expect(1).toBeTruthy()
+  })
+})

@@ -1,6 +1,6 @@
 const parser = require('./parser')
 
-function processor(issues, acyort) {
+function processor(issues, acyort = {}) {
   const config = {
     postsDir: 'posts',
     tagsDir: 'tags',

@@ -28,7 +28,7 @@ function postParse(issue, config) {
     labels: parseLabels({ labels, tagsDir, postId: id }),
     created,
     updated,
-    row: body,
+    raw: body,
     body: marker.parse(body),
     user: {
       homePage,

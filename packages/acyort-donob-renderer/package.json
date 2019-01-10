@@ -15,7 +15,8 @@
     "url": "https://github.com/zWingz/acyort-donob-plugins"
   },
   "scripts": {
-    "dev": "export NODE_ENV=dev && nodemon ./test/index.js"
+    "dev": "export NODE_ENV=dev && nodemon ./test/index.js",
+    "test": "jest"
   },
   "nodemonConfig": {
     "ignore": [
@@ -23,8 +24,9 @@
     ]
   },
   "devDependencies": {
-    "acyort-plugin-fetch": "^1.0.0",
     "acyort": "^3.0.10",
+    "jest": "^23.6.0",
+    "acyort-plugin-fetch": "^1.0.0",
     "nodemon": "^1.18.9"
   }
 }
