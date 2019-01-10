@@ -6,7 +6,7 @@ const logSymbols = require('log-symbols')
 function fetch(acyort) {
   const cacheFile = join(__dirname, 'issues.json')
   const {
-    repository, author: creator, gitToken, issuesPageSize = 20,
+    repository, author: creator, gitToken, issuesPageSize = 20, issuesCache = false,
   } = acyort.config
   const [owner, repo] = repository.split('/')
   const { fs } = acyort
@@ -15,7 +15,7 @@ function fetch(acyort) {
     text: 'Fetch issues...\n',
     color: 'green',
   }).start()
-  if (fs.existsSync(cacheFile)) {
+  if (issuesCache && fs.existsSync(cacheFile)) {
     spinner.succeed('Fetch issues completed')
     return Promise.resolve(require(cacheFile)) // eslint-disable-line
   }
@@ -58,7 +58,9 @@ function fetch(acyort) {
         })
         load(page + 1)
       } else {
-        fs.outputFileSync(cacheFile, JSON.stringify(result))
+        if (issuesCache) {
+          fs.outputFileSync(cacheFile, JSON.stringify(result))
+        }
         spinner.succeed('Fetch issues completed')
         resolve(result)
       }
