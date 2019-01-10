@@ -14,7 +14,7 @@ module.exports = (issues, config) => {
   posts = posts.map(each => postsParse(each, config))
   pages = pages.map(each => pagesParse(each, config))
   // const labels = getLabels()
-  const archives = archivesParse(posts).map(each => ({
+  const archives = archivesParse(posts, config).map(each => ({
     ...each,
     path: `${each.path}/index.html`,
   }))

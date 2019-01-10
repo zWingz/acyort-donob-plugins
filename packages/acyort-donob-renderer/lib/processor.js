@@ -4,6 +4,7 @@ function processor(issues, acyort) {
   const config = {
     postsDir: 'posts',
     tagsDir: 'tags',
+    archivesDir: 'archives',
     ...acyort.config,
   }
   const {

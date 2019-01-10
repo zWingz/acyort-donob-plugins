@@ -10,7 +10,8 @@ module.exports = (acyort) => {
       fetcher(this)
     },
   })
-  acyort.workflow.register(() => {
-    fetcher.call(acyort, acyort)
+  acyort.workflow.register(async () => {
+    const data = fetcher.call(acyort, acyort)
+    acyort.store.set('fetch:issues', data)
   })
 }

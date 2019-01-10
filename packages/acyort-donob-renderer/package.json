@@ -5,9 +5,9 @@
   "license": "MIT",
   "dependencies": {
     "@acyort/markdown": "^1.0.1",
-    "acyort": "^3.0.10",
     "lodash": "^4.17.11",
-    "nodemon": "^1.18.9"
+    "log-symbols": "^2.2.0",
+    "ora": "^3.0.0"
   },
   "scripts": {
     "dev": "export NODE_ENV=dev && nodemon ./test/index.js"
@@ -16,5 +16,10 @@
     "ignore": [
       "test/temp/**/**"
     ]
+  },
+  "devDependencies": {
+    "acyort-plugin-fetch": "^1.0.0",
+    "acyort": "^3.0.10",
+    "nodemon": "^1.18.9"
   }
 }

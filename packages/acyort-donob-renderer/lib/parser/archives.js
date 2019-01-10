@@ -15,9 +15,9 @@ function setArchives(p) {
 }
 
 
-module.exports = (p) => {
+module.exports = (p, { archivesDir = 'archives' } = {}) => {
   const posts = pagination(p.map(each => lodash.pick(each, ['id', 'created', 'title', 'url'])), {
-    base: 'archives',
+    base: archivesDir,
     pageSize: 10,
   })
   return posts.map(each => ({

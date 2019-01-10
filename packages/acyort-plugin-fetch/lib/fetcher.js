@@ -3,11 +3,11 @@ const octokit = require('@octokit/rest')()
 const ora = require('ora')
 const logSymbols = require('log-symbols')
 
-const isDev = false
-
 function fetch(acyort) {
   const cacheFile = join(__dirname, 'issues.json')
-  const { repository, author: creator, gitToken } = acyort.config
+  const {
+    repository, author: creator, gitToken, issuesPageSize = 20,
+  } = acyort.config
   const [owner, repo] = repository.split('/')
   const { fs } = acyort
 
@@ -33,7 +33,7 @@ function fetch(acyort) {
           owner,
           repo,
           sort: 'created',
-          per_page: isDev ? 3 : 20,
+          per_page: issuesPageSize,
           direction: 'desc',
           page,
           creator: creator || owner,
@@ -51,7 +51,7 @@ function fetch(acyort) {
         })
       result = result.concat(data)
       const { link } = headers
-      if (link && link.includes('rel="next"') && !isDev) {
+      if (link && link.includes('rel="next"')) {
         spinner.stopAndPersist({
           symbol: logSymbols.success,
           text: `Succeed to fetch issues from page ${page}`,
