@@ -1,4 +1,3 @@
-const config = require('acyort/lib/config/')
 const path = require('path')
 
 const acyort = require('acyort')({
@@ -14,7 +13,7 @@ const acyort = require('acyort')({
   root: '/',
   template: '../../../../acyort-templates-donob-plus/templates',
 })
-const issues = require('../../acyort-donob-fetch/lib/issues.json')
+const issues = require('../../acyort-plugin-fetch/lib/issues.json')
 const processor = require('../lib/processor')
 const render = require('../lib/render')
 

@@ -19,7 +19,7 @@ module.exports = (issues, config) => {
     path: `${each.path}/index.html`,
   }))
   const index = pagination(
-    posts.map(each => lodash.pick(each, 'title', 'id', 'url', 'created')),
+    posts.map(each => lodash.pick(each, 'title', 'id', 'url', 'created')), { pageSize: 5 },
   ).map(each => ({
     ...each,
     path: path.join(each.path, 'index.html'),

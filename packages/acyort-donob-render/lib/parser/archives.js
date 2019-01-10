@@ -20,7 +20,6 @@ module.exports = (p) => {
     base: 'archives',
     pageSize: 10,
   })
-  // console.log(posts)
   return posts.map(each => ({
     ...each,
     data: setArchives(each.data),

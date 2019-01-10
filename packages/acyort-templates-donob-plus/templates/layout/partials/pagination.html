@@ -7,8 +7,15 @@
     {% else %}
     <a class="disabled">{{ __('prev') }}</a>
     {% endif %}
-
-    <!-- {{ _paginator(pagination) }} -->
+    <span>
+      {% for item in pagination.items %}
+        {% if item.placeholder %}
+          <a class='disalbed'>...</a>
+        {% else %}
+          <a {% if item.active %}class='current'{% endif %} href="{{ _url(item.url) }}">{{ item.page }}</a>
+        {% endif %}
+      {% endfor %}
+    </span>
 
     {% if pagination.nextPage %}
     <a rel="next" href="{{ _url(pagination.nextPage) }}">{{ __('next') }}</a>
