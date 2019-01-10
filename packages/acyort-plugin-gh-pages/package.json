@@ -1,11 +1,15 @@
 {
   "name": "acyort-plugin-ghpages",
   "version": "1.0.0",
-  "description": "Acyort-plugin-ghpages",
+  "description": "acyort plugin for gh-pages",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "test": "export NODE_DEBUG=gh-pages node ./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zWingz/acyort-donob-plugins"
   },
   "dependencies": {
     "acyort": "^3.0.10",

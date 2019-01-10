@@ -1,5 +1,6 @@
 {
   "name": "acyort-plugin-fetch",
+  "description": "acyort plugin for fetch github issues",
   "version": "1.0.0",
   "dependencies": {
     "@octokit/rest": "^16.5.0",
@@ -9,6 +10,10 @@
   "devDependencies": {
     "acyort": "^3.0.10",
     "nodemon": "^1.18.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zWingz/acyort-donob-plugins"
   },
   "scripts": {
     "dev": "export NODE_ENV=dev && nodemon ./test/index.js"

@@ -1,5 +1,6 @@
 {
   "name": "acyort-donob-renderer",
+  "description": "acyort renderer for donob renderer",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -8,6 +9,10 @@
     "lodash": "^4.17.11",
     "log-symbols": "^2.2.0",
     "ora": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zWingz/acyort-donob-plugins"
   },
   "scripts": {
     "dev": "export NODE_ENV=dev && nodemon ./test/index.js"
