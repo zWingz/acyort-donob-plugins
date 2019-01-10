@@ -15,6 +15,9 @@ template: acyort-templates-donob-plus
 tagsDir: # default tags
 postsDir: # default posts
 archivesDir: # default archives
+pageSize:
+  archives: # default 10
+  posts: # default 10
 
 plugins:
   - acyort-plugin-fetch

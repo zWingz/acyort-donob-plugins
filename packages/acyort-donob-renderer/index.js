@@ -16,6 +16,12 @@ module.exports = function ayrortDonobRenderer(acyort) {
     spinner.start('Staring to render html...\n')
     const processData = processor(data, acyort)
     render(processData, acyort)
-    spinner.succeed('Finish to render...')
+    spinner.stopAndPersist({
+      symbol: logSymbols.success,
+      text: 'Succeed to render issues',
+    })
+    spinner.start('Staring to copy source...')
+    acyort.copySource()
+    spinner.succeed('Succeed to copy source')
   })
 }

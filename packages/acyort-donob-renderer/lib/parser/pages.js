@@ -1,8 +1,10 @@
 const pathFn = require('path')
 const Marked = require('@acyort/markdown')
 
-function page(issue, config) {
-  const marker = new Marked(config)
+function page(issue) {
+  const marker = new Marked({
+    lineNumbers: false,
+  })
   const {
     id, title, updated_at: updated, created_at: created, body,
   } = issue
