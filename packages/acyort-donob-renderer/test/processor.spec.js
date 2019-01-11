@@ -39,6 +39,13 @@ describe('test processor', () => {
   const testIssues = [...testPosts, pageIssues]
   const postPageSize = 3
   const archivesPageSize = 5
+  const clientId = 'fdsafdsa'
+  const clientSecret = 'fdsafdsafad'
+  const repository = 'zxvc/uiku'
+  const gitalk = {
+    clientId,
+    clientSecret,
+  }
   const {
     posts, archives, index, pages,
   } = processor(testIssues, {
@@ -50,6 +57,8 @@ describe('test processor', () => {
         posts: postPageSize,
         archives: archivesPageSize,
       },
+      gitalk,
+      repository,
     },
   })
   describe('test posts processor', () => {
@@ -60,6 +69,16 @@ describe('test processor', () => {
     it('posts path', () => {
       const p = posts[0]
       expect(p.url).toEqual(`/${postsDir}/${p.id}.html`)
+    })
+    it('test gitalk in post', () => {
+      posts.forEach((each) => {
+        expect(each.gitalk).toMatchObject({
+          ...gitalk,
+          number: each.number,
+          owner: repository.split('/')[0],
+          repo: repository.split('/')[1],
+        })
+      })
     })
   })
   describe('test index', () => {

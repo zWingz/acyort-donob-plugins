@@ -146,6 +146,7 @@ Array [
             </h3>
           ",
     "created": "2018-11-20T11:07:18Z",
+    "gitalk": false,
     "id": 1,
     "labels": Array [],
     "number": 101,
@@ -171,6 +172,7 @@ Array [
             </h3>
           ",
     "created": "2018-10-19T11:07:18Z",
+    "gitalk": false,
     "id": 2,
     "labels": Array [
       Object {
@@ -202,6 +204,7 @@ Array [
             </h3>
           ",
     "created": "2017-10-19T11:07:18Z",
+    "gitalk": false,
     "id": 3,
     "labels": Array [],
     "number": 103,
@@ -227,6 +230,7 @@ Array [
             </h3>
           ",
     "created": "2016-10-19T11:07:18Z",
+    "gitalk": false,
     "id": 4,
     "labels": Array [
       Object {

@@ -19,6 +19,15 @@ pageSize:
   archives: # default 10
   posts: # default 10
 
+repository: # optional, used in gitalk and acyort-plugin-fetch
+
+gitalk: # default false
+  clientID:
+  clientSecret:
+  owner: # split by repository
+  repo: # split by repository
+  # gitalk config
+
 plugins:
   - acyort-plugin-fetch
   - acyort-donob-renderer
@@ -30,3 +39,8 @@ plugins:
 - run `cp test/config.yml.default test/config.yml`
 - set your config
 - run `yarn dev`
+
+
+## Related
+
+- [gitalk](https://github.com/gitalk/gitalk)

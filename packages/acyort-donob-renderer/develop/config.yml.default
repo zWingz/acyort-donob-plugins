@@ -13,3 +13,7 @@ gitToken:
 public: ./temp
 
 issuesCache: true
+
+gitalk:
+  clientID: 
+  clientSecret: 

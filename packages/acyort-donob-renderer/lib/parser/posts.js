@@ -17,8 +17,11 @@ function postParse(issue, config) {
     body,
     user: { html_url: homePage, avatar_url: avatar },
   } = issue
-  const { postsDir, tagsDir } = config
+  const {
+    postsDir, tagsDir, gitalk = false, repository = '',
+  } = config
   const url = path.join('/', postsDir, `${id.toString()}.html`)
+  const [owner, repo] = repository.split('/')
   return {
     id,
     url,
@@ -34,6 +37,13 @@ function postParse(issue, config) {
       homePage,
       avatar,
     },
+    gitalk: gitalk ? {
+      owner,
+      repo,
+      admin: [owner],
+      ...gitalk,
+      number,
+    } : false,
   }
 }
 

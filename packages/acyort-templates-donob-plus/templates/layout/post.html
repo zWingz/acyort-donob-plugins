@@ -20,18 +20,12 @@
 {% block script %}
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script>
-  const gitalkConfig = JSON.parse('{{ config.gitalk }}')
+  {% if page.gitalk %}
+  const gitalkConfig = JSON.parse('{{ page.gitalk|json }}')
   var gitalk = new Gitalk({
-    // clientID: '{{ config.gitalk.clientID }}',
-    // clientSecret: '{{ config.gitalk.secret }}',
-    // repo: '{{ config.gitalk.repo }}',
-    // owner: '{{ config.gitalk.owner }}',
-    // admin: ['{{config.gitalk.admin}}'],
-    // number: {{page.number}},      // Ensure uniqueness and length less than 50
-    // distractionFreeMode: false,  // Facebook-like distraction free mode
-    // ...{{config.gitalk}}
     ...gitalkConfig
   })
   gitalk.render('gitalk-container')
+  {% endif %}
 </script>
 {% endblock %}
