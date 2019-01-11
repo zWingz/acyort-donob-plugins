@@ -1,5 +1,6 @@
 const Marked = require('@acyort/markdown')
-const issues = require('./fixtures/issues')
+// const issues = require('./fixtures/issues')
+const { issues, mockPages } = require('./fixtures/issues')
 const processor = require('../lib/processor')
 
 const marker = new Marked({
@@ -9,22 +10,13 @@ const postsDir = 'fdsaf'
 const archivesDir = 'fdsafd'
 const tagsDir = '12fds'
 describe('test processor', () => {
-  const postPageSize = 2
-  const archivesPageSize = 2
   describe('test snapshot', () => {
     const {
       posts, archives, index, pages,
-    } = processor(issues, {
-      config: {
-        postsDir,
-        archivesDir,
-        tagsDir,
-        pageSize: {
-          posts: postPageSize,
-          archives: archivesPageSize,
-        },
-      },
-    })
+    } = processor([
+      ...issues,
+      mockPages(),
+    ])
     it('test posts snapshot', () => {
       expect(posts).toMatchSnapshot('posts')
     })
@@ -38,12 +30,18 @@ describe('test processor', () => {
   })
 })
 describe('test processor', () => {
-  const moreIsseus = [...issues, ...issues, ...issues, ...issues]
+  const counter = 6
+  const testPosts = Array(counter)
+    .fill(issues)
+    .reduce((sum, e) => sum.concat(e), [])
+    .sort((a, b) => (a.created_at < b.created_at ? 1 : -1))
+  const pageIssues = mockPages()
+  const testIssues = [...testPosts, pageIssues]
   const postPageSize = 3
-  const archivesPageSize = 3
+  const archivesPageSize = 5
   const {
     posts, archives, index, pages,
-  } = processor(moreIsseus, {
+  } = processor(testIssues, {
     config: {
       postsDir,
       archivesDir,
@@ -56,7 +54,7 @@ describe('test processor', () => {
   })
   describe('test posts processor', () => {
     it('posts length', () => {
-      expect(posts).toHaveLength(moreIsseus.length)
+      expect(posts).toHaveLength(testPosts.length)
       expect(posts[0].body).toEqual(marker.parse(posts[0].raw))
     })
     it('posts path', () => {
@@ -66,7 +64,7 @@ describe('test processor', () => {
   })
   describe('test index', () => {
     it('test index pagination', () => {
-      expect(index).toHaveLength(Math.ceil(moreIsseus.length / postPageSize))
+      expect(index).toHaveLength(Math.ceil(testPosts.length / postPageSize))
       expect(index[0].data).toHaveLength(postPageSize)
     })
     it('test prev & next', () => {
@@ -79,11 +77,11 @@ describe('test processor', () => {
     })
     it('test pagination items', () => {
       const testPaginationItem = (pageItem) => {
-        const tmp = pageItem.items
-        for (let i = 0; i < tmp.length; i += 1) {
+        const { items } = pageItem
+        for (let i = 0; i < items.length; i += 1) {
           const {
             url, page, active, placeholder,
-          } = tmp[i]
+          } = items[i]
           if (i === 0) {
             expect(url).toBe('/')
           } else if (placeholder) {
@@ -102,6 +100,65 @@ describe('test processor', () => {
     })
   })
 
-  it('test pages snapshot', () => {
+  describe('test pages', () => {
+    it('test pages', () => {
+      const pageItem = pages[0]
+      const {
+        title, name, url, path, content, raw,
+      } = pageItem
+      expect(name).toEqual(pageIssues.title.match(/\[(.*)\]/)[1])
+      expect(title).toEqual(pageIssues.title.split(']')[1])
+      expect(url).toEqual(`/${name}/`)
+      expect(path).toEqual(`/${name}/index.html`)
+      expect(content).toEqual(marker.parse(raw))
+    })
+  })
+
+  describe('test archives', () => {
+    it('test archives pagination', () => {
+      expect(
+        archives[2].data.reduce((s, e) => s.concat(e.posts), []),
+      ).toHaveLength(archivesPageSize)
+      expect(archives).toHaveLength(
+        Math.ceil(testIssues.length / archivesPageSize),
+      )
+    })
+    it('test archives path', () => {
+      archives.forEach((each) => {
+        const {
+          path,
+          pagination: { currentPage },
+        } = each
+        if (currentPage === 1) {
+          expect(path).toBe(`/${archivesDir}/index.html`)
+        } else {
+          expect(path).toBe(`/${archivesDir}/page/${currentPage}/index.html`)
+        }
+      })
+    })
+    it('test archives posts', () => {
+      const testArchivesPost = (post, skip, year) => {
+        const target = posts[skip]
+        expect(post.id).toEqual(target.id)
+        expect(post.created).toEqual(target.created)
+        expect(`${new Date(post.created).getFullYear()}`).toEqual(year)
+      }
+      const testArchivesYear = (yearArchive, skip) => {
+        yearArchive.posts.forEach((e, idx) => {
+          testArchivesPost(e, idx + skip, yearArchive.year)
+        })
+      }
+      archives.forEach((archivePage) => {
+        const { currentPage } = archivePage.pagination
+        let skip = 0
+        archivePage.data.forEach((yearArchive) => {
+          testArchivesYear(
+            yearArchive,
+            (currentPage - 1) * archivesPageSize + skip,
+          )
+          skip += yearArchive.posts.length
+        })
+      })
+    })
   })
 })

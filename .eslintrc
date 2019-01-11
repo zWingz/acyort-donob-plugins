@@ -10,7 +10,7 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": ["**/test/**"],
+        "devDependencies": ["**/test/**", "**/develop/**"],
         "optionalDependencies": false,
         "peerDependencies": false
       }

@@ -19,7 +19,7 @@ function render(acyort, { data, template, contentKey }) {
 }
 
 module.exports = ({
-  posts, pages, archives, index,
+  posts = [], pages = [], archives = [], index = [],
 }, acyort) => {
   const renderList = [{
     template: 'index',

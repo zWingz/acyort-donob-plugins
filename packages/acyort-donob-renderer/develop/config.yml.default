@@ -1,0 +1,15 @@
+title: 'zWing'
+
+menu:
+  Archives: /archives
+  About: /about
+
+template: ../../../acyort-templates-donob-plus/templates
+
+repository: zWingz/my-blog-config
+
+gitToken: 
+
+public: ./temp
+
+issuesCache: true

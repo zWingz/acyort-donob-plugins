@@ -1,6 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[` 1`] = `Array []`;
+exports[` 1`] = `
+Array [
+  Object {
+    "content": "
+            <h1>
+              <a href=\\"#Abount me\\" id=\\"Abount me\\" class=\\"heading\\"></a>Abount me
+            </h1>
+          
+            <h2>
+              <a href=\\"#About me content\\" id=\\"About me content\\" class=\\"heading\\"></a>About me content
+            </h2>
+          ",
+    "created": "2018-11-11T11:07:18Z",
+    "id": 5,
+    "name": "about",
+    "path": "/about/index.html",
+    "raw": "# Abount me 
+ ## About me content",
+    "title": "abount me",
+    "type": "page",
+    "updated": "2018-11-11T11:07:18Z",
+    "url": "/about/",
+  },
+]
+`;
 
 exports[`test processor test snapshot test archives snapshot: archives 1`] = `
 Array [
@@ -12,46 +36,24 @@ Array [
             "created": "2018-11-20T11:07:18Z",
             "id": 1,
             "title": "issus-1 title",
-            "url": "/fdsaf/1.html",
+            "url": "/posts/1.html",
           },
           Object {
             "created": "2018-10-19T11:07:18Z",
             "id": 2,
             "title": "issus-2 title",
-            "url": "/fdsaf/2.html",
+            "url": "/posts/2.html",
           },
         ],
         "year": "2018",
       },
-    ],
-    "pagination": Object {
-      "currentPage": 1,
-      "items": Array [
-        Object {
-          "active": true,
-          "page": 1,
-          "url": "/fdsafd",
-        },
-        Object {
-          "active": false,
-          "page": 2,
-          "url": "/fdsafd/page/2",
-        },
-      ],
-      "nextPage": "/fdsafd/page/2",
-      "prevPage": "",
-    },
-    "path": "/fdsafd/index.html",
-  },
-  Object {
-    "data": Array [
       Object {
         "posts": Array [
           Object {
             "created": "2017-10-19T11:07:18Z",
             "id": 3,
             "title": "issus-3 title",
-            "url": "/fdsaf/3.html",
+            "url": "/posts/3.html",
           },
         ],
         "year": "2017",
@@ -62,30 +64,25 @@ Array [
             "created": "2016-10-19T11:07:18Z",
             "id": 4,
             "title": "issus-4 title",
-            "url": "/fdsaf/4.html",
+            "url": "/posts/4.html",
           },
         ],
         "year": "2016",
       },
     ],
     "pagination": Object {
-      "currentPage": 2,
+      "currentPage": 1,
       "items": Array [
         Object {
-          "active": false,
-          "page": 1,
-          "url": "/fdsafd",
-        },
-        Object {
           "active": true,
-          "page": 2,
-          "url": "/fdsafd/page/2",
+          "page": 1,
+          "url": "/archives",
         },
       ],
       "nextPage": "",
-      "prevPage": "/fdsafd",
+      "prevPage": "",
     },
-    "path": "/fdsafd/page/2/index.html",
+    "path": "/archives/index.html",
   },
 ]
 `;
@@ -98,13 +95,25 @@ Array [
         "created": "2018-11-20T11:07:18Z",
         "id": 1,
         "title": "issus-1 title",
-        "url": "/fdsaf/1.html",
+        "url": "/posts/1.html",
       },
       Object {
         "created": "2018-10-19T11:07:18Z",
         "id": 2,
         "title": "issus-2 title",
-        "url": "/fdsaf/2.html",
+        "url": "/posts/2.html",
+      },
+      Object {
+        "created": "2017-10-19T11:07:18Z",
+        "id": 3,
+        "title": "issus-3 title",
+        "url": "/posts/3.html",
+      },
+      Object {
+        "created": "2016-10-19T11:07:18Z",
+        "id": 4,
+        "title": "issus-4 title",
+        "url": "/posts/4.html",
       },
     ],
     "pagination": Object {
@@ -115,50 +124,11 @@ Array [
           "page": 1,
           "url": "/",
         },
-        Object {
-          "active": false,
-          "page": 2,
-          "url": "/page/2",
-        },
       ],
-      "nextPage": "/page/2",
+      "nextPage": "",
       "prevPage": "",
     },
     "path": "/index.html",
-  },
-  Object {
-    "data": Array [
-      Object {
-        "created": "2017-10-19T11:07:18Z",
-        "id": 3,
-        "title": "issus-3 title",
-        "url": "/fdsaf/3.html",
-      },
-      Object {
-        "created": "2016-10-19T11:07:18Z",
-        "id": 4,
-        "title": "issus-4 title",
-        "url": "/fdsaf/4.html",
-      },
-    ],
-    "pagination": Object {
-      "currentPage": 2,
-      "items": Array [
-        Object {
-          "active": false,
-          "page": 1,
-          "url": "/",
-        },
-        Object {
-          "active": true,
-          "page": 2,
-          "url": "/page/2",
-        },
-      ],
-      "nextPage": "",
-      "prevPage": "/",
-    },
-    "path": "/page/2/index.html",
   },
 ]
 `;
@@ -181,16 +151,16 @@ Array [
       Object {
         "id": "label-1",
         "name": "label-name-1",
-        "url": "/12fds/label-1",
+        "url": "/tags/label-1",
       },
     ],
     "number": 101,
-    "path": "/fdsaf/1.html",
+    "path": "/posts/1.html",
     "raw": "## Header 
  ### Issues1 Content",
     "title": "issus-1 title",
     "updated": "2018-11-20T08:25:34Z",
-    "url": "/fdsaf/1.html",
+    "url": "/posts/1.html",
     "user": Object {
       "avatar": "avatar_url",
       "homePage": "html_url",
@@ -212,16 +182,16 @@ Array [
       Object {
         "id": "label-1",
         "name": "label-name-1",
-        "url": "/12fds/label-1",
+        "url": "/tags/label-1",
       },
     ],
     "number": 102,
-    "path": "/fdsaf/2.html",
+    "path": "/posts/2.html",
     "raw": "## Header 
  ### Issues2 Content",
     "title": "issus-2 title",
     "updated": "2018-10-19T08:25:34Z",
-    "url": "/fdsaf/2.html",
+    "url": "/posts/2.html",
     "user": Object {
       "avatar": "avatar_url",
       "homePage": "html_url",
@@ -243,16 +213,16 @@ Array [
       Object {
         "id": "label-1",
         "name": "label-name-1",
-        "url": "/12fds/label-1",
+        "url": "/tags/label-1",
       },
     ],
     "number": 103,
-    "path": "/fdsaf/3.html",
+    "path": "/posts/3.html",
     "raw": "## Header 
  ### Issues3 Content",
     "title": "issus-3 title",
     "updated": "2017-10-19T08:25:34Z",
-    "url": "/fdsaf/3.html",
+    "url": "/posts/3.html",
     "user": Object {
       "avatar": "avatar_url",
       "homePage": "html_url",
@@ -274,16 +244,16 @@ Array [
       Object {
         "id": "label-1",
         "name": "label-name-1",
-        "url": "/12fds/label-1",
+        "url": "/tags/label-1",
       },
     ],
     "number": 104,
-    "path": "/fdsaf/4.html",
+    "path": "/posts/4.html",
     "raw": "## Header 
  ### Issues4 Content",
     "title": "issus-4 title",
     "updated": "2016-10-19T08:25:34Z",
-    "url": "/fdsaf/4.html",
+    "url": "/posts/4.html",
     "user": Object {
       "avatar": "avatar_url",
       "homePage": "html_url",

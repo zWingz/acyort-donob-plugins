@@ -6,7 +6,7 @@ const logSymbols = require('log-symbols')
 function fetch(acyort) {
   const cacheFile = join(__dirname, 'issues.json')
   const {
-    repository, author: creator, gitToken, issuesPageSize = 20, issuesCache = false,
+    repository, author: creator, gitToken = '', issuesPageSize = 20, issuesCache = false,
   } = acyort.config
   const [owner, repo] = repository.split('/')
   const { fs } = acyort
