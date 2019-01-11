@@ -4,11 +4,12 @@
   "version": "1.0.0",
   "dependencies": {
     "@octokit/rest": "^16.5.0",
+    "fs-extra": "^7.0.1",
     "log-symbols": "^2.2.0",
     "ora": "^3.0.0"
   },
   "devDependencies": {
-		"acyort": "^3.0.10",
+    "acyort": "^3.0.10",
     "jest": "^23.6.0",
     "nodemon": "^1.18.9"
   },
@@ -17,13 +18,24 @@
     "url": "https://github.com/zWingz/acyort-donob-plugins"
   },
   "scripts": {
-    "dev": "export NODE_ENV=dev && nodemon ./test/index.js"
+    "dev": "nodemon ./develop/index.js",
+    "test": "jest"
   },
   "main": "index.js",
   "license": "MIT",
   "nodemonConfig": {
     "ignore": [
       "issues.json"
+    ]
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js}",
+      "!**/node_modules/**",
+      "!**/test/**",
+      "!**/coverage/**",
+      "!**/develop/**"
     ]
   }
 }

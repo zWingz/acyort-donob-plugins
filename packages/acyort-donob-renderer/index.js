@@ -5,10 +5,10 @@ const render = require('./lib/render')
 
 
 module.exports = function ayrortDonobRenderer(acyort) {
-  acyort.workflow.register(async () => {
+  acyort.workflow.register(() => {
     const spinner = ora('Staring to process...')
     spinner.start()
-    const data = await acyort.store.get('fetch:issues')
+    const data = acyort.store.get('fetch:issues')
     spinner.stopAndPersist({
       symbol: logSymbols.success,
       text: 'Succeed to process issues',

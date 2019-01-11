@@ -35,7 +35,8 @@
       "**/*.{js}",
       "!**/node_modules/**",
       "!**/test/**",
-      "!**/coverage/**"
+      "!**/coverage/**",
+      "!**/develop/**"
     ]
   }
 }

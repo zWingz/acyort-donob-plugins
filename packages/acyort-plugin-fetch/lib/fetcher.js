@@ -2,14 +2,20 @@ const { join } = require('path')
 const octokit = require('@octokit/rest')()
 const ora = require('ora')
 const logSymbols = require('log-symbols')
+const fs = require('fs-extra')
 
-function fetch(acyort) {
+function fetch(config = {}) {
   const cacheFile = join(__dirname, 'issues.json')
   const {
-    repository, author: creator, gitToken = '', issuesPageSize = 20, issuesCache = false,
-  } = acyort.config
+    repository, author: creator, gitToken, issuesPageSize = 20, issuesCache = false,
+  } = config
+  // console.log(octokit)
+  if (!(repository && gitToken)) {
+    const msg = 'missing repository or gitToken'
+    ora(msg).fail()
+    return Promise.reject(new Error(msg))
+  }
   const [owner, repo] = repository.split('/')
-  const { fs } = acyort
 
   const spinner = ora({
     text: 'Fetch issues...\n',
@@ -25,7 +31,6 @@ function fetch(acyort) {
     token: gitToken.split('#').join(''),
   })
   let result = []
-
   return new Promise((resolve) => {
     async function load(page = 1) {
       const { data, headers } = await octokit.issues
@@ -70,6 +75,3 @@ function fetch(acyort) {
 }
 
 module.exports = fetch
-// module.exports = async function fetcher() {
-//   this.store.set('issues', await fetch(this))
-// }

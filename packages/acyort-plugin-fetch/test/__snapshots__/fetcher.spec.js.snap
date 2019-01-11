@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test fetcher test fetcher: octokit.issues 1`] = `
+Array [
+  Array [
+    Object {
+      "creator": "lalal",
+      "direction": "desc",
+      "owner": "lalal",
+      "page": 1,
+      "per_page": 20,
+      "repo": "fdsa",
+      "sort": "created",
+    },
+  ],
+  Array [
+    Object {
+      "creator": "lalal",
+      "direction": "desc",
+      "owner": "lalal",
+      "page": 2,
+      "per_page": 20,
+      "repo": "fdsa",
+      "sort": "created",
+    },
+  ],
+  Array [
+    Object {
+      "creator": "lalal",
+      "direction": "desc",
+      "owner": "lalal",
+      "page": 3,
+      "per_page": 20,
+      "repo": "fdsa",
+      "sort": "created",
+    },
+  ],
+]
+`;
