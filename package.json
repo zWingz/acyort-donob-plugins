@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "zhengzhirong <zhengzwing@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "lerna run test --ignore acyort-templates-* --ignore acyort-plugin-ghpages"
+  },
   "devDependencies": {
     "eslint": "^5.12.0",
     "eslint-config-airbnb-base": "^13.1.0",

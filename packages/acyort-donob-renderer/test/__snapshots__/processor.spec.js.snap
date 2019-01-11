@@ -147,13 +147,7 @@ Array [
           ",
     "created": "2018-11-20T11:07:18Z",
     "id": 1,
-    "labels": Array [
-      Object {
-        "id": "label-1",
-        "name": "label-name-1",
-        "url": "/tags/label-1",
-      },
-    ],
+    "labels": Array [],
     "number": 101,
     "path": "/posts/1.html",
     "raw": "## Header 
@@ -209,13 +203,7 @@ Array [
           ",
     "created": "2017-10-19T11:07:18Z",
     "id": 3,
-    "labels": Array [
-      Object {
-        "id": "label-1",
-        "name": "label-name-1",
-        "url": "/tags/label-1",
-      },
-    ],
+    "labels": Array [],
     "number": 103,
     "path": "/posts/3.html",
     "raw": "## Header 

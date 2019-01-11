@@ -45,7 +45,7 @@ function genPage({
   }
 }
 
-function parsePage({ pages, ...rst } = {}) {
+function parsePage({ pages, ...rst }) {
   const base = path.join('/', rst.base)
   return {
     pagination: genPage({
@@ -56,7 +56,7 @@ function parsePage({ pages, ...rst } = {}) {
       rst.current === 1 ? base : path.join(base, rst.prefix, `${rst.current}`),
   }
 }
-
+/* istanbul ignore next */
 function pagination(data, { pageSize = 10, prefix = 'page', base = '/' } = {}) {
   let current = 1
   const { length } = data

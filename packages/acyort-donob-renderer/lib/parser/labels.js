@@ -19,7 +19,7 @@ function setTags(label, postId) {
   }
 }
 function parseLabels({ labels, tagsDir, postId }) {
-  if (!labels.length) {
+  if (!labels) {
     return []
   }
 
@@ -37,5 +37,5 @@ function parseLabels({ labels, tagsDir, postId }) {
 
 module.exports = {
   parseLabels,
-  getLabels: () => tags,
+  getLabels: /* istanbul ignore next */ () => tags,
 }

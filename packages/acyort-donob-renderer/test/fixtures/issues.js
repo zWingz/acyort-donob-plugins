@@ -18,7 +18,7 @@ function mockIssues(date) {
       avatar_url: 'avatar_url',
       html_url: 'html_url',
     },
-    labels: [{ ...labels[0] }],
+    labels: id % 2 === 0 ? [{ ...labels[0] }] : undefined,
     created_at: `${date}T11:07:18Z`,
     updated_at: `${date}T08:25:34Z`,
     body: `## Header \r\n ### Issues${id} Content`,

@@ -4,6 +4,7 @@ const ora = require('ora')
 const logSymbols = require('log-symbols')
 const fs = require('fs-extra')
 
+/* istanbul ignore next */
 function fetch(config = {}) {
   const cacheFile = join(__dirname, 'issues.json')
   const {
