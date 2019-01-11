@@ -4,3 +4,4 @@ node_modules
 **/yarn-error.log
 **/test/**/config.yml
 **/coverage
+**/develop/config.yml
