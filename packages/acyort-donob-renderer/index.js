@@ -6,7 +6,7 @@ const render = require('./lib/render')
 const mini = require('./lib/minify')
 
 module.exports = function ayrortDonobRenderer(acyort) {
-  acyort.workflow.register(() => {
+  acyort.workflow.register(async () => {
     const spinner = ora('Staring to process...')
     spinner.start()
     const data = acyort.store.get('fetch:issues')
@@ -29,7 +29,7 @@ module.exports = function ayrortDonobRenderer(acyort) {
       text: 'Succeed to copy source',
     })
     spinner.start('Staring to minify...\n')
-    mini(join(base, publicDir))
+    await mini(join(base, publicDir))
     spinner.succeed('Succeed to minify\n')
   })
 }
