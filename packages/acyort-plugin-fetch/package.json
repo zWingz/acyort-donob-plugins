@@ -1,7 +1,7 @@
 {
   "name": "acyort-plugin-fetch-issues",
   "description": "acyort plugin for fetch github issues",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "dependencies": {
     "@octokit/rest": "^16.5.0",
     "fs-extra": "^7.0.1",
