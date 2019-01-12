@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "export NODE_DEBUG=gh-pages node ./test/index.js"
+    "test": "export NODE_DEBUG=gh-pages && node ./test/index.js"
   },
   "repository": {
     "type": "git",
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "acyort": "^3.0.10",
+    "dayjs": "^1.7.8",
     "gh-pages": "^2.0.1",
     "ora": "^3.0.0"
   },

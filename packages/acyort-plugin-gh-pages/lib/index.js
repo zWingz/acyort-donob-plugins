@@ -1,6 +1,7 @@
 const ghpages = require('gh-pages')
 const ora = require('ora')
 const path = require('path')
+const dayjs = require('dayjs')
 
 function push(config) {
   const { base, public: publicPath, ghPages = {} } = config
@@ -9,7 +10,8 @@ function push(config) {
     text: 'Starting to publish...\n',
     color: 'green',
   }).start()
-  ghpages.publish(outputDir, ghPages, (err) => {
+  const date = dayjs().format('YYYY-MM-DD hh:mm:ss')
+  ghpages.publish(outputDir, { ...ghPages, message: `Updated by gh-pages - ${date}` }, (err) => {
     if (err) {
       spinner.fail('Publish to gh-pages fail')
     } else {
