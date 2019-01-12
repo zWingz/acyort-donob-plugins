@@ -1,6 +1,6 @@
 {
   "name": "acyort-plugin-ghpages",
-  "version": "1.0.1-alpha.0",
+  "version": "1.0.1-alpha.1",
   "description": "acyort plugin for gh-pages",
   "main": "index.js",
   "license": "MIT",
