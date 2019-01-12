@@ -9,7 +9,7 @@ const autoprefixer = require('autoprefixer')
 module.exports = (publicDir) => {
   gulp.task('html', () => gulp
     .src(`${publicDir}/**/*.html`)
-    .pipe(minifier({ collapseWhitespace: true }))
+    .pipe(minifier({ collapseWhitespace: true, removeComments: true, minifyJS: true }))
     .pipe(gulp.dest(publicDir)))
   gulp.task('js', () => gulp
     .src(`${publicDir}/**/*.js`)
