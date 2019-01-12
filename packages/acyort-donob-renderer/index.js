@@ -1,12 +1,14 @@
 const { join } = require('path')
 const logSymbols = require('log-symbols')
 const ora = require('ora')
+const fs = require('fs-extra')
 const processor = require('./lib/processor')
 const render = require('./lib/render')
 const mini = require('./lib/minify')
 
 module.exports = function ayrortDonobRenderer(acyort) {
   acyort.workflow.register(async () => {
+    const { base, public: publicDir, favicon = '' } = acyort.config
     const spinner = ora('Staring to process...')
     spinner.start()
     const data = acyort.store.get('fetch:issues')
@@ -23,7 +25,10 @@ module.exports = function ayrortDonobRenderer(acyort) {
     })
     spinner.start('Staring to copy source...\n')
     acyort.copySource()
-    const { base, public: publicDir } = acyort.config
+    const fav = join(base, favicon)
+    if (favicon && fs.pathExistsSync(fav)) {
+      fs.copyFileSync(fav, join(base, publicDir, favicon))
+    }
     spinner.stopAndPersist({
       symbol: logSymbols.success,
       text: 'Succeed to copy source',

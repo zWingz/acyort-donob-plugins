@@ -3,8 +3,12 @@ const copySource = jest.fn().mockReturnValue(1)
 const min = jest.fn()
 const { join } = require('path')
 
+const copyFileSync = jest.fn()
+const favicon = 'fafdsafdsa'
 jest.doMock('../lib/minify', () => min)
-
+jest.doMock('fs-extra', () => ({
+  copyFileSync, pathExistsSync: () => true,
+}))
 const cache = []
 const register = jest.fn((fn) => {
   cache.push(fn)
@@ -25,6 +29,7 @@ describe('test register plugins', () => {
     config: {
       base,
       public: publicDir,
+      favicon,
     },
   })
   it('test workflow register', () => {
@@ -32,12 +37,11 @@ describe('test register plugins', () => {
     expect(cache).toHaveLength(1)
   })
   it('test workflow exec', async () => {
-    await cache[0]({
-      config: {
-        base, public: publicDir,
-      },
-    })
+    await cache[0]()
     expect(copySource).toBeCalledTimes(1)
+    expect(copyFileSync).toBeCalledTimes(1)
+    expect(copyFileSync).toBeCalledWith(join(base, favicon), join(base, publicDir, favicon))
+
     expect(min).toBeCalledTimes(1)
     expect(min).toBeCalledWith(join(base, publicDir))
   })

@@ -17,3 +17,5 @@ issuesCache: true
 gitalk:
   clientID: 
   clientSecret: 
+
+favicon: 

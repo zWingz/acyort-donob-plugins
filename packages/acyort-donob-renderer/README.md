@@ -28,6 +28,8 @@ gitalk: # default false
   repo: # split by repository
   # gitalk config
 
+favicon: # favicon.ico, copy to public/favicon.ico
+
 plugins:
   - acyort-plugin-fetch-issues
   - acyort-donob-renderer
