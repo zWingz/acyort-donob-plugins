@@ -6,12 +6,14 @@
   "version": "1.0.3",
   "message": "chore(release): publish",
   "command": {
-    "ignoreChanges": [
-      "ignored-file",
-      "*.md",
-      "**/test/**",
-      "**/develop/**"
-    ],
-    "message": "chore(release): publish %s"
+    "publish": {
+      "ignoreChanges": [
+        "ignored-file",
+        "*.md",
+        "**/test/**",
+        "**/develop/**"
+      ],
+      "message": "chore(release): publish %s"
+    }
   }
 }
