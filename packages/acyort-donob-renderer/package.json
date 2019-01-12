@@ -6,8 +6,13 @@
   "license": "MIT",
   "dependencies": {
     "@acyort/markdown": "^1.0.1",
+    "autoprefixer": "^9.4.4",
+    "cssnano": "^4.1.8",
     "fs-extra": "^7.0.1",
-    "html-minifier": "^3.5.21",
+    "gulp": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-uglify": "^3.0.1",
     "lodash": "^4.17.11",
     "log-symbols": "^2.2.0",
     "ora": "^3.0.0"
@@ -39,6 +44,9 @@
       "!**/test/**",
       "!**/coverage/**",
       "!**/develop/**"
+    ],
+    "watchPathIgnorePatterns": [
+      "<rootDir>/test/fixtures/dest"
     ]
   }
 }
