@@ -17,6 +17,9 @@
     "log-symbols": "^2.2.0",
     "ora": "^3.0.0"
   },
+  "files": [
+    "lib"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/zWingz/acyort-donob-plugins"

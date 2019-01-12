@@ -1,8 +1,10 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "npmClient": "yarn",
   "version": "1.0.1",
-  "message": "chore(release): publish"
+  "message": "chore(release): publish",
+  "command": {
+    "ignoreChanges": ["ignored-file", "*.md", "**/test/**", "**/develop/**"],
+    "message": "chore(release): publish %s"
+  }
 }

@@ -17,6 +17,9 @@
     "type": "git",
     "url": "https://github.com/zWingz/acyort-donob-plugins"
   },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "dev": "nodemon ./develop/index.js",
     "test": "jest"

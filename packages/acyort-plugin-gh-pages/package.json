@@ -11,6 +11,9 @@
     "type": "git",
     "url": "https://github.com/zWingz/acyort-donob-plugins"
   },
+  "files": [
+    "lib"
+  ],
   "dependencies": {
     "acyort": "^3.0.10",
     "dayjs": "^1.7.8",
