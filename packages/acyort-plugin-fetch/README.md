@@ -1,4 +1,4 @@
-# Acyort-plugin-fetch
+# acyort-plugin-fetch-issues
 
 fetch `issues` from `github`
 
@@ -13,6 +13,6 @@ gitToken:  # your github token
 issuesPageSize: # issues per_page, default: 20
 issuesCache: # cache issues
 plugins:
-  - acyort-plugin-fetch
+  - acyort-plugin-fetch-issues
 
 ```

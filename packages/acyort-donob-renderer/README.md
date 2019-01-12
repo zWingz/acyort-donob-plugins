@@ -19,7 +19,7 @@ pageSize:
   archives: # default 10
   posts: # default 10
 
-repository: # optional, used in gitalk and acyort-plugin-fetch
+repository: # optional, used in gitalk and acyort-plugin-fetch-issues
 
 gitalk: # default false
   clientID:
@@ -29,7 +29,7 @@ gitalk: # default false
   # gitalk config
 
 plugins:
-  - acyort-plugin-fetch
+  - acyort-plugin-fetch-issues
   - acyort-donob-renderer
 
 ```

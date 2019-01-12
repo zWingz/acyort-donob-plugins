@@ -1,5 +1,5 @@
 {
-  "name": "acyort-plugin-fetch",
+  "name": "acyort-plugin-fetch-issues",
   "description": "acyort plugin for fetch github issues",
   "version": "1.0.0",
   "dependencies": {

@@ -1,6 +1,6 @@
 const acyort = require('acyort')
 const config = require('acyort/lib/config')
-const fetcher = require('acyort-plugin-fetch')
+const fetcher = require('acyort-plugin-fetch-issues')
 
 const renderer = require('..')
 const path = require('path')
