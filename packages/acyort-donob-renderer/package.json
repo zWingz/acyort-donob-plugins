@@ -6,6 +6,13 @@
   "license": "MIT",
   "dependencies": {
     "@acyort/markdown": "^1.0.1",
+    "autoprefixer": "^9.4.4",
+    "cssnano": "^4.1.8",
+    "fs-extra": "^7.0.1",
+    "gulp": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-uglify": "^3.0.1",
     "lodash": "^4.17.11",
     "log-symbols": "^2.2.0",
     "ora": "^3.0.0"
@@ -25,8 +32,8 @@
   },
   "devDependencies": {
     "acyort": "^3.0.10",
-    "jest": "^23.6.0",
     "acyort-plugin-fetch": "^1.0.0",
+    "jest": "^23.6.0",
     "nodemon": "^1.18.9"
   },
   "jest": {
@@ -37,6 +44,9 @@
       "!**/test/**",
       "!**/coverage/**",
       "!**/develop/**"
+    ],
+    "watchPathIgnorePatterns": [
+      "<rootDir>/test/fixtures/dest"
     ]
   }
 }

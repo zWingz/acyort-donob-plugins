@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test minify minify html && js && css: minifiy:css 1`] = `"div{background:red;color:red}body{margin:0;padding:0}"`;
+
+exports[`test minify minify html && js && css: minifiy:html 1`] = `"<html lang=\\"en\\"><head><meta charset=\\"UTF-8\\"><meta name=\\"viewport\\" content=\\"width=device-width,initial-scale=1\\"><meta http-equiv=\\"X-UA-Compatible\\" content=\\"ie=edge\\"><title>Document</title></head><body><div>text html minify</div></body></html>"`;
+
+exports[`test minify minify html && js && css: minifiy:js 1`] = `"function test(){console.log(\\"test js uglisy\\")}test(),test(),test(),test();"`;
