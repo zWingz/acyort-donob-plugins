@@ -5,3 +5,4 @@ node_modules
 **/test/**/config.yml
 **/coverage
 **/develop/config.yml
+lerna-debug.log
