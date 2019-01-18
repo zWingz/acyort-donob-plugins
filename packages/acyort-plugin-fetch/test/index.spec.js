@@ -44,6 +44,6 @@ describe('test acyort plugins', () => {
     await workflow[0]()
     expect(fetcher).toBeCalledTimes(2)
     expect(set).toBeCalledTimes(1)
-    expect(set).toBeCalledWith('fetch:issues', 100)
+    expect(set).toBeCalledWith('issues', 100)
   })
 })

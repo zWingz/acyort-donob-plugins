@@ -34,7 +34,7 @@
     ]
   },
   "devDependencies": {
-    "acyort": "^3.0.10",
+    "acyort": "^3.0.13",
     "acyort-plugin-fetch-issues": "^1.0.2",
     "jest": "^23.6.0",
     "nodemon": "^1.18.9"

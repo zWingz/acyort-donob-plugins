@@ -2,6 +2,8 @@
 
 fetch `issues` from `github`
 
+require `acyort>=3.0.13`
+
 ## Usage
 
 ```yaml

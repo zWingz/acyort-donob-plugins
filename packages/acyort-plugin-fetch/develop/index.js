@@ -7,5 +7,11 @@ const acyort = require('acyort')({
 })
 const plugin = require('..')
 
-plugin(acyort)
+plugin({
+  ...acyort,
+  store: {
+    store: [],
+    set: acyort.store.set.bind({ context: acyort.store, namespace: 'plugin:acyort-plugin-fetch-issues' }),
+  },
+})
 acyort.process()

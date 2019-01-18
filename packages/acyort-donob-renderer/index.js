@@ -11,7 +11,7 @@ module.exports = function ayrortDonobRenderer(acyort) {
     const { base, public: publicDir, favicon = '' } = acyort.config
     const spinner = ora('Staring to process...')
     spinner.start()
-    const data = acyort.store.get('fetch:issues')
+    const data = acyort.store.get('issues', 'acyort-plugin-fetch-issues')
     spinner.stopAndPersist({
       symbol: logSymbols.success,
       text: 'Succeed to process issues',

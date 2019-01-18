@@ -2,6 +2,7 @@
 
 `process` and `render` issues for `donob` templates
 
+require `acyort>=3.0.13`
 
 ## Usage
 
