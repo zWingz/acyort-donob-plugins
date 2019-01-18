@@ -1,7 +1,7 @@
 {
   "name": "acyort-donob-renderer",
   "description": "acyort renderer for donob renderer",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "acyort": "^3.0.13",
-    "acyort-plugin-fetch-issues": "^1.0.2",
+    "acyort-plugin-fetch-issues": "^1.1.0",
     "jest": "^23.6.0",
     "nodemon": "^1.18.9"
   },
