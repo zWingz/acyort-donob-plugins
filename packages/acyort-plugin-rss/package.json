@@ -1,0 +1,34 @@
+{
+  "name": "acyort-plugin-rss",
+  "version": "1.0.0",
+  "description": "acyort plugin for rss",
+  "keywords": [
+    "acyort",
+    "acyort-plugin",
+    "rss"
+  ],
+  "author": "zhengzhirong <zhengzwing@gmail.com>",
+  "homepage": "https://github.com/zWingz/acyort-donob-plugins#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zWingz/acyort-donob-plugins.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/zWingz/acyort-donob-plugins/issues"
+  },
+  "dependencies": {
+    "rss": "^1.2.2"
+  }
+}
