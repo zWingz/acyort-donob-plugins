@@ -2,33 +2,34 @@ const RSS = require('rss')
 
 function parseItem(item) {
   const {
-    title, labels, created, body, url, author,
+    title, categories, craetedDate, description, url, author, guid,
   } = item
   return {
     title,
-    description: body,
+    description,
     url,
+    guid,
     author,
-    date: created,
-    categories: labels.map(each => each.name),
+    date: craetedDate,
+    categories,
   }
 }
 
 function acyortPluginRss({
-  title, description, feedUrl, siteUrl, author, favicon, pubDate, ...rst
+  title, description, feedUrl, siteUrl, webMaster, imageUrl, pubDate, ...rst
 }, items) {
   const rss = new RSS({
-    ...rst,
     title,
     description,
-    webMaster: author,
+    webMaster,
     feed_url: feedUrl,
     site_url: siteUrl,
-    image_url: favicon,
+    image_url: imageUrl,
     pubDate,
+    ...rst,
   })
   items.forEach((each) => {
-    rss.item(parseItem({ ...each, author }))
+    rss.item(parseItem({ author: webMaster, ...each }))
   })
   return rss.xml()
 }

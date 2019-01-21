@@ -15,7 +15,7 @@ function postParse(issue, config) {
     created_at: created,
     updated_at: updated,
     body,
-    user: { html_url: homePage, avatar_url: avatar },
+    user: { login, html_url: homePage, avatar_url: avatar },
   } = issue
   const {
     postsDir, tagsDir, gitalk = false, repository = '',
@@ -34,6 +34,7 @@ function postParse(issue, config) {
     raw: body,
     body: marker.parse(body),
     user: {
+      name: login,
       homePage,
       avatar,
     },

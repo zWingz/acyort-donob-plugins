@@ -23,12 +23,40 @@
     "url": "git+https://github.com/zWingz/acyort-donob-plugins.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "dev": "nodemon ./develop/index.js",
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/zWingz/acyort-donob-plugins/issues"
   },
   "dependencies": {
-    "rss": "^1.2.2"
+    "rss": "^1.2.2",
+    "fs-extra": "^7.0.1"
+  },
+  "devDependencies": {
+    "acyort": "^3.0.13",
+    "acyort-donob-renderer": "^1.1.0",
+    "acyort-plugin-fetch-issues": "^1.1.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.9",
+    "rss-parser": "^3.6.2"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "develop/temp/**/**"
+    ]
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js}",
+      "!**/node_modules/**",
+      "!**/test/**",
+      "!**/coverage/**",
+      "!**/develop/**"
+    ],
+    "watchPathIgnorePatterns": [
+      "<rootDir>/test/fixtures/dest"
+    ]
   }
 }

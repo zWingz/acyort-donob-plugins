@@ -8,17 +8,26 @@ const mini = require('./lib/minify')
 
 module.exports = function ayrortDonobRenderer(acyort) {
   acyort.workflow.register(async () => {
-    const { base, public: publicDir, favicon = '' } = acyort.config
+    const {
+      base, public: publicDir, favicon = '', repository = '',
+    } = acyort.config
     const spinner = ora('Staring to process...')
     spinner.start()
     const data = acyort.store.get('issues', 'acyort-plugin-fetch-issues')
+    const { rssItems, ...rst } = processor(data, acyort)
+    const rssData = {
+      items: rssItems,
+      rssConfig: {
+        webMaster: repository.split('/')[0] || '',
+      },
+    }
     spinner.stopAndPersist({
       symbol: logSymbols.success,
       text: 'Succeed to process issues',
     })
     spinner.start('Staring to render html...\n')
-    const processData = processor(data, acyort)
-    render(processData, acyort)
+    acyort.store.set('rssData', rssData)
+    render(rst, acyort)
     spinner.stopAndPersist({
       symbol: logSymbols.success,
       text: 'Succeed to render issues',

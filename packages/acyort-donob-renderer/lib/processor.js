@@ -8,13 +8,14 @@ function processor(issues, acyort = {}) {
     ...acyort.config,
   }
   const {
-    posts, archives, index, pages,
+    posts, archives, index, pages, rssItems,
   } = parser(issues, config)
   return {
     posts,
     archives,
     index,
     pages,
+    rssItems,
   }
 }
 
