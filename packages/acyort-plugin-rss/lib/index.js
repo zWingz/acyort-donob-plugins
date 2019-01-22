@@ -1,20 +1,5 @@
 const RSS = require('rss')
 
-function parseItem(item) {
-  const {
-    title, categories, craetedDate, description, url, author, guid,
-  } = item
-  return {
-    title,
-    description,
-    url,
-    guid,
-    author,
-    date: craetedDate,
-    categories,
-  }
-}
-
 function acyortPluginRss({
   title, description, feedUrl, siteUrl, webMaster, imageUrl, pubDate, ...rst
 }, items) {
@@ -29,7 +14,7 @@ function acyortPluginRss({
     ...rst,
   })
   items.forEach((each) => {
-    rss.item(parseItem({ author: webMaster, ...each }))
+    rss.item({ author: webMaster, ...each })
   })
   return rss.xml()
 }

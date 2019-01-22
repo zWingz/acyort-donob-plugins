@@ -10,7 +10,7 @@ module.exports = function ayrortDonobRenderer(acyort) {
       url,
       title,
       description,
-      rss: globalConfig = {},
+      rss: globalConfig,
       rssDataFrom = 'acyort-donob-renderer',
       base,
     } = acyort.config
@@ -28,9 +28,9 @@ module.exports = function ayrortDonobRenderer(acyort) {
         pubDate: new Date(),
         siteUrl: url,
         feedUrl: `${url}/rss.xml`,
-        favicon: imageUrl ? `${url}/favicon.ico` : '',
+        imageUrl: imageUrl ? `${url}/favicon.ico` : '',
         ...pluginConfig,
-        ...globalConfig,
+        ...(globalConfig === true ? {} : globalConfig),
       },
       items,
     )

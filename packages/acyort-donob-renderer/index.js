@@ -11,7 +11,7 @@ module.exports = function ayrortDonobRenderer(acyort) {
     const {
       base, public: publicDir, favicon = '', repository = '',
     } = acyort.config
-    const spinner = ora('Staring to process...')
+    const spinner = ora('Starting to process...')
     spinner.start()
     const data = acyort.store.get('issues', 'acyort-plugin-fetch-issues')
     const { rssItems, ...rst } = processor(data, acyort)
@@ -25,14 +25,16 @@ module.exports = function ayrortDonobRenderer(acyort) {
       symbol: logSymbols.success,
       text: 'Succeed to process issues',
     })
-    spinner.start('Staring to render html...\n')
+    spinner.start('Starting to render html...\n')
     acyort.store.set('rssData', rssData)
-    render(rst, acyort)
+    render(rst, {
+      rssPath: 'rss.xml',
+    }, acyort)
     spinner.stopAndPersist({
       symbol: logSymbols.success,
-      text: 'Succeed to render issues',
+      text: 'Succeed to render html',
     })
-    spinner.start('Staring to copy source...\n')
+    spinner.start('Starting to copy source...\n')
     acyort.copySource()
     const fav = join(base, favicon)
     if (favicon && fs.pathExistsSync(fav)) {
@@ -42,7 +44,7 @@ module.exports = function ayrortDonobRenderer(acyort) {
       symbol: logSymbols.success,
       text: 'Succeed to copy source',
     })
-    spinner.start('Staring to minify...\n')
+    spinner.start('Starting to minify...\n')
     await mini(join(base, publicDir))
     spinner.succeed('Succeed to minify\n')
   })

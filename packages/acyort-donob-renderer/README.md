@@ -32,9 +32,9 @@ gitalk: # default false
 favicon: # favicon.ico, copy to public/favicon.ico
 
 plugins:
-  - acyort-plugin-fetch-issues
+  - acyort-plugin-fetch-issues # generate data
   - acyort-donob-renderer
-
+  - acyort-plugin-rss # optional, generate rss
 ```
 
 ## Development
@@ -43,7 +43,7 @@ plugins:
 - set your config
 - run `yarn dev`
 
-
 ## Related
 
 - [gitalk](https://github.com/gitalk/gitalk)
+- [acyort-plugin-rss](https://github.com/zWingz/acyort-donob-plugins/blob/master/packages/acyort-plugin-rss/README.md)

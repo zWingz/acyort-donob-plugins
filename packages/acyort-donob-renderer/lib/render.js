@@ -1,5 +1,5 @@
 
-function render(acyort, { data, template, contentKey }) {
+function render(acyort, { data, template, contentKey }, globalData) {
   data.forEach((each) => {
     const { path, pagination, data: content } = each
     const opt = {
@@ -10,9 +10,13 @@ function render(acyort, { data, template, contentKey }) {
       opt.data = {
         pagination,
         [contentKey]: content,
+        globalData,
       }
     } else {
-      opt.data = each
+      opt.data = {
+        ...each,
+        globalData,
+      }
     }
     acyort.outputHTML(opt)
   })
@@ -20,7 +24,7 @@ function render(acyort, { data, template, contentKey }) {
 
 module.exports = ({
   posts = [], pages = [], archives = [], index = [],
-}, acyort) => {
+}, globalData = {}, acyort) => {
   const renderList = [{
     template: 'index',
     contentKey: 'posts',
@@ -37,6 +41,6 @@ module.exports = ({
     data: pages,
   }]
   renderList.forEach((each) => {
-    render(acyort, each)
+    render(acyort, each, globalData)
   })
 }

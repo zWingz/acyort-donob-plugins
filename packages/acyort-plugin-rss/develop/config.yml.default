@@ -1,4 +1,4 @@
-title: 'zWing'
+title: 
 description: 
 url: 
 menu:
@@ -7,7 +7,7 @@ menu:
 
 template: ../../../acyort-templates-donob-plus/templates
 
-repository: zWingz/my-blog-config
+repository: 
 
 gitToken: 
 
@@ -15,8 +15,6 @@ public: ./temp
 
 issuesCache: true
 
-gitalk:
-  clientID: 
-  clientSecret: 
-
 favicon: 
+
+rss: true
