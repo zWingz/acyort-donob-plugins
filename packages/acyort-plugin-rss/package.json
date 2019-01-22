@@ -1,0 +1,62 @@
+{
+  "name": "acyort-plugin-rss",
+  "version": "1.0.0",
+  "description": "acyort plugin for rss",
+  "keywords": [
+    "acyort",
+    "acyort-plugin",
+    "rss"
+  ],
+  "author": "zhengzhirong <zhengzwing@gmail.com>",
+  "homepage": "https://github.com/zWingz/acyort-donob-plugins#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zWingz/acyort-donob-plugins.git"
+  },
+  "scripts": {
+    "dev": "nodemon ./develop/index.js",
+    "test": "jest"
+  },
+  "bugs": {
+    "url": "https://github.com/zWingz/acyort-donob-plugins/issues"
+  },
+  "dependencies": {
+    "rss": "^1.2.2",
+    "fs-extra": "^7.0.1"
+  },
+  "devDependencies": {
+    "acyort": "^3.0.13",
+    "acyort-donob-renderer": "^1.1.0",
+    "acyort-plugin-fetch-issues": "^1.1.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.9",
+    "rss-parser": "^3.6.2"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "develop/temp/**/**"
+    ]
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js}",
+      "!**/node_modules/**",
+      "!**/test/**",
+      "!**/coverage/**",
+      "!**/develop/**"
+    ],
+    "watchPathIgnorePatterns": [
+      "<rootDir>/test/fixtures/dest"
+    ]
+  }
+}

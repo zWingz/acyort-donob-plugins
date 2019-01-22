@@ -12,7 +12,7 @@ const tagsDir = '12fds'
 describe('test processor', () => {
   describe('test snapshot', () => {
     const {
-      posts, archives, index, pages,
+      posts, archives, index, pages, rssItems,
     } = processor([
       ...issues,
       mockPages(),
@@ -26,7 +26,12 @@ describe('test processor', () => {
     it('test archives snapshot', () => {
       expect(archives).toMatchSnapshot('archives')
     })
-    expect(pages).toMatchSnapshot('pages')
+    it('test pages snapshot', () => {
+      expect(pages).toMatchSnapshot('pages')
+    })
+    it('test rssItems snapshot', () => {
+      expect(rssItems).toMatchSnapshot('rssItems')
+    })
   })
 })
 describe('test processor', () => {

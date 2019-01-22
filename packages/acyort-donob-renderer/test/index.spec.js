@@ -1,4 +1,5 @@
 const get = jest.fn().mockResolvedValue([])
+const set = jest.fn()
 const copySource = jest.fn().mockReturnValue(1)
 const min = jest.fn()
 const { join } = require('path')
@@ -21,6 +22,7 @@ describe('test register plugins', () => {
   plugins({
     store: {
       get,
+      set,
     },
     copySource,
     workflow: {
@@ -41,6 +43,14 @@ describe('test register plugins', () => {
     expect(copySource).toBeCalledTimes(1)
     expect(copyFileSync).toBeCalledTimes(1)
     expect(copyFileSync).toBeCalledWith(join(base, favicon), join(base, publicDir, favicon))
+
+    expect(get).toBeCalledTimes(1)
+    expect(set).toBeCalledWith('rssData', {
+      items: [],
+      rssConfig: {
+        webMaster: '',
+      },
+    })
 
     expect(min).toBeCalledTimes(1)
     expect(min).toBeCalledWith(join(base, publicDir))

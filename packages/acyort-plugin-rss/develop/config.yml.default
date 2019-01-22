@@ -1,0 +1,20 @@
+title: 
+description: 
+url: 
+menu:
+  Archives: /archives
+  About: /about
+
+template: ../../../acyort-templates-donob-plus/templates
+
+repository: 
+
+gitToken: 
+
+public: ./temp
+
+issuesCache: true
+
+favicon: 
+
+rss: true

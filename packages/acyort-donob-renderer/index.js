@@ -8,24 +8,43 @@ const mini = require('./lib/minify')
 
 module.exports = function ayrortDonobRenderer(acyort) {
   acyort.workflow.register(async () => {
-    const { base, public: publicDir, favicon = '' } = acyort.config
-    const spinner = ora('Staring to process...')
+    const {
+      base,
+      public: publicDir,
+      favicon = '',
+      repository = '',
+    } = acyort.config
+    const spinner = ora('Starting to process...')
     spinner.start()
     const data = acyort.store.get('issues', 'acyort-plugin-fetch-issues')
+    const { rssItems, ...rst } = processor(data, acyort)
+    const rssData = {
+      items: rssItems,
+      rssConfig: {
+        webMaster: repository.split('/')[0] || '',
+      },
+    }
     spinner.stopAndPersist({
       symbol: logSymbols.success,
       text: 'Succeed to process issues',
     })
-    spinner.start('Staring to render html...\n')
-    const processData = processor(data, acyort)
-    render(processData, acyort)
+    spinner.start('Starting to render html...\n')
+    acyort.store.set('rssData', rssData)
+    render(
+      rst,
+      {
+        rssPath: 'rss.xml',
+      },
+      acyort,
+    )
     spinner.stopAndPersist({
       symbol: logSymbols.success,
-      text: 'Succeed to render issues',
+      text: 'Succeed to render html',
     })
-    spinner.start('Staring to copy source...\n')
+    spinner.start('Starting to copy source...\n')
     acyort.copySource()
     const fav = join(base, favicon)
+    /* istanbul ignore next */
     if (favicon && fs.pathExistsSync(fav)) {
       fs.copyFileSync(fav, join(base, publicDir, favicon))
     }
@@ -33,7 +52,7 @@ module.exports = function ayrortDonobRenderer(acyort) {
       symbol: logSymbols.success,
       text: 'Succeed to copy source',
     })
-    spinner.start('Staring to minify...\n')
+    spinner.start('Starting to minify...\n')
     await mini(join(base, publicDir))
     spinner.succeed('Succeed to minify\n')
   })

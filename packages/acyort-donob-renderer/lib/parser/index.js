@@ -7,12 +7,17 @@ const postsParse = require('./posts')
 const archivesParse = require('./archives')
 const pagesParse = require('./pages')
 const pagination = require('./pagination')
-
+const { markRssItem, getRssItems } = require('./rss')
 
 module.exports = (issues, config) => {
   let { pages, posts } = filterParse(issues)
-  posts = posts.map(each => postsParse(each, config))
+  posts = posts.map((each) => {
+    const post = postsParse(each, config)
+    markRssItem(post, config)
+    return post
+  })
   pages = pages.map(each => pagesParse(each))
+  const rssItems = getRssItems()
   const { pageSize = {} } = config
   // const labels = getLabels()
   const archives = archivesParse(posts, config).map(each => ({
@@ -31,5 +36,6 @@ module.exports = (issues, config) => {
     // labels,
     archives,
     index,
+    rssItems,
   }
 }
