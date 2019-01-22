@@ -23,7 +23,6 @@
   "changelog": {
     "labels": {
       "feat": ":rocket: New Feature"
-    },
-    "cacheDir": ".changelog"
+    }
   }
 }
