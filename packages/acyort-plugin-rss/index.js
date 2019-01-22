@@ -17,10 +17,14 @@ module.exports = function ayrortDonobRenderer(acyort) {
     if (!url || !globalConfig) {
       return
     }
-    const { rssConfig: pluginConfig = {}, items } = acyort.store.get(
+    const rssData = acyort.store.get(
       'rssData',
       rssDataFrom,
     )
+    if (!rssData) {
+      return
+    }
+    const { rssConfig: pluginConfig = {}, items } = rssData
     const rss = acyortPluginRss(
       {
         title,

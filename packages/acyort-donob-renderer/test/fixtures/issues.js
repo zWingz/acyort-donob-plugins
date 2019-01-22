@@ -17,6 +17,7 @@ function mockIssues(date) {
     user: {
       avatar_url: 'avatar_url',
       html_url: 'html_url',
+      login: 'issues creator',
     },
     labels: id % 2 === 0 ? [{ ...labels[0] }] : undefined,
     created_at: `${date}T11:07:18Z`,

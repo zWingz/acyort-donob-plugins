@@ -9,7 +9,10 @@ const mini = require('./lib/minify')
 module.exports = function ayrortDonobRenderer(acyort) {
   acyort.workflow.register(async () => {
     const {
-      base, public: publicDir, favicon = '', repository = '',
+      base,
+      public: publicDir,
+      favicon = '',
+      repository = '',
     } = acyort.config
     const spinner = ora('Starting to process...')
     spinner.start()
@@ -27,9 +30,13 @@ module.exports = function ayrortDonobRenderer(acyort) {
     })
     spinner.start('Starting to render html...\n')
     acyort.store.set('rssData', rssData)
-    render(rst, {
-      rssPath: 'rss.xml',
-    }, acyort)
+    render(
+      rst,
+      {
+        rssPath: 'rss.xml',
+      },
+      acyort,
+    )
     spinner.stopAndPersist({
       symbol: logSymbols.success,
       text: 'Succeed to render html',
@@ -37,6 +44,7 @@ module.exports = function ayrortDonobRenderer(acyort) {
     spinner.start('Starting to copy source...\n')
     acyort.copySource()
     const fav = join(base, favicon)
+    /* istanbul ignore next */
     if (favicon && fs.pathExistsSync(fav)) {
       fs.copyFileSync(fav, join(base, publicDir, favicon))
     }

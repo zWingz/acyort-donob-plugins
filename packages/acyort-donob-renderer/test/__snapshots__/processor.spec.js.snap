@@ -1,31 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[` 1`] = `
-Array [
-  Object {
-    "content": "
-            <h1>
-              <a href=\\"#Abount me\\" id=\\"Abount me\\" class=\\"heading\\"></a>Abount me
-            </h1>
-          
-            <h2>
-              <a href=\\"#About me content\\" id=\\"About me content\\" class=\\"heading\\"></a>About me content
-            </h2>
-          ",
-    "created": "2018-11-11T11:07:18Z",
-    "id": 5,
-    "name": "about",
-    "path": "/about/index.html",
-    "raw": "# Abount me 
- ## About me content",
-    "title": "abount me",
-    "type": "page",
-    "updated": "2018-11-11T11:07:18Z",
-    "url": "/about/",
-  },
-]
-`;
-
 exports[`test processor test snapshot test archives snapshot: archives 1`] = `
 Array [
   Object {
@@ -133,6 +107,32 @@ Array [
 ]
 `;
 
+exports[`test processor test snapshot test pages snapshot: pages 1`] = `
+Array [
+  Object {
+    "content": "
+            <h1>
+              <a href=\\"#Abount me\\" id=\\"Abount me\\" class=\\"heading\\"></a>Abount me
+            </h1>
+          
+            <h2>
+              <a href=\\"#About me content\\" id=\\"About me content\\" class=\\"heading\\"></a>About me content
+            </h2>
+          ",
+    "created": "2018-11-11T11:07:18Z",
+    "id": 5,
+    "name": "about",
+    "path": "/about/index.html",
+    "raw": "# Abount me 
+ ## About me content",
+    "title": "abount me",
+    "type": "page",
+    "updated": "2018-11-11T11:07:18Z",
+    "url": "/about/",
+  },
+]
+`;
+
 exports[`test processor test snapshot test posts snapshot: posts 1`] = `
 Array [
   Object {
@@ -159,6 +159,7 @@ Array [
     "user": Object {
       "avatar": "avatar_url",
       "homePage": "html_url",
+      "name": "issues creator",
     },
   },
   Object {
@@ -191,6 +192,7 @@ Array [
     "user": Object {
       "avatar": "avatar_url",
       "homePage": "html_url",
+      "name": "issues creator",
     },
   },
   Object {
@@ -217,6 +219,7 @@ Array [
     "user": Object {
       "avatar": "avatar_url",
       "homePage": "html_url",
+      "name": "issues creator",
     },
   },
   Object {
@@ -249,7 +252,517 @@ Array [
     "user": Object {
       "avatar": "avatar_url",
       "homePage": "html_url",
+      "name": "issues creator",
     },
+  },
+]
+`;
+
+exports[`test processor test snapshot test rssItems snapshot: rssItems 1`] = `
+Array [
+  Object {
+    "author": "issues creator",
+    "categories": Array [],
+    "date": "2018-11-20T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues1 Content\\" id=\\"Issues1 Content\\" class=\\"heading\\"></a>Issues1 Content
+            </h3>
+          ",
+    "guid": 1,
+    "title": "issus-1 title",
+    "url": "undefined/posts/1.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [
+      "label-name-1",
+    ],
+    "date": "2018-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues2 Content\\" id=\\"Issues2 Content\\" class=\\"heading\\"></a>Issues2 Content
+            </h3>
+          ",
+    "guid": 2,
+    "title": "issus-2 title",
+    "url": "undefined/posts/2.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [],
+    "date": "2017-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues3 Content\\" id=\\"Issues3 Content\\" class=\\"heading\\"></a>Issues3 Content
+            </h3>
+          ",
+    "guid": 3,
+    "title": "issus-3 title",
+    "url": "undefined/posts/3.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [
+      "label-name-1",
+    ],
+    "date": "2016-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues4 Content\\" id=\\"Issues4 Content\\" class=\\"heading\\"></a>Issues4 Content
+            </h3>
+          ",
+    "guid": 4,
+    "title": "issus-4 title",
+    "url": "undefined/posts/4.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [],
+    "date": "2018-11-20T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues1 Content\\" id=\\"Issues1 Content\\" class=\\"heading\\"></a>Issues1 Content
+            </h3>
+          ",
+    "guid": 1,
+    "title": "issus-1 title",
+    "url": "undefined/fdsaf/1.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [],
+    "date": "2018-11-20T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues1 Content\\" id=\\"Issues1 Content\\" class=\\"heading\\"></a>Issues1 Content
+            </h3>
+          ",
+    "guid": 1,
+    "title": "issus-1 title",
+    "url": "undefined/fdsaf/1.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [],
+    "date": "2018-11-20T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues1 Content\\" id=\\"Issues1 Content\\" class=\\"heading\\"></a>Issues1 Content
+            </h3>
+          ",
+    "guid": 1,
+    "title": "issus-1 title",
+    "url": "undefined/fdsaf/1.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [],
+    "date": "2018-11-20T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues1 Content\\" id=\\"Issues1 Content\\" class=\\"heading\\"></a>Issues1 Content
+            </h3>
+          ",
+    "guid": 1,
+    "title": "issus-1 title",
+    "url": "undefined/fdsaf/1.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [],
+    "date": "2018-11-20T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues1 Content\\" id=\\"Issues1 Content\\" class=\\"heading\\"></a>Issues1 Content
+            </h3>
+          ",
+    "guid": 1,
+    "title": "issus-1 title",
+    "url": "undefined/fdsaf/1.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [],
+    "date": "2018-11-20T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues1 Content\\" id=\\"Issues1 Content\\" class=\\"heading\\"></a>Issues1 Content
+            </h3>
+          ",
+    "guid": 1,
+    "title": "issus-1 title",
+    "url": "undefined/fdsaf/1.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [
+      "label-name-1",
+    ],
+    "date": "2018-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues2 Content\\" id=\\"Issues2 Content\\" class=\\"heading\\"></a>Issues2 Content
+            </h3>
+          ",
+    "guid": 2,
+    "title": "issus-2 title",
+    "url": "undefined/fdsaf/2.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [
+      "label-name-1",
+    ],
+    "date": "2018-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues2 Content\\" id=\\"Issues2 Content\\" class=\\"heading\\"></a>Issues2 Content
+            </h3>
+          ",
+    "guid": 2,
+    "title": "issus-2 title",
+    "url": "undefined/fdsaf/2.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [
+      "label-name-1",
+    ],
+    "date": "2018-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues2 Content\\" id=\\"Issues2 Content\\" class=\\"heading\\"></a>Issues2 Content
+            </h3>
+          ",
+    "guid": 2,
+    "title": "issus-2 title",
+    "url": "undefined/fdsaf/2.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [
+      "label-name-1",
+    ],
+    "date": "2018-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues2 Content\\" id=\\"Issues2 Content\\" class=\\"heading\\"></a>Issues2 Content
+            </h3>
+          ",
+    "guid": 2,
+    "title": "issus-2 title",
+    "url": "undefined/fdsaf/2.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [
+      "label-name-1",
+    ],
+    "date": "2018-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues2 Content\\" id=\\"Issues2 Content\\" class=\\"heading\\"></a>Issues2 Content
+            </h3>
+          ",
+    "guid": 2,
+    "title": "issus-2 title",
+    "url": "undefined/fdsaf/2.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [
+      "label-name-1",
+    ],
+    "date": "2018-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues2 Content\\" id=\\"Issues2 Content\\" class=\\"heading\\"></a>Issues2 Content
+            </h3>
+          ",
+    "guid": 2,
+    "title": "issus-2 title",
+    "url": "undefined/fdsaf/2.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [],
+    "date": "2017-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues3 Content\\" id=\\"Issues3 Content\\" class=\\"heading\\"></a>Issues3 Content
+            </h3>
+          ",
+    "guid": 3,
+    "title": "issus-3 title",
+    "url": "undefined/fdsaf/3.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [],
+    "date": "2017-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues3 Content\\" id=\\"Issues3 Content\\" class=\\"heading\\"></a>Issues3 Content
+            </h3>
+          ",
+    "guid": 3,
+    "title": "issus-3 title",
+    "url": "undefined/fdsaf/3.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [],
+    "date": "2017-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues3 Content\\" id=\\"Issues3 Content\\" class=\\"heading\\"></a>Issues3 Content
+            </h3>
+          ",
+    "guid": 3,
+    "title": "issus-3 title",
+    "url": "undefined/fdsaf/3.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [],
+    "date": "2017-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues3 Content\\" id=\\"Issues3 Content\\" class=\\"heading\\"></a>Issues3 Content
+            </h3>
+          ",
+    "guid": 3,
+    "title": "issus-3 title",
+    "url": "undefined/fdsaf/3.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [],
+    "date": "2017-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues3 Content\\" id=\\"Issues3 Content\\" class=\\"heading\\"></a>Issues3 Content
+            </h3>
+          ",
+    "guid": 3,
+    "title": "issus-3 title",
+    "url": "undefined/fdsaf/3.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [],
+    "date": "2017-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues3 Content\\" id=\\"Issues3 Content\\" class=\\"heading\\"></a>Issues3 Content
+            </h3>
+          ",
+    "guid": 3,
+    "title": "issus-3 title",
+    "url": "undefined/fdsaf/3.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [
+      "label-name-1",
+    ],
+    "date": "2016-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues4 Content\\" id=\\"Issues4 Content\\" class=\\"heading\\"></a>Issues4 Content
+            </h3>
+          ",
+    "guid": 4,
+    "title": "issus-4 title",
+    "url": "undefined/fdsaf/4.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [
+      "label-name-1",
+    ],
+    "date": "2016-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues4 Content\\" id=\\"Issues4 Content\\" class=\\"heading\\"></a>Issues4 Content
+            </h3>
+          ",
+    "guid": 4,
+    "title": "issus-4 title",
+    "url": "undefined/fdsaf/4.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [
+      "label-name-1",
+    ],
+    "date": "2016-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues4 Content\\" id=\\"Issues4 Content\\" class=\\"heading\\"></a>Issues4 Content
+            </h3>
+          ",
+    "guid": 4,
+    "title": "issus-4 title",
+    "url": "undefined/fdsaf/4.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [
+      "label-name-1",
+    ],
+    "date": "2016-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues4 Content\\" id=\\"Issues4 Content\\" class=\\"heading\\"></a>Issues4 Content
+            </h3>
+          ",
+    "guid": 4,
+    "title": "issus-4 title",
+    "url": "undefined/fdsaf/4.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [
+      "label-name-1",
+    ],
+    "date": "2016-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues4 Content\\" id=\\"Issues4 Content\\" class=\\"heading\\"></a>Issues4 Content
+            </h3>
+          ",
+    "guid": 4,
+    "title": "issus-4 title",
+    "url": "undefined/fdsaf/4.html",
+  },
+  Object {
+    "author": "issues creator",
+    "categories": Array [
+      "label-name-1",
+    ],
+    "date": "2016-10-19T11:07:18Z",
+    "description": "
+            <h2>
+              <a href=\\"#Header\\" id=\\"Header\\" class=\\"heading\\"></a>Header
+            </h2>
+          
+            <h3>
+              <a href=\\"#Issues4 Content\\" id=\\"Issues4 Content\\" class=\\"heading\\"></a>Issues4 Content
+            </h3>
+          ",
+    "guid": 4,
+    "title": "issus-4 title",
+    "url": "undefined/fdsaf/4.html",
   },
 ]
 `;

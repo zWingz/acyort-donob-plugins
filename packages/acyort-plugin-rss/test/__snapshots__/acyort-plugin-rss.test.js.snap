@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test plugin test rss content: rssContent 1`] = `
+Object {
+  "description": "test rss description",
+  "feedUrl": "https://xzy.com/rss.xml",
+  "generator": "RSS for Node",
+  "image": Object {
+    "link": "https://xzy.com",
+    "title": "title from plugin",
+    "url": "https://xzy.com/favicon.ico",
+  },
+  "items": Array [
+    Object {
+      "categories": Array [
+        "label1",
+        "label2",
+      ],
+      "content": "itel body lllll",
+      "contentSnippet": "itel body lllll",
+      "creator": "master",
+      "dc:creator": "master",
+      "guid": "1",
+      "isoDate": "2019-02-21T16:00:00.000Z",
+      "link": "path/to/item1",
+      "pubDate": "Thu, 21 Feb 2019 16:00:00 GMT",
+      "title": "item1-title",
+    },
+    Object {
+      "content": "ite2 222",
+      "contentSnippet": "ite2 222",
+      "creator": "item2 author",
+      "dc:creator": "item2 author",
+      "guid": "2",
+      "isoDate": "2019-02-21T16:00:00.000Z",
+      "link": "path/to/item2",
+      "pubDate": "Thu, 21 Feb 2019 16:00:00 GMT",
+      "title": "item2-title",
+    },
+  ],
+  "lastBuildDate": "Thu, 21 Feb 2019 16:00:00 GMT",
+  "link": "https://xzy.com",
+  "pubDate": "Thu, 21 Feb 2019 16:00:00 GMT",
+  "title": "title from plugin",
+  "webMaster": "master",
+}
+`;
