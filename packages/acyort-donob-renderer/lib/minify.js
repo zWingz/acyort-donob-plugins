@@ -1,7 +1,7 @@
 // const minify = require('html-minifier').minify
 const gulp = require('gulp')
 const minifier = require('gulp-htmlmin')
-const uglify = require('gulp-uglify')
+const uglify = require('gulp-terser')
 const postcss = require('gulp-postcss')
 const cssnano = require('cssnano')
 const autoprefixer = require('autoprefixer')

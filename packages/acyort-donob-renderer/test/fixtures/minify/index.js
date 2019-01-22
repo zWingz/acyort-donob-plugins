@@ -1,5 +1,6 @@
 function test() {
-  console.log('test js uglisy')
+  const a = 1
+  return a
 }
 test()
 test()
