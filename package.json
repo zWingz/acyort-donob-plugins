@@ -5,7 +5,8 @@
   "author": "zhengzhirong <zhengzwing@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "lerna run test --ignore acyort-templates-* --ignore acyort-plugin-ghpages"
+    "test": "lerna run test --ignore acyort-templates-* --ignore acyort-plugin-ghpages",
+    "pub": "yarn test && lerna publish"
   },
   "devDependencies": {
     "eslint": "^5.12.0",
