@@ -31,7 +31,7 @@ describe('test rss', () => {
     const url = 'fdsafdsfa'
     const item1 = {
       title: 'item1-title',
-      craetedDate: '2019-01-01',
+      date: '2019-01-01',
       description: 'itel body lllll',
       categories: ['label1', 'label2'],
       url,
@@ -39,7 +39,7 @@ describe('test rss', () => {
     const item2 = {
       title: 'item2-title',
       categories: [],
-      craetedDate: '2019-05-07',
+      date: '2019-05-07',
       description: 'ite2 222',
       url,
       author: 'item2 author',
@@ -51,7 +51,7 @@ describe('test rss', () => {
     expect(rssItem1.content).toBe(item1.description)
     expect(rssItem1.categories).toEqual(item1.categories)
     expect(rssItem2.title).toBe(item2.title)
-    expect(rssItem2.pubDate).toBe(new Date(item2.craetedDate).toUTCString())
+    expect(rssItem2.pubDate).toBe(new Date(item2.date).toUTCString())
     expect(rssItem2.link).toBe(url)
     expect(rssItem2.creator).toBe(item2.author)
     expect(rssItem1.creator).toBe(author)
