@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test toc render toc: toc 1`] = `
+"<ul>
+<li><a href=\\"#marked-in-the-browsernnrendered-by-marked\\">Marked in the browser\\\\n\\\\nRendered by <strong>marked</strong>.</a><ul>
+<li><a href=\\"#section-one\\">Section One</a></li>
+<li><a href=\\"#hello\\">hello</a><ul>
+<li><a href=\\"#test\\"><code>test</code></a></li>
+</ul>
+</li>
+<li><a href=\\"#%E5%95%8A%E5%95%8A%E5%95%8A\\">啊啊啊</a></li>
+</ul>
+</li>
+</ul>
+"
+`;

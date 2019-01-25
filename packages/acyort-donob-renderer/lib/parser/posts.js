@@ -1,10 +1,6 @@
-const Mark = require('@acyort/markdown')
 const path = require('path')
+const parseMd = require('../markdown')
 const { parseLabels } = require('./labels')
-
-const marker = new Mark({
-  lineNumbers: true,
-})
 
 function postParse(issue, config) {
   const {
@@ -32,7 +28,9 @@ function postParse(issue, config) {
     created,
     updated,
     raw: body,
-    body: marker.parse(body),
+    body: parseMd(body, {
+      lineNumber: true,
+    }),
     user: {
       name: login,
       homePage,

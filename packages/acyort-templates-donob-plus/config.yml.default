@@ -1,0 +1,20 @@
+title: 'zWing'
+
+menu:
+  Archives: /archives
+  About: /about
+
+template: donob
+
+repository: zWingz/my-blog-config
+
+gitToken: 
+
+public: ./temp
+
+issuesCache: true
+
+plugins:
+  - acyort-plugin-fetch-issues
+  - acyort-donob-renderer
+  - acyort-server

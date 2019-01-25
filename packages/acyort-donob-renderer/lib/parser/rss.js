@@ -1,9 +1,6 @@
-const Mark = require('@acyort/markdown')
+const parseMd = require('../markdown')
 
 const rssItems = []
-const marker = new Mark({
-  lineNumbers: false,
-})
 
 function getRssItems() {
   return rssItems
@@ -18,7 +15,7 @@ function markRssItem(post, config) {
     title,
     guid: id,
     // description: body,
-    description: marker.parse(raw),
+    description: parseMd(raw),
     date,
     author: user.name,
     url: baseUrl + url,
