@@ -1,11 +1,8 @@
-const Marked = require('@acyort/markdown')
 // const issues = require('./fixtures/issues')
 const { issues, mockPages } = require('./fixtures/issues')
 const processor = require('../lib/processor')
+const parseMd = require('../lib/markdown')
 
-const marker = new Marked({
-  lineNumbers: true,
-})
 const postsDir = 'fdsaf'
 const archivesDir = 'fdsafd'
 const tagsDir = '12fds'
@@ -69,7 +66,9 @@ describe('test processor', () => {
   describe('test posts processor', () => {
     it('posts length', () => {
       expect(posts).toHaveLength(testPosts.length)
-      expect(posts[0].body).toEqual(marker.parse(posts[0].raw))
+      expect(posts[0].body).toEqual(parseMd(posts[0].raw, {
+        lineNumber: true,
+      }))
     })
     it('posts path', () => {
       const p = posts[0]
@@ -134,7 +133,7 @@ describe('test processor', () => {
       expect(title).toEqual(pageIssues.title.split(']')[1])
       expect(url).toEqual(`/${name}/`)
       expect(path).toEqual(`/${name}/index.html`)
-      expect(content).toEqual(marker.parse(raw))
+      expect(content).toEqual(parseMd(raw))
     })
   })
 

@@ -226,6 +226,10 @@ a {
 /* post */
 #post {
   margin-top: 100px;
+  display: flex;
+}
+.post-content {
+  width: 100%;
 }
 .title {
   color: #222;
@@ -344,7 +348,7 @@ a {
 .content img {
   max-width: 100%;
 }
-code {
+.content code {
   background: #f7f7f7;
   border: 1px solid #e6e6e6;
   padding: 1px 5px;
@@ -386,134 +390,57 @@ table tr th :last-child, table tr td :last-child {
   margin-bottom: 0;
 }
 
-/* Ocean Dark Theme */
-/* https://github.com/gavsiu */
-/* Original theme - https://github.com/chriskempson/base16 */
 
-/* Ocean Comment */
-.hljs-comment,
-.hljs-quote {
-  color: #65737e;
+.toc {
+  font-size: 13px;
+  /* position: fixed; */
+  width: 235px;
+  /* transform: translateX(-100%); */
+  margin-left: -235px;
+  padding-right: 35px;
 }
-
-/* Ocean Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-  color: #bf616a;
+.stay {
+  position: relative;
 }
-
-/* Ocean Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-  color: #d08770;
-}
-
-/* Ocean Yellow */
-.hljs-attribute {
-  color: #ebcb8b;
-}
-
-/* Ocean Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-  color: #a3be8c;
-}
-
-/* Ocean Blue */
-.hljs-title,
-.hljs-section {
-  color: #8fa1b3;
-}
-
-/* Ocean Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-  color: #b48ead;
-}
-
-.hljs {
-  background: #2b303b;
-  overflow-x: auto;
-  font-size: 14px;
-  margin-bottom: 16px;
-  border-radius: 3px;
-  width: 760px;
-  /* margin-left: -20px; */
-}
-.hljs pre {
-  white-space: pre;
-}
-.hljs table {
-  margin-bottom: 0;
-}
-.hljs .mark {
-  display: none;
-}
-.hljs tr, .hljs td {
-  border: none;
-  background: transparent;
-  padding: 0;
-}
-.hljs .line pre {
-  text-align: right;
-  color: #c0c5ce;
-  background: #262a33;
-  padding: 10px;
-  line-height: 1.6;
-}
-.hljs .code {
-  padding: 10px;
-}
-.code pre {
-  line-height: 1.6;
-  background: transparent;
+.stay .toc-icon {
+  content: '';
   display: block;
-  color: #c0c5ce;
-  font-family: monospace;
-  border: none;
-  margin-right: 10px;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-top: 6px solid #40a9ff;
+  border-left: 6px solid transparent;
+  transform: rotate(45deg);
+  transition: transform .3s ease;
+  top: 7px;
+  left: -4px;
+}
+.toc .stay.fixed {
+  position: fixed;
+  top: 20px;
+}
+.toc a {
+  color: rgba(0,0,0,0.55);
+  transition: color .1s ease;
+  white-space: nowrap;
+}
+.toc a:hover {
+  color: #40a9ff
+}
+.toc a.active {
+  color: #40a9ff
+}
+.toc ul {
+  padding-left: 10px;
+}
+.toc li {
+  line-height: 1.5;
 }
 
-.hljs-emphasis {
-  font-style: italic;
-}
-
-.hljs-strong {
-  font-weight: bold;
-}
 
 @media screen and (max-width: 760px) {
-  .hljs {
-    position: relative;
-    width: 100vw;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    border-radius: 0;
-  }
-  .hljs .line {
+  .toc {
     display: none;
-  }
-  .hljs table {
-    margin-left: 4%;
-  }
-  .hljs .code {
-    padding-left: 0;
   }
   .header a {
     font-size: 14px;

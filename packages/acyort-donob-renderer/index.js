@@ -5,9 +5,12 @@ const fs = require('fs-extra')
 const processor = require('./lib/processor')
 const render = require('./lib/render')
 const mini = require('./lib/minify')
+const toc = require('./lib/toc')
 
 module.exports = function ayrortDonobRenderer(acyort) {
+  acyort.helper.register('_toc', toc)
   acyort.workflow.register(async () => {
+    /* istanbul ignore next */
     const {
       base,
       public: publicDir,

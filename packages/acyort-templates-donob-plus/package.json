@@ -3,12 +3,17 @@
   "version": "1.2.0",
   "description": "acyort-templates",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "acyort server"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/zWingz/acyort-donob-plugins"
   },
   "author": "zhengzwing@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "acyort-donob-renderer": "^1.2.2",
+    "acyort-plugin-fetch-issues": "^1.1.0",
+    "acyort-server": "^2.1.3"
+  }
 }
