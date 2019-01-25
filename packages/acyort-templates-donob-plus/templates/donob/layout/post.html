@@ -10,15 +10,18 @@
 
 {% block content %}
 <div id="post" class="center">
+  <div class='toc'>
+    <div class='stay'>
+      {{_toc(page.raw)}}
+      <span class='toc-icon'></span>
+    </div>
+  </div>
   <div class='post-content'>
     <p class="time">{{ _time(page.created, 'MMMM DD, YYYY') }}</p>
     <h1 class="title">{{ page.title }}</h1>
     <div class="content">{{ page.body }}</div>
     <div class="comments"><div id="gitalk-container"></div></div>
     <!-- <div class="comments"><div id="disqus_thread"></div></div> -->
-  </div>
-  <div class='toc'>
-    {{_toc(page.raw)}}
   </div>
 </div>
 {% endblock %}

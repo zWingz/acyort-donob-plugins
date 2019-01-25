@@ -393,6 +393,31 @@ table tr th :last-child, table tr td :last-child {
 
 .toc {
   font-size: 13px;
+  /* position: fixed; */
+  width: 235px;
+  /* transform: translateX(-100%); */
+  margin-left: -235px;
+  padding-right: 35px;
+}
+.stay {
+  position: relative;
+}
+.stay .toc-icon {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-top: 6px solid #40a9ff;
+  border-left: 6px solid transparent;
+  transform: rotate(45deg);
+  transition: transform .3s ease;
+  top: 7px;
+  left: -4px;
+}
+.toc .stay.fixed {
+  position: fixed;
+  top: 20px;
 }
 .toc a {
   color: rgba(0,0,0,0.55);
@@ -403,18 +428,20 @@ table tr th :last-child, table tr td :last-child {
   color: #40a9ff
 }
 .toc a.active {
-  color: rgba(0,0,0,0.85);
+  color: #40a9ff
 }
 .toc ul {
   padding-left: 10px;
 }
 .toc li {
-  margin: 5px 0px;
+  line-height: 1.5;
 }
 
 
 @media screen and (max-width: 760px) {
-  
+  .toc {
+    display: none;
+  }
   .header a {
     font-size: 14px;
     padding: 16px 20px 14px;

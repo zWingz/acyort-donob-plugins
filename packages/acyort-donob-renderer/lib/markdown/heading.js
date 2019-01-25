@@ -4,8 +4,8 @@ function heading(text, level) {
   const id = slugify(text)
   const decode = encodeURI(id)
   return `
-    <h${level} class="heading">
-      <a href="#${decode}" id="${decode}" class="heading-anchor"></a>${text}
+    <h${level} id="${decode}" class="heading">
+      <a href="#${decode}" class="heading-anchor"></a>${text}
     </h${level}>
   `
 }
