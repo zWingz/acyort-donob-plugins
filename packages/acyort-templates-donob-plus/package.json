@@ -14,6 +14,9 @@
   "devDependencies": {
     "acyort-donob-renderer": "^1.2.2",
     "acyort-plugin-fetch-issues": "^1.1.0",
+    "acyort-plugin-rss": "^1.2.2",
     "acyort-server": "^2.1.3"
+  },
+  "dependencies": {
   }
 }

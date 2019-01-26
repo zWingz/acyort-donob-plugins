@@ -111,12 +111,12 @@ exports[`test processor test snapshot test pages snapshot: pages 1`] = `
 Array [
   Object {
     "content": "
-    <h1 class=\\"heading\\">
-      <a href=\\"#abount-me\\" id=\\"abount-me\\" class=\\"heading-anchor\\"></a>Abount me
+    <h1 id=\\"abount-me\\" class=\\"heading\\">
+      <a href=\\"#abount-me\\" class=\\"heading-anchor\\"></a>Abount me
     </h1>
   
-    <h2 class=\\"heading\\">
-      <a href=\\"#about-me-content\\" id=\\"about-me-content\\" class=\\"heading-anchor\\"></a>About me content
+    <h2 id=\\"about-me-content\\" class=\\"heading\\">
+      <a href=\\"#about-me-content\\" class=\\"heading-anchor\\"></a>About me content
     </h2>
   ",
     "created": "2018-11-11T11:07:18Z",
@@ -137,12 +137,12 @@ exports[`test processor test snapshot test posts snapshot: posts 1`] = `
 Array [
   Object {
     "body": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues1-content\\" id=\\"issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
+    <h3 id=\\"issues1-content\\" class=\\"heading\\">
+      <a href=\\"#issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
     </h3>
   ",
     "created": "2018-11-20T11:07:18Z",
@@ -164,12 +164,12 @@ Array [
   },
   Object {
     "body": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues2-content\\" id=\\"issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
+    <h3 id=\\"issues2-content\\" class=\\"heading\\">
+      <a href=\\"#issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
     </h3>
   ",
     "created": "2018-10-19T11:07:18Z",
@@ -197,12 +197,12 @@ Array [
   },
   Object {
     "body": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues3-content\\" id=\\"issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
+    <h3 id=\\"issues3-content\\" class=\\"heading\\">
+      <a href=\\"#issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
     </h3>
   ",
     "created": "2017-10-19T11:07:18Z",
@@ -224,12 +224,12 @@ Array [
   },
   Object {
     "body": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues4-content\\" id=\\"issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
+    <h3 id=\\"issues4-content\\" class=\\"heading\\">
+      <a href=\\"#issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
     </h3>
   ",
     "created": "2016-10-19T11:07:18Z",
@@ -265,12 +265,12 @@ Array [
     "categories": Array [],
     "date": "2018-11-20T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues1-content\\" id=\\"issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
+    <h3 id=\\"issues1-content\\" class=\\"heading\\">
+      <a href=\\"#issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
     </h3>
   ",
     "guid": 1,
@@ -284,12 +284,12 @@ Array [
     ],
     "date": "2018-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues2-content\\" id=\\"issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
+    <h3 id=\\"issues2-content\\" class=\\"heading\\">
+      <a href=\\"#issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
     </h3>
   ",
     "guid": 2,
@@ -301,12 +301,12 @@ Array [
     "categories": Array [],
     "date": "2017-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues3-content\\" id=\\"issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
+    <h3 id=\\"issues3-content\\" class=\\"heading\\">
+      <a href=\\"#issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
     </h3>
   ",
     "guid": 3,
@@ -320,12 +320,12 @@ Array [
     ],
     "date": "2016-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues4-content\\" id=\\"issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
+    <h3 id=\\"issues4-content\\" class=\\"heading\\">
+      <a href=\\"#issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
     </h3>
   ",
     "guid": 4,
@@ -337,12 +337,12 @@ Array [
     "categories": Array [],
     "date": "2018-11-20T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues1-content\\" id=\\"issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
+    <h3 id=\\"issues1-content\\" class=\\"heading\\">
+      <a href=\\"#issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
     </h3>
   ",
     "guid": 1,
@@ -354,12 +354,12 @@ Array [
     "categories": Array [],
     "date": "2018-11-20T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues1-content\\" id=\\"issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
+    <h3 id=\\"issues1-content\\" class=\\"heading\\">
+      <a href=\\"#issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
     </h3>
   ",
     "guid": 1,
@@ -371,12 +371,12 @@ Array [
     "categories": Array [],
     "date": "2018-11-20T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues1-content\\" id=\\"issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
+    <h3 id=\\"issues1-content\\" class=\\"heading\\">
+      <a href=\\"#issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
     </h3>
   ",
     "guid": 1,
@@ -388,12 +388,12 @@ Array [
     "categories": Array [],
     "date": "2018-11-20T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues1-content\\" id=\\"issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
+    <h3 id=\\"issues1-content\\" class=\\"heading\\">
+      <a href=\\"#issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
     </h3>
   ",
     "guid": 1,
@@ -405,12 +405,12 @@ Array [
     "categories": Array [],
     "date": "2018-11-20T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues1-content\\" id=\\"issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
+    <h3 id=\\"issues1-content\\" class=\\"heading\\">
+      <a href=\\"#issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
     </h3>
   ",
     "guid": 1,
@@ -422,12 +422,12 @@ Array [
     "categories": Array [],
     "date": "2018-11-20T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues1-content\\" id=\\"issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
+    <h3 id=\\"issues1-content\\" class=\\"heading\\">
+      <a href=\\"#issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
     </h3>
   ",
     "guid": 1,
@@ -441,12 +441,12 @@ Array [
     ],
     "date": "2018-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues2-content\\" id=\\"issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
+    <h3 id=\\"issues2-content\\" class=\\"heading\\">
+      <a href=\\"#issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
     </h3>
   ",
     "guid": 2,
@@ -460,12 +460,12 @@ Array [
     ],
     "date": "2018-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues2-content\\" id=\\"issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
+    <h3 id=\\"issues2-content\\" class=\\"heading\\">
+      <a href=\\"#issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
     </h3>
   ",
     "guid": 2,
@@ -479,12 +479,12 @@ Array [
     ],
     "date": "2018-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues2-content\\" id=\\"issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
+    <h3 id=\\"issues2-content\\" class=\\"heading\\">
+      <a href=\\"#issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
     </h3>
   ",
     "guid": 2,
@@ -498,12 +498,12 @@ Array [
     ],
     "date": "2018-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues2-content\\" id=\\"issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
+    <h3 id=\\"issues2-content\\" class=\\"heading\\">
+      <a href=\\"#issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
     </h3>
   ",
     "guid": 2,
@@ -517,12 +517,12 @@ Array [
     ],
     "date": "2018-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues2-content\\" id=\\"issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
+    <h3 id=\\"issues2-content\\" class=\\"heading\\">
+      <a href=\\"#issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
     </h3>
   ",
     "guid": 2,
@@ -536,12 +536,12 @@ Array [
     ],
     "date": "2018-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues2-content\\" id=\\"issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
+    <h3 id=\\"issues2-content\\" class=\\"heading\\">
+      <a href=\\"#issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
     </h3>
   ",
     "guid": 2,
@@ -553,12 +553,12 @@ Array [
     "categories": Array [],
     "date": "2017-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues3-content\\" id=\\"issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
+    <h3 id=\\"issues3-content\\" class=\\"heading\\">
+      <a href=\\"#issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
     </h3>
   ",
     "guid": 3,
@@ -570,12 +570,12 @@ Array [
     "categories": Array [],
     "date": "2017-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues3-content\\" id=\\"issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
+    <h3 id=\\"issues3-content\\" class=\\"heading\\">
+      <a href=\\"#issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
     </h3>
   ",
     "guid": 3,
@@ -587,12 +587,12 @@ Array [
     "categories": Array [],
     "date": "2017-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues3-content\\" id=\\"issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
+    <h3 id=\\"issues3-content\\" class=\\"heading\\">
+      <a href=\\"#issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
     </h3>
   ",
     "guid": 3,
@@ -604,12 +604,12 @@ Array [
     "categories": Array [],
     "date": "2017-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues3-content\\" id=\\"issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
+    <h3 id=\\"issues3-content\\" class=\\"heading\\">
+      <a href=\\"#issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
     </h3>
   ",
     "guid": 3,
@@ -621,12 +621,12 @@ Array [
     "categories": Array [],
     "date": "2017-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues3-content\\" id=\\"issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
+    <h3 id=\\"issues3-content\\" class=\\"heading\\">
+      <a href=\\"#issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
     </h3>
   ",
     "guid": 3,
@@ -638,12 +638,12 @@ Array [
     "categories": Array [],
     "date": "2017-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues3-content\\" id=\\"issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
+    <h3 id=\\"issues3-content\\" class=\\"heading\\">
+      <a href=\\"#issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
     </h3>
   ",
     "guid": 3,
@@ -657,12 +657,12 @@ Array [
     ],
     "date": "2016-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues4-content\\" id=\\"issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
+    <h3 id=\\"issues4-content\\" class=\\"heading\\">
+      <a href=\\"#issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
     </h3>
   ",
     "guid": 4,
@@ -676,12 +676,12 @@ Array [
     ],
     "date": "2016-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues4-content\\" id=\\"issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
+    <h3 id=\\"issues4-content\\" class=\\"heading\\">
+      <a href=\\"#issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
     </h3>
   ",
     "guid": 4,
@@ -695,12 +695,12 @@ Array [
     ],
     "date": "2016-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues4-content\\" id=\\"issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
+    <h3 id=\\"issues4-content\\" class=\\"heading\\">
+      <a href=\\"#issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
     </h3>
   ",
     "guid": 4,
@@ -714,12 +714,12 @@ Array [
     ],
     "date": "2016-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues4-content\\" id=\\"issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
+    <h3 id=\\"issues4-content\\" class=\\"heading\\">
+      <a href=\\"#issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
     </h3>
   ",
     "guid": 4,
@@ -733,12 +733,12 @@ Array [
     ],
     "date": "2016-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues4-content\\" id=\\"issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
+    <h3 id=\\"issues4-content\\" class=\\"heading\\">
+      <a href=\\"#issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
     </h3>
   ",
     "guid": 4,
@@ -752,12 +752,12 @@ Array [
     ],
     "date": "2016-10-19T11:07:18Z",
     "description": "
-    <h2 class=\\"heading\\">
-      <a href=\\"#header\\" id=\\"header\\" class=\\"heading-anchor\\"></a>Header
+    <h2 id=\\"header\\" class=\\"heading\\">
+      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
     </h2>
   
-    <h3 class=\\"heading\\">
-      <a href=\\"#issues4-content\\" id=\\"issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
+    <h3 id=\\"issues4-content\\" class=\\"heading\\">
+      <a href=\\"#issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
     </h3>
   ",
     "guid": 4,
