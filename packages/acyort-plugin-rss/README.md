@@ -1,6 +1,7 @@
 # `acyort-plugin-rss`
 
-use [node-rss](https://github.com/dylang/node-rss) to generate `rss` from `acyort`
+plugin for [acyort](https://github.com/acyortjs/acyort/)
+use [node-rss](https://github.com/dylang/node-rss) to generate `rss`
 
 ## Usage
 
@@ -11,12 +12,12 @@ rss: # true or rssConfig, see the node-rss doc
 rssDataFrom: # plugin to provide rssData, default acyort-donob-renderer
 ```
 
-## plugin to provide rssData
+## RssData Provider
 
 ```javascript
 const rssData = {
-  rssConfig: {},
-  items: []
+  rssConfig: {}, // rss config
+  items: [] // rss items
 }
 acyort.store.set('rssData', rssData)
 ```
@@ -26,8 +27,6 @@ and set config
 ```yaml
 rssDataFrom: rss-data-provider-plugin-name
 ```
-
-
 
 ## Related
 

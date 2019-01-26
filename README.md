@@ -1,5 +1,7 @@
 # acyort-donob-plugins
 
+[DEMO](https://zwing.site)
+
 ## Usage
 
 ### acyort-plugin-fetch-issues
@@ -40,6 +42,24 @@ gitalk: # default false
 favicon: # favicon.ico, copy to public/favicon.ico
 ```
 
+### acyort-templates-donob-plus
+
+``` yaml
+# config.yml
+template: acyort-templates-donob-plus
+```
+
+### acyort-plugin-rss
+
+generate from [node-rss](https://github.com/dylang/node-rss)
+
+```yaml
+# config.yml
+url: # site url, required
+rss: # true or rssConfig, see the node-rss doc
+rssDataFrom: # plugin to provide rssData, default acyort-donob-renderer
+```
+
 ### acyort-plugin-ghpages
 
 see [gh-pages](https://github.com/tschaub/gh-pages)
@@ -49,7 +69,5 @@ ghPages:
   # gh-pages config
 
 plugins:
-  - acyort-plugin-fetch
-  - acyort-donob-renderer
   - acyort-plugin-ghpages
 ```
