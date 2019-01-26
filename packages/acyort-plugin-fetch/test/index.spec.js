@@ -1,14 +1,16 @@
+const nock = require('nock')
+const plugin = require('..')
 
-const fetcher = jest.fn().mockResolvedValue(100)
 const cliRegister = jest.fn()
 const workflow = []
 const set = jest.fn()
+const issues = [1, 2, 3, 4, 5]
 const workflowRegister = jest.fn((fn) => {
   workflow.push(fn)
 })
-const config = { d: 1, c: 2 }
-jest.doMock('../lib/fetcher', () => fetcher)
-const plugin = require('..')
+
+const repository = 'zwing/repo'
+const config = { repository, gitToken: '1233#fdsa' }
 
 const acyort = {
   cli: {
@@ -35,15 +37,16 @@ describe('test acyort plugins', () => {
       action: expect.any(Function),
     })
     cliRegister.mock.calls[0][1].action.call({ config })
-    expect(fetcher).toBeCalledTimes(1)
-    expect(fetcher).toBeCalledWith(config)
   })
   it('workflow register', async () => {
+    nock('https://api.github.com')
+      .get(`/repos/${repository}/issues`)
+      .query(true)
+      .reply(200, issues)
     expect(workflowRegister).toBeCalledTimes(1)
     expect(workflow).toHaveLength(1)
     await workflow[0]()
-    expect(fetcher).toBeCalledTimes(2)
     expect(set).toBeCalledTimes(1)
-    expect(set).toBeCalledWith('issues', 100)
+    expect(set).toBeCalledWith('issues', issues)
   })
 })

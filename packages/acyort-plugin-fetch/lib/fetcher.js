@@ -1,16 +1,14 @@
 const { join } = require('path')
-const octokit = require('@octokit/rest')()
+const Octokit = require('@octokit/rest')
 const ora = require('ora')
 const logSymbols = require('log-symbols')
 const fs = require('fs-extra')
 
-/* istanbul ignore next */
 function fetch(config = {}) {
   const cacheFile = join(__dirname, 'issues.json')
   const {
     repository, author: creator, gitToken, issuesPageSize = 20, issuesCache = false,
   } = config
-  // console.log(octokit)
   if (!(repository && gitToken)) {
     const msg = 'missing repository or gitToken'
     ora(msg).fail()
@@ -26,10 +24,8 @@ function fetch(config = {}) {
     spinner.succeed('Fetch issues completed')
     return Promise.resolve(require(cacheFile)) // eslint-disable-line
   }
-  octokit.authenticate({
-    type: 'token',
-    // token: 'd#e8919195a05bd0c3e3c0d5b5bcfd218bc606694'.split('#').join(''),
-    token: gitToken.split('#').join(''),
+  const octokit = new Octokit({
+    auth: gitToken.split('#').join(''),
   })
   let result = []
   return new Promise((resolve) => {
