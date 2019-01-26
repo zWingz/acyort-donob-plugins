@@ -1,5 +1,5 @@
 
-## 1.2.3 (2019-01-25)
+## 1.3.0 (2019-01-25)
 
 #### :rocket: New Feature
 * `acyort-donob-renderer`, `acyort-templates-donob-plus`
