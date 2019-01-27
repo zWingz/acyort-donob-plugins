@@ -1,0 +1,42 @@
+{
+  "name": "acyort-util-md",
+  "version": "1.3.1",
+  "description": "markdown for acyort use remark + prismjs",
+  "keywords": [
+    "acyort",
+    "remark",
+    "markdown",
+    "prismjs"
+  ],
+  "author": "zhengzhirong <zhengzwing@gmail.com>",
+  "homepage": "https://github.com/zWingz/acyort-donob-plugins#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zWingz/acyort-donob-plugins.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/zWingz/acyort-donob-plugins/issues"
+  },
+  "dependencies": {
+    "gatsby-remark-prismjs": "^3.2.2",
+    "github-slugger": "^1.2.1",
+    "markdown-toc": "^1.2.0",
+    "prismjs": "^1.15.0",
+    "remark": "^10.0.1",
+    "remark-autolink-headings": "^5.1.0",
+    "remark-html": "^9.0.0",
+    "remark-slug": "^5.1.1"
+  }
+}

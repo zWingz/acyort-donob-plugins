@@ -2,10 +2,10 @@ const { join } = require('path')
 const logSymbols = require('log-symbols')
 const ora = require('ora')
 const fs = require('fs-extra')
+const { toc } = require('acyort-util-md')
 const processor = require('./lib/processor')
 const render = require('./lib/render')
 const mini = require('./lib/minify')
-const toc = require('./lib/toc')
 
 module.exports = function ayrortDonobRenderer(acyort) {
   acyort.helper.register('_toc', toc)
