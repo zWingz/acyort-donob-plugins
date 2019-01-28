@@ -348,12 +348,12 @@ a {
 .content img {
   max-width: 100%;
 }
-.content code {
+/* .content code {
   background: #f7f7f7;
   border: 1px solid #e6e6e6;
   padding: 1px 5px;
   border-radius: 1px;
-}
+} */
 
 table {
   line-height: 1.5;

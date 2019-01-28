@@ -37,6 +37,7 @@
     "remark": "^10.0.1",
     "remark-autolink-headings": "^5.1.0",
     "remark-html": "^9.0.0",
-    "remark-slug": "^5.1.1"
+    "remark-slug": "^5.1.1",
+    "unist-util-visit": "^1.4.0"
   }
 }

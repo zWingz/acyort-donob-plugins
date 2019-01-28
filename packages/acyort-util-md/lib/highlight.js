@@ -5,7 +5,7 @@ const defaultOptions = {
   inlineCodeMarker: null,
   aliases: {},
   noInlineHighlight: false,
-  showLineNumbers: false,
+  showLineNumbers: true,
 }
 
 function attacher(options) {
