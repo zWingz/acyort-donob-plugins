@@ -8,6 +8,12 @@ const defaultOptions = {
   showLineNumbers: true,
 }
 
+/**
+ * gatsby-remark-prismjs adapter
+ *
+ * @param {*} options
+ * @returns
+ */
 function attacher(options) {
   const opt = {
     ...defaultOptions,

@@ -46,10 +46,12 @@ module.exports = function ayrortDonobRenderer(acyort) {
     })
     spinner.start('Starting to copy source...\n')
     acyort.copySource()
-    const fav = join(base, favicon)
     /* istanbul ignore next */
-    if (favicon && fs.pathExistsSync(fav)) {
-      fs.copyFileSync(fav, join(base, publicDir, favicon))
+    if (favicon) {
+      const fav = join(base, favicon)
+      if (fs.pathExistsSync(fav)) {
+        fs.copyFileSync(fav, join(base, publicDir, favicon))
+      }
     }
     spinner.stopAndPersist({
       symbol: logSymbols.success,

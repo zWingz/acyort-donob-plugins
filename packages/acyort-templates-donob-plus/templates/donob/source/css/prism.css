@@ -139,6 +139,11 @@ pre[data-line] {
   min-width: 100%;
   margin-bottom: 1em;
 }
+.gatsby-highlight pre[class*='language-'].line-numbers {
+  padding: 0 0 0 2.4em;
+  overflow: initial;
+  box-sizing: border-box;
+}
 
 /* line-numbers */
 pre[class*='language-'].line-numbers {
@@ -180,10 +185,4 @@ pre[class*='language-'].line-numbers > code {
   display: block;
   padding-right: 0.8em;
   text-align: right;
-}
-
-.gatsby-highlight pre[class*='language-'].line-numbers {
-  padding: 0;
-  padding-left: 2.4em;
-  overflow: initial;
 }

@@ -7,6 +7,13 @@ const slugger = new GhSlugger()
 const slugger2 = new GhSlugger()
 let tmp = 0
 
+/**
+ * as same as remark-slug
+ * use the github-slugger to generate toc
+ *
+ * @param {*} md
+ * @returns
+ */
 function toc(md) {
   slugger.reset()
   const { content: tocContent } = mdToc(md, {

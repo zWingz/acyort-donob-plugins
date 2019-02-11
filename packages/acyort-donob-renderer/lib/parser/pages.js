@@ -1,5 +1,5 @@
 const pathFn = require('path')
-const parseMd = require('../markdown')
+const { parseMd } = require('acyort-util-md')
 
 function page(issue) {
   const {
