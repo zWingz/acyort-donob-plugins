@@ -30,7 +30,7 @@ function postParse(issue, config) {
     raw: body,
     body: parseMd(body, {
       highlightOpt: {
-        showLineNumbers: true,
+        showLineNumbers: false,
       },
     }),
     user: {

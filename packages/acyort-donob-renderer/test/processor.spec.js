@@ -1,7 +1,7 @@
 // const issues = require('./fixtures/issues')
+const { parseMd } = require('acyort-util-md')
 const { issues, mockPages } = require('./fixtures/issues')
 const processor = require('../lib/processor')
-const parseMd = require('../lib/markdown')
 
 const postsDir = 'fdsaf'
 const archivesDir = 'fdsafd'
@@ -66,9 +66,13 @@ describe('test processor', () => {
   describe('test posts processor', () => {
     it('posts length', () => {
       expect(posts).toHaveLength(testPosts.length)
-      expect(posts[0].body).toEqual(parseMd(posts[0].raw, {
-        lineNumber: true,
-      }))
+      expect(posts[0].body).toEqual(
+        parseMd(posts[0].raw, {
+          highlightOpt: {
+            showLineNumbers: false,
+          },
+        }),
+      )
     })
     it('posts path', () => {
       const p = posts[0]

@@ -47,7 +47,7 @@ pre[class*='language-'] {
 }
 pre[class*='language-'] {
   overflow: auto;
-  padding: 1em;
+  padding: 0.5em;
 }
 pre[class*='language-']::selection {
   background: #27292a;
@@ -132,12 +132,13 @@ pre[data-line] {
   -webkit-overflow-scrolling: touch;
   overflow: auto;
   margin: 0.5em 0;
-  padding: 0 1em;
+  padding: 0.5em 0.5em;
 }
 .gatsby-highlight pre[class*='language-'] {
   float: left;
   min-width: 100%;
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
+  margin: 0px;
 }
 .gatsby-highlight pre[class*='language-'].line-numbers {
   padding: 0 0 0 2.4em;
