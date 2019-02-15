@@ -10,6 +10,7 @@ function attacher() {
     visit(tree, 'heading', (node) => {
       const { data: { hProperties } } = node
       const { class: className } = hProperties
+      /* istanbul ignore next */
       hProperties.class = className ? `heading ${className}` : 'heading'
     })
   }

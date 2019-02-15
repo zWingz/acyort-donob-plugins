@@ -27,14 +27,4 @@ function parseMd(content, opt = {}) {
     .processSync(content)
   return c.contents
 }
-
-// const str = parseMd(`
-// \`\`\`javascript
-// const a = Promise.resolve()
-// a.then(() => {}, () => {})
-
-// \`\`\
-
-// `)
-// console.log(str)
 module.exports.parseMd = parseMd

@@ -16,6 +16,8 @@ let tmp = 0
  */
 function toc(md) {
   slugger.reset()
+  slugger2.reset()
+  tmp = 0
   const { content: tocContent } = mdToc(md, {
     slugify(str) {
       let r

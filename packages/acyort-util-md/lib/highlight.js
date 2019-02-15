@@ -5,7 +5,7 @@ const defaultOptions = {
   inlineCodeMarker: null,
   aliases: {},
   noInlineHighlight: false,
-  showLineNumbers: true,
+  showLineNumbers: false,
 }
 
 /**

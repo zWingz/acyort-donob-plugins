@@ -24,14 +24,16 @@
     "url": "git+https://github.com/zWingz/acyort-donob-plugins.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/zWingz/acyort-donob-plugins/issues"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "gatsby-remark-prismjs": "^3.2.2",
     "github-slugger": "^1.2.1",
+    "jest": "^24.1.0",
     "markdown-toc": "^1.2.0",
     "prettier": "^1.16.4",
     "prismjs": "^1.15.0",
@@ -40,5 +42,16 @@
     "remark-html": "^9.0.0",
     "remark-slug": "^5.1.1",
     "unist-util-visit": "^1.4.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "lib/*.js",
+      "!**/node_modules/**",
+      "!**/test/**",
+      "!**/coverage/**",
+      "!**/develop/**"
+    ],
+    "watchPathIgnorePatterns": []
   }
 }

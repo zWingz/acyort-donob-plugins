@@ -26,6 +26,7 @@ function attacher() {
   return (tree) => {
     visit(tree, 'code', (node) => {
       const { lang, value } = node
+      /* istanbul ignore next */
       if (lang && lang in parserMap) {
         const parser = parserMap[lang]
         try {
