@@ -110,15 +110,9 @@ Array [
 exports[`test processor test snapshot test pages snapshot: pages 1`] = `
 Array [
   Object {
-    "content": "
-    <h1 id=\\"abount-me\\" class=\\"heading\\">
-      <a href=\\"#abount-me\\" class=\\"heading-anchor\\"></a>Abount me
-    </h1>
-  
-    <h2 id=\\"about-me-content\\" class=\\"heading\\">
-      <a href=\\"#about-me-content\\" class=\\"heading-anchor\\"></a>About me content
-    </h2>
-  ",
+    "content": "<h1 id=\\"abount-me\\" class=\\"heading\\"><a href=\\"#abount-me\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Abount me</h1>
+<h2 id=\\"about-me-content\\" class=\\"heading\\"><a href=\\"#about-me-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>About me content</h2>
+",
     "created": "2018-11-11T11:07:18Z",
     "id": 5,
     "name": "about",
@@ -136,15 +130,9 @@ Array [
 exports[`test processor test snapshot test posts snapshot: posts 1`] = `
 Array [
   Object {
-    "body": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues1-content\\" class=\\"heading\\">
-      <a href=\\"#issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
-    </h3>
-  ",
+    "body": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues1-content\\" class=\\"heading\\"><a href=\\"#issues1-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues1 Content</h3>
+",
     "created": "2018-11-20T11:07:18Z",
     "gitalk": false,
     "id": 1,
@@ -163,15 +151,9 @@ Array [
     },
   },
   Object {
-    "body": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues2-content\\" class=\\"heading\\">
-      <a href=\\"#issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
-    </h3>
-  ",
+    "body": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues2-content\\" class=\\"heading\\"><a href=\\"#issues2-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues2 Content</h3>
+",
     "created": "2018-10-19T11:07:18Z",
     "gitalk": false,
     "id": 2,
@@ -196,15 +178,9 @@ Array [
     },
   },
   Object {
-    "body": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues3-content\\" class=\\"heading\\">
-      <a href=\\"#issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
-    </h3>
-  ",
+    "body": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues3-content\\" class=\\"heading\\"><a href=\\"#issues3-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues3 Content</h3>
+",
     "created": "2017-10-19T11:07:18Z",
     "gitalk": false,
     "id": 3,
@@ -223,15 +199,9 @@ Array [
     },
   },
   Object {
-    "body": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues4-content\\" class=\\"heading\\">
-      <a href=\\"#issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
-    </h3>
-  ",
+    "body": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues4-content\\" class=\\"heading\\"><a href=\\"#issues4-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues4 Content</h3>
+",
     "created": "2016-10-19T11:07:18Z",
     "gitalk": false,
     "id": 4,
@@ -264,15 +234,9 @@ Array [
     "author": "issues creator",
     "categories": Array [],
     "date": "2018-11-20T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues1-content\\" class=\\"heading\\">
-      <a href=\\"#issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues1-content\\" class=\\"heading\\"><a href=\\"#issues1-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues1 Content</h3>
+",
     "guid": 1,
     "title": "issus-1 title",
     "url": "undefined/posts/1.html",
@@ -283,15 +247,9 @@ Array [
       "label-name-1",
     ],
     "date": "2018-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues2-content\\" class=\\"heading\\">
-      <a href=\\"#issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues2-content\\" class=\\"heading\\"><a href=\\"#issues2-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues2 Content</h3>
+",
     "guid": 2,
     "title": "issus-2 title",
     "url": "undefined/posts/2.html",
@@ -300,15 +258,9 @@ Array [
     "author": "issues creator",
     "categories": Array [],
     "date": "2017-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues3-content\\" class=\\"heading\\">
-      <a href=\\"#issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues3-content\\" class=\\"heading\\"><a href=\\"#issues3-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues3 Content</h3>
+",
     "guid": 3,
     "title": "issus-3 title",
     "url": "undefined/posts/3.html",
@@ -319,15 +271,9 @@ Array [
       "label-name-1",
     ],
     "date": "2016-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues4-content\\" class=\\"heading\\">
-      <a href=\\"#issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues4-content\\" class=\\"heading\\"><a href=\\"#issues4-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues4 Content</h3>
+",
     "guid": 4,
     "title": "issus-4 title",
     "url": "undefined/posts/4.html",
@@ -336,15 +282,9 @@ Array [
     "author": "issues creator",
     "categories": Array [],
     "date": "2018-11-20T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues1-content\\" class=\\"heading\\">
-      <a href=\\"#issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues1-content\\" class=\\"heading\\"><a href=\\"#issues1-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues1 Content</h3>
+",
     "guid": 1,
     "title": "issus-1 title",
     "url": "undefined/fdsaf/1.html",
@@ -353,15 +293,9 @@ Array [
     "author": "issues creator",
     "categories": Array [],
     "date": "2018-11-20T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues1-content\\" class=\\"heading\\">
-      <a href=\\"#issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues1-content\\" class=\\"heading\\"><a href=\\"#issues1-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues1 Content</h3>
+",
     "guid": 1,
     "title": "issus-1 title",
     "url": "undefined/fdsaf/1.html",
@@ -370,15 +304,9 @@ Array [
     "author": "issues creator",
     "categories": Array [],
     "date": "2018-11-20T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues1-content\\" class=\\"heading\\">
-      <a href=\\"#issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues1-content\\" class=\\"heading\\"><a href=\\"#issues1-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues1 Content</h3>
+",
     "guid": 1,
     "title": "issus-1 title",
     "url": "undefined/fdsaf/1.html",
@@ -387,15 +315,9 @@ Array [
     "author": "issues creator",
     "categories": Array [],
     "date": "2018-11-20T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues1-content\\" class=\\"heading\\">
-      <a href=\\"#issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues1-content\\" class=\\"heading\\"><a href=\\"#issues1-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues1 Content</h3>
+",
     "guid": 1,
     "title": "issus-1 title",
     "url": "undefined/fdsaf/1.html",
@@ -404,15 +326,9 @@ Array [
     "author": "issues creator",
     "categories": Array [],
     "date": "2018-11-20T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues1-content\\" class=\\"heading\\">
-      <a href=\\"#issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues1-content\\" class=\\"heading\\"><a href=\\"#issues1-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues1 Content</h3>
+",
     "guid": 1,
     "title": "issus-1 title",
     "url": "undefined/fdsaf/1.html",
@@ -421,15 +337,9 @@ Array [
     "author": "issues creator",
     "categories": Array [],
     "date": "2018-11-20T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues1-content\\" class=\\"heading\\">
-      <a href=\\"#issues1-content\\" class=\\"heading-anchor\\"></a>Issues1 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues1-content\\" class=\\"heading\\"><a href=\\"#issues1-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues1 Content</h3>
+",
     "guid": 1,
     "title": "issus-1 title",
     "url": "undefined/fdsaf/1.html",
@@ -440,15 +350,9 @@ Array [
       "label-name-1",
     ],
     "date": "2018-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues2-content\\" class=\\"heading\\">
-      <a href=\\"#issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues2-content\\" class=\\"heading\\"><a href=\\"#issues2-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues2 Content</h3>
+",
     "guid": 2,
     "title": "issus-2 title",
     "url": "undefined/fdsaf/2.html",
@@ -459,15 +363,9 @@ Array [
       "label-name-1",
     ],
     "date": "2018-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues2-content\\" class=\\"heading\\">
-      <a href=\\"#issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues2-content\\" class=\\"heading\\"><a href=\\"#issues2-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues2 Content</h3>
+",
     "guid": 2,
     "title": "issus-2 title",
     "url": "undefined/fdsaf/2.html",
@@ -478,15 +376,9 @@ Array [
       "label-name-1",
     ],
     "date": "2018-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues2-content\\" class=\\"heading\\">
-      <a href=\\"#issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues2-content\\" class=\\"heading\\"><a href=\\"#issues2-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues2 Content</h3>
+",
     "guid": 2,
     "title": "issus-2 title",
     "url": "undefined/fdsaf/2.html",
@@ -497,15 +389,9 @@ Array [
       "label-name-1",
     ],
     "date": "2018-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues2-content\\" class=\\"heading\\">
-      <a href=\\"#issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues2-content\\" class=\\"heading\\"><a href=\\"#issues2-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues2 Content</h3>
+",
     "guid": 2,
     "title": "issus-2 title",
     "url": "undefined/fdsaf/2.html",
@@ -516,15 +402,9 @@ Array [
       "label-name-1",
     ],
     "date": "2018-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues2-content\\" class=\\"heading\\">
-      <a href=\\"#issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues2-content\\" class=\\"heading\\"><a href=\\"#issues2-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues2 Content</h3>
+",
     "guid": 2,
     "title": "issus-2 title",
     "url": "undefined/fdsaf/2.html",
@@ -535,15 +415,9 @@ Array [
       "label-name-1",
     ],
     "date": "2018-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues2-content\\" class=\\"heading\\">
-      <a href=\\"#issues2-content\\" class=\\"heading-anchor\\"></a>Issues2 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues2-content\\" class=\\"heading\\"><a href=\\"#issues2-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues2 Content</h3>
+",
     "guid": 2,
     "title": "issus-2 title",
     "url": "undefined/fdsaf/2.html",
@@ -552,15 +426,9 @@ Array [
     "author": "issues creator",
     "categories": Array [],
     "date": "2017-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues3-content\\" class=\\"heading\\">
-      <a href=\\"#issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues3-content\\" class=\\"heading\\"><a href=\\"#issues3-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues3 Content</h3>
+",
     "guid": 3,
     "title": "issus-3 title",
     "url": "undefined/fdsaf/3.html",
@@ -569,15 +437,9 @@ Array [
     "author": "issues creator",
     "categories": Array [],
     "date": "2017-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues3-content\\" class=\\"heading\\">
-      <a href=\\"#issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues3-content\\" class=\\"heading\\"><a href=\\"#issues3-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues3 Content</h3>
+",
     "guid": 3,
     "title": "issus-3 title",
     "url": "undefined/fdsaf/3.html",
@@ -586,15 +448,9 @@ Array [
     "author": "issues creator",
     "categories": Array [],
     "date": "2017-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues3-content\\" class=\\"heading\\">
-      <a href=\\"#issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues3-content\\" class=\\"heading\\"><a href=\\"#issues3-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues3 Content</h3>
+",
     "guid": 3,
     "title": "issus-3 title",
     "url": "undefined/fdsaf/3.html",
@@ -603,15 +459,9 @@ Array [
     "author": "issues creator",
     "categories": Array [],
     "date": "2017-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues3-content\\" class=\\"heading\\">
-      <a href=\\"#issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues3-content\\" class=\\"heading\\"><a href=\\"#issues3-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues3 Content</h3>
+",
     "guid": 3,
     "title": "issus-3 title",
     "url": "undefined/fdsaf/3.html",
@@ -620,15 +470,9 @@ Array [
     "author": "issues creator",
     "categories": Array [],
     "date": "2017-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues3-content\\" class=\\"heading\\">
-      <a href=\\"#issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues3-content\\" class=\\"heading\\"><a href=\\"#issues3-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues3 Content</h3>
+",
     "guid": 3,
     "title": "issus-3 title",
     "url": "undefined/fdsaf/3.html",
@@ -637,15 +481,9 @@ Array [
     "author": "issues creator",
     "categories": Array [],
     "date": "2017-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues3-content\\" class=\\"heading\\">
-      <a href=\\"#issues3-content\\" class=\\"heading-anchor\\"></a>Issues3 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues3-content\\" class=\\"heading\\"><a href=\\"#issues3-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues3 Content</h3>
+",
     "guid": 3,
     "title": "issus-3 title",
     "url": "undefined/fdsaf/3.html",
@@ -656,15 +494,9 @@ Array [
       "label-name-1",
     ],
     "date": "2016-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues4-content\\" class=\\"heading\\">
-      <a href=\\"#issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues4-content\\" class=\\"heading\\"><a href=\\"#issues4-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues4 Content</h3>
+",
     "guid": 4,
     "title": "issus-4 title",
     "url": "undefined/fdsaf/4.html",
@@ -675,15 +507,9 @@ Array [
       "label-name-1",
     ],
     "date": "2016-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues4-content\\" class=\\"heading\\">
-      <a href=\\"#issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues4-content\\" class=\\"heading\\"><a href=\\"#issues4-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues4 Content</h3>
+",
     "guid": 4,
     "title": "issus-4 title",
     "url": "undefined/fdsaf/4.html",
@@ -694,15 +520,9 @@ Array [
       "label-name-1",
     ],
     "date": "2016-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues4-content\\" class=\\"heading\\">
-      <a href=\\"#issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues4-content\\" class=\\"heading\\"><a href=\\"#issues4-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues4 Content</h3>
+",
     "guid": 4,
     "title": "issus-4 title",
     "url": "undefined/fdsaf/4.html",
@@ -713,15 +533,9 @@ Array [
       "label-name-1",
     ],
     "date": "2016-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues4-content\\" class=\\"heading\\">
-      <a href=\\"#issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues4-content\\" class=\\"heading\\"><a href=\\"#issues4-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues4 Content</h3>
+",
     "guid": 4,
     "title": "issus-4 title",
     "url": "undefined/fdsaf/4.html",
@@ -732,15 +546,9 @@ Array [
       "label-name-1",
     ],
     "date": "2016-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues4-content\\" class=\\"heading\\">
-      <a href=\\"#issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues4-content\\" class=\\"heading\\"><a href=\\"#issues4-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues4 Content</h3>
+",
     "guid": 4,
     "title": "issus-4 title",
     "url": "undefined/fdsaf/4.html",
@@ -751,15 +559,9 @@ Array [
       "label-name-1",
     ],
     "date": "2016-10-19T11:07:18Z",
-    "description": "
-    <h2 id=\\"header\\" class=\\"heading\\">
-      <a href=\\"#header\\" class=\\"heading-anchor\\"></a>Header
-    </h2>
-  
-    <h3 id=\\"issues4-content\\" class=\\"heading\\">
-      <a href=\\"#issues4-content\\" class=\\"heading-anchor\\"></a>Issues4 Content
-    </h3>
-  ",
+    "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
+<h3 id=\\"issues4-content\\" class=\\"heading\\"><a href=\\"#issues4-content\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Issues4 Content</h3>
+",
     "guid": 4,
     "title": "issus-4 title",
     "url": "undefined/fdsaf/4.html",

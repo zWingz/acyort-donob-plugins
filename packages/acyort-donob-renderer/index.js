@@ -2,10 +2,10 @@ const { join } = require('path')
 const logSymbols = require('log-symbols')
 const ora = require('ora')
 const fs = require('fs-extra')
+const { toc } = require('acyort-util-md')
 const processor = require('./lib/processor')
 const render = require('./lib/render')
 const mini = require('./lib/minify')
-const toc = require('./lib/toc')
 
 module.exports = function ayrortDonobRenderer(acyort) {
   acyort.helper.register('_toc', toc)
@@ -46,10 +46,12 @@ module.exports = function ayrortDonobRenderer(acyort) {
     })
     spinner.start('Starting to copy source...\n')
     acyort.copySource()
-    const fav = join(base, favicon)
     /* istanbul ignore next */
-    if (favicon && fs.pathExistsSync(fav)) {
-      fs.copyFileSync(fav, join(base, publicDir, favicon))
+    if (favicon) {
+      const fav = join(base, favicon)
+      if (fs.pathExistsSync(fav)) {
+        fs.copyFileSync(fav, join(base, publicDir, favicon))
+      }
     }
     spinner.stopAndPersist({
       symbol: logSymbols.success,

@@ -1,4 +1,4 @@
-const parseMd = require('../markdown')
+const { parseMd } = require('acyort-util-md')
 
 const rssItems = []
 

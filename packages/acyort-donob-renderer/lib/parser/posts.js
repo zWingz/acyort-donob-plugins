@@ -1,5 +1,5 @@
 const path = require('path')
-const parseMd = require('../markdown')
+const { parseMd } = require('acyort-util-md')
 const { parseLabels } = require('./labels')
 
 function postParse(issue, config) {
@@ -29,7 +29,9 @@ function postParse(issue, config) {
     updated,
     raw: body,
     body: parseMd(body, {
-      lineNumber: true,
+      highlightOpt: {
+        showLineNumbers: false,
+      },
     }),
     user: {
       name: login,
