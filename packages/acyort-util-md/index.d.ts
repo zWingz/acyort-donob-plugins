@@ -11,6 +11,6 @@ interface parseMdOption {
 }
 
 declare module 'acyort-util-md' {
-  export function parseMd(content: string, opt: parseMdOption = {}): string
+  export function parseMd(content: string, opt?: parseMdOption): string
   export function toc(md: string): string
 }
