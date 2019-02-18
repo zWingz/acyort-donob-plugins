@@ -24,7 +24,13 @@ function postParse(issue, config) {
     path: url,
     number,
     title,
-    labels: parseLabels({ labels, tagsDir, postId: id }),
+    labels: parseLabels({
+      labels,
+      tagsDir,
+      post: {
+        id, url, title, created, updated,
+      },
+    }),
     created,
     updated,
     raw: body,
