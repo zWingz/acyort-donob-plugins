@@ -20,7 +20,6 @@ function setAnchorActive() {
     return (rect.top + rect.height / 2) < 0
   })
   const target = targets.slice(-1)[0]
-  console.log(target);
   if(!target) return
   const len = targets.length - 1
   tocIcon.style.transform = `translate3d(0, ${len * 19}px,0) rotate(45deg)`
@@ -28,7 +27,6 @@ function setAnchorActive() {
     each.classList.remove('active')
   })
   const id = encodeURI(target.id)
-  console.log(id);
   document.querySelector(`.toc a[href="#${id}"]`).classList.add('active')
 }
 

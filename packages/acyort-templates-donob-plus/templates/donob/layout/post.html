@@ -20,6 +20,15 @@
   <div class='post-content'>
     <p class="time">{{ _time(page.created, 'MMMM DD, YYYY') }}</p>
     <h1 class="title">{{ page.title }}</h1>
+    {% if page.labels.length %}
+      <div class='post-labels'>
+        {% for label in page.labels %}
+          <span class='post-label' style='background: #{{label.color}};'>
+            {{ label.name }}
+          </span>
+        {% endfor %}
+      </div>
+    {% endif %}
     <div class="content">{{ page.body }}</div>
     <div class="comments"><div id="gitalk-container"></div></div>
     <!-- <div class="comments"><div id="disqus_thread"></div></div> -->
@@ -31,6 +40,7 @@
 <script src="{{ _url('script/post.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script>
+  console.log(JSON.parse('{{ page.labels|json }}'));
   {% if page.gitalk %}
   const gitalkConfig = JSON.parse('{{ page.gitalk|json }}')
   var gitalk = new Gitalk({
