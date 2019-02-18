@@ -2,35 +2,37 @@ const path = require('path')
 
 const tags = []
 
-function setTags(label, postId) {
-  const { id, name, url } = label
+function setTags(label, post) {
+  const { id } = label
   const pos = tags.findIndex(each => each.id === id)
 
   if (pos === -1) {
     tags.push({
-      id,
-      name,
-      url,
+      ...label,
       type: 'tags',
-      posts: [postId],
+      posts: [post],
     })
   } else {
-    tags[pos].posts.push(postId)
+    tags[pos].posts.push(post)
   }
 }
-function parseLabels({ labels, tagsDir, postId }) {
+function parseLabels({ labels, tagsDir, post }) {
   if (!labels) {
     return []
   }
-
   return labels.map((label) => {
-    const { id, name } = label
+    const {
+      id, name, description, color, node_id: nodeId,
+    } = label
     const ret = {
       id,
       name,
       url: path.join('/', tagsDir, id.toString()),
+      description,
+      color,
+      nodeId,
     }
-    setTags(ret, postId)
+    setTags(ret, post)
     return ret
   })
 }

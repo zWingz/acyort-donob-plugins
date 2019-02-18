@@ -9,12 +9,14 @@ function processor(issues, acyort = {}) {
   }
   const {
     posts, archives, index, pages, rssItems,
+    labels,
   } = parser(issues, config)
   return {
     posts,
     archives,
     index,
     pages,
+    labels,
     rssItems,
   }
 }
