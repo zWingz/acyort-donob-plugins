@@ -1,4 +1,6 @@
 const path = require('path')
+const lodash = require('lodash')
+const pagination = require('./pagination')
 
 const tags = []
 
@@ -26,7 +28,7 @@ function parseLabels({ labels, tagsDir, post }) {
     } = label
     const ret = {
       id,
-      name,
+      name: lodash.startCase(name),
       url: path.join('/', tagsDir, id.toString()),
       description,
       color,
@@ -37,7 +39,31 @@ function parseLabels({ labels, tagsDir, post }) {
   })
 }
 
+function generateTags({ pageSize, tagsDir }) {
+  const ret = []
+  tags.forEach((each) => {
+    const paginator = pagination(each.posts, {
+      base: path.join(tagsDir, each.id.toString()),
+      pageSize,
+    })
+    ret.push(
+      paginator.map(page => ({
+        ...page,
+        data: {
+          ...lodash.pick(each, ['id', 'color', 'description']),
+          posts: page.data,
+        },
+      })),
+    )
+  })
+  return ret
+}
+
 module.exports = {
   parseLabels,
-  getLabels: /* istanbul ignore next */ () => tags,
+  generateTags,
+  getTags: () => tags.map(each => ({
+    ...each,
+  })),
+  // getLabels: /* istanbul ignore next */ () => tags,
 }

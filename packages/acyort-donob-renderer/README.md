@@ -19,6 +19,7 @@ archivesDir: # default archives
 pageSize:
   archives: # default 10
   posts: # default 10
+  tags: # default 10
 
 repository: # optional, used in gitalk and acyort-plugin-fetch-issues
 

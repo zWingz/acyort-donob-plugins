@@ -16,7 +16,7 @@ function parsePaginator(current, total) {
 
 function generatePagePath({ page, prefix, base }) {
   const root = path.join('/', base)
-  return page === 1 ? root : path.join(root, prefix, `${page}`)
+  return path.join(page === 1 ? root : path.join(root, prefix, `${page}`), 'index.html')
 }
 
 function genPage({
@@ -53,7 +53,7 @@ function parsePage({ pages, ...rst }) {
     }),
     data: pages,
     path:
-      rst.current === 1 ? base : path.join(base, rst.prefix, `${rst.current}`),
+      path.join(rst.current === 1 ? base : path.join(base, rst.prefix, `${rst.current}`), 'index.html'),
   }
 }
 /* istanbul ignore next */

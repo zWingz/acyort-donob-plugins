@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Tags - {{ config.title }}
+{% endblock %}
+
+{% block content %}
+<div id="posts">
+  <h2 class="tags-name">Tags</h2>
+  
+  {% set tags = page.tags %}
+  <div class='tags-list'>
+    {% for tag in tags %}
+    <div class="tags-item">
+      <a href="{{ _url(tag.url) }}" style="color: #{{tag.color}}">{{ tag.name }}</a>
+      <i class='tags-item-border' style="border-color: #{{tag.color}}"></i>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

@@ -23,7 +23,7 @@ function render(acyort, { data, template, contentKey }, globalData) {
 }
 
 module.exports = ({
-  posts = [], pages = [], archives = [], index = [],
+  posts = [], pages = [], archives = [], index = [], tags = [], tagsMain = {},
 }, globalData = {}, acyort) => {
   const renderList = [{
     template: 'index',
@@ -40,7 +40,22 @@ module.exports = ({
     template: 'page',
     data: pages,
   }]
+  tags.forEach((each) => {
+    renderList.push({
+      template: 'tags',
+      data: each,
+      contentKey: 'tags',
+    })
+  })
   renderList.forEach((each) => {
     render(acyort, each, globalData)
+  })
+  acyort.outputHTML({
+    template: 'tagsMain',
+    path: tagsMain.path,
+    data: {
+      tags: tagsMain.data,
+      globalData,
+    },
   })
 }

@@ -7,18 +7,7 @@ function processor(issues, acyort = {}) {
     archivesDir: 'archives',
     ...acyort.config,
   }
-  const {
-    posts, archives, index, pages, rssItems,
-    labels,
-  } = parser(issues, config)
-  return {
-    posts,
-    archives,
-    index,
-    pages,
-    labels,
-    rssItems,
-  }
+  return parser(issues, config)
 }
 
 module.exports = processor

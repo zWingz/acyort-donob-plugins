@@ -1,14 +1,12 @@
 const lodash = require('lodash')
-const path = require('path')
-
+const { join } = require('path')
 const filterParse = require('./filter')
 const postsParse = require('./posts')
-// const { getLabels } = require('./labels')
 const archivesParse = require('./archives')
 const pagesParse = require('./pages')
 const pagination = require('./pagination')
 const { markRssItem, getRssItems } = require('./rss')
-const { getLabels } = require('./labels')
+const { generateTags, getTags } = require('./labels')
 
 module.exports = (issues, config) => {
   let { pages, posts } = filterParse(issues)
@@ -19,24 +17,36 @@ module.exports = (issues, config) => {
   })
   pages = pages.map(each => pagesParse(each))
   const rssItems = getRssItems()
-  const { pageSize = {} } = config
-  const labels = getLabels()
-  const archives = archivesParse(posts, config).map(each => ({
+  const { pageSize = {}, archivesDir, tagsDir } = config
+  const archives = archivesParse(posts, {
+    archivesDir,
+    pageSize: pageSize.archives,
+  }).map(each => ({
     ...each,
-    path: `${each.path}/index.html`,
+    // path: `${each.path}/index.html`,
   }))
+  const tags = generateTags({
+    pageSize: pageSize.tags,
+    tagsDir,
+  })
+  const tagsMain = {
+    path: join('/', tagsDir, 'index.html'),
+    data: getTags(),
+  }
   const index = pagination(
-    posts.map(each => lodash.pick(each, 'title', 'id', 'url', 'created')), { pageSize: pageSize.posts },
+    posts.map(each => lodash.pick(each, 'title', 'id', 'url', 'created')),
+    { pageSize: pageSize.posts },
   ).map(each => ({
     ...each,
-    path: path.join(each.path, 'index.html'),
+    // path: path.join(each.path, 'index.html'),
   }))
   return {
     pages,
     posts,
-    labels,
     archives,
+    tags,
     index,
     rssItems,
+    tagsMain,
   }
 }
