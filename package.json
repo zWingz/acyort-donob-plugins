@@ -15,6 +15,7 @@
     "url": "https://github.com/zWingz/acyort-donob-plugins"
   },
   "devDependencies": {
+    "acyort-donob-renderer": "^1.4.1",
     "eslint": "^5.12.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
