@@ -42,7 +42,9 @@ a {
   position: fixed;
   z-index: -1;
 }
-
+.content-container {
+  margin-top: 100px;
+}
 .center {
   max-width: 720px;
   width: 92%;
@@ -100,9 +102,9 @@ a {
   margin-top: -2px;
 }
 
+
 /* posts */
 #posts {
-  margin-top: 100px;
   padding-bottom: 50px;
 }
 #posts h2 {
@@ -111,7 +113,6 @@ a {
 }
 
 .list {
-  margin-top: 100px;
   min-height: 500px;
 }
 .list li {
@@ -167,6 +168,37 @@ a {
   border-bottom: 4px solid;
   display: inline-block;
   padding: 0 5px 10px 0;
+}
+.tags-list {
+  width: 66%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tags-item {
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.tags-item-border {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 0px;
+  width: 0;
+  height: 100%;
+  border-bottom: 2px solid;
+  transition: 0.2s all linear;
+}
+.tags-item:hover .tags-item-border {
+  width: 100%;
+  transition-delay: 0.1s;
+  z-index: -1;
+  left: 0;
+}
+.tags-item:hover ~ .tags-item .tags-item-border {
+  left: 0;
 }
 /* pagination */
 #pagination {
@@ -247,11 +279,25 @@ a {
 
 /* post */
 #post {
-  margin-top: 100px;
+  /* display: flex; */
+}
+#post.flex {
   display: flex;
 }
 .post-content {
   width: 100%;
+}
+.post-content .tags-item {
+  font-size: 13px;
+  padding: 2px 5px;
+  margin-right: 10px;
+  border-bottom: none;
+}
+.post-content .tags-item:hover {
+  text-decoration: underline;
+}
+.post-content .tags-item:after {
+  display: none;
 }
 .title {
   color: #222;
@@ -417,17 +463,6 @@ table tr td :first-child {
 table tr th :last-child,
 table tr td :last-child {
   margin-bottom: 0;
-}
-
-/* post-labels */
-.post-label {
-  padding: 2px 5px;
-  font-size: 13px;
-  border-radius: 4px;
-  margin-right: 10px;
-}
-.post-label:hover {
-  text-decoration: underline;
 }
 
 /* toc */

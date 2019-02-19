@@ -1,14 +1,12 @@
 const lodash = require('lodash')
-const path = require('path')
-
+const { join } = require('path')
 const filterParse = require('./filter')
 const postsParse = require('./posts')
-// const { getLabels } = require('./labels')
 const archivesParse = require('./archives')
 const pagesParse = require('./pages')
 const pagination = require('./pagination')
 const { markRssItem, getRssItems } = require('./rss')
-const { generateTags } = require('./labels')
+const { generateTags, getTags } = require('./labels')
 
 module.exports = (issues, config) => {
   let { pages, posts } = filterParse(issues)
@@ -27,10 +25,14 @@ module.exports = (issues, config) => {
     ...each,
     // path: `${each.path}/index.html`,
   }))
-  const labels = generateTags({
+  const tags = generateTags({
     pageSize: pageSize.tags,
     tagsDir,
   })
+  const tagsMain = {
+    path: join('/', tagsDir, 'index.html'),
+    data: getTags(),
+  }
   const index = pagination(
     posts.map(each => lodash.pick(each, 'title', 'id', 'url', 'created')),
     { pageSize: pageSize.posts },
@@ -42,8 +44,9 @@ module.exports = (issues, config) => {
     pages,
     posts,
     archives,
-    labels,
+    tags,
     index,
     rssItems,
+    tagsMain,
   }
 }

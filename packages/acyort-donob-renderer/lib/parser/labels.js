@@ -63,5 +63,9 @@ function generateTags({ pageSize, tagsDir }) {
 module.exports = {
   parseLabels,
   generateTags,
+  getTags: () => tags.map(each => ({
+    ...each,
+    name: lodash.startCase(each.name),
+  })),
   // getLabels: /* istanbul ignore next */ () => tags,
 }
