@@ -28,7 +28,7 @@ function parseLabels({ labels, tagsDir, post }) {
     } = label
     const ret = {
       id,
-      name,
+      name: lodash.startCase(name),
       url: path.join('/', tagsDir, id.toString()),
       description,
       color,
@@ -51,7 +51,6 @@ function generateTags({ pageSize, tagsDir }) {
         ...page,
         data: {
           ...lodash.pick(each, ['id', 'color', 'description']),
-          name: lodash.startCase(each.name),
           posts: page.data,
         },
       })),
@@ -65,7 +64,6 @@ module.exports = {
   generateTags,
   getTags: () => tags.map(each => ({
     ...each,
-    name: lodash.startCase(each.name),
   })),
   // getLabels: /* istanbul ignore next */ () => tags,
 }

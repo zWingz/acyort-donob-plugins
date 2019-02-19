@@ -42,7 +42,6 @@ function fixedToc() {
 
 function calc() {
   toc && fixedToc()
-  console.log('calc');
   setAnchorActive()
 }
 
