@@ -237,7 +237,7 @@ a {
   font-weight: 500;
   line-height: 1.4;
   margin-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 .time {
   color: #999;
@@ -250,7 +250,7 @@ a {
 /* article content */
 .content {
   color: #333;
-  margin-top: 50px;
+  margin-top: 40px;
   word-break: break-all;
 }
 .content p {
@@ -389,6 +389,18 @@ table tr th :first-child, table tr td :first-child {
 table tr th :last-child, table tr td :last-child {
   margin-bottom: 0;
 }
+
+/* post-labels */
+.post-label {
+  padding: 2px 5px;
+  font-size: 13px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.post-label:hover {
+  text-decoration: underline;
+}
+
 
 /* toc */
 .toc {

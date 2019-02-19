@@ -23,9 +23,9 @@
     {% if page.labels.length %}
       <div class='post-labels'>
         {% for label in page.labels %}
-          <span class='post-label' style='background: #{{label.color}};'>
+          <a href="{{label.url}}" class='post-label' style='background: #{{label.color}};'>
             {{ label.name }}
-          </span>
+          </a>
         {% endfor %}
       </div>
     {% endif %}
