@@ -1,5 +1,15 @@
+const lodash = require('lodash')
 const renderer = require('../lib/render')
 
+/**
+ * function to test outputHTML
+ *
+ * @param {*} testArr index/pages/posts/archives listData
+ * @param {*} templateName keys of index/pages/posts/archives
+ * @param {*} matchFnc matcher
+ * @param {*} { outputHTML }
+ * @param {*} globalData
+ */
 const testFnc = (
   testArr,
   templateName,
@@ -7,6 +17,11 @@ const testFnc = (
   { outputHTML },
   globalData,
 ) => {
+  /**
+   * function to match outputHTML.mocl.calls
+   *
+   * @param {*} callArg
+   */
   const callMatch = (callArg) => {
     expect(matchFnc(callArg[0], testArr)).not.toEqual(-1)
   }
@@ -94,5 +109,28 @@ describe('test renderer', () => {
     testFnc(pages, 'pages', matchFnc, acyort, {
       pageGlobal: 'page global',
     })
+  })
+  it('test render tags', () => {
+    const tags = [
+      [{ name: 'label1' }],
+      [{ name: 'label2' }, { name: 'label2-2' }],
+      [{ name: 'label3' }],
+    ]
+    renderer({ tags }, {}, acyort)
+    expect(outputHTML).toBeCalledTimes(tags.reduce((s, each) => s + each.length, 0))
+    const flat = lodash.flatten(tags)
+    outputHTML.mock.calls.forEach((e, i) => {
+      expect(e[0].data).toMatchObject(flat[i])
+    })
+  })
+  it('test render tagsMain', () => {
+    const tagsMain = {
+      path: 'path/to/tagsMain',
+      data: 'tagsMain/data',
+    }
+    renderer({
+      tagsMain,
+    }, {}, acyort)
+    expect(outputHTML).toBeCalledTimes(1)
   })
 })

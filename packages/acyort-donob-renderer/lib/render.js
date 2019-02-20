@@ -50,12 +50,15 @@ module.exports = ({
   renderList.forEach((each) => {
     render(acyort, each, globalData)
   })
-  acyort.outputHTML({
-    template: 'tagsMain',
-    path: tagsMain.path,
-    data: {
-      tags: tagsMain.data,
-      globalData,
-    },
-  })
+  const { data: tagsData } = tagsMain
+  if (tagsData && tagsData.length) {
+    acyort.outputHTML({
+      template: 'tagsMain',
+      path: tagsMain.path,
+      data: {
+        tags: tagsMain.data,
+        globalData,
+      },
+    })
+  }
 }

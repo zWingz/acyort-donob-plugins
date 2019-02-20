@@ -1,5 +1,12 @@
 const path = require('path')
 
+function concatPath(p) {
+  if (p) {
+    return path.join(p, 'index.html')
+  }
+  return p
+}
+
 function parsePaginator(current, total) {
   const result = []
   const begin = Math.max(current - 2, 1)
@@ -16,7 +23,7 @@ function parsePaginator(current, total) {
 
 function generatePagePath({ page, prefix, base }) {
   const root = path.join('/', base)
-  return path.join(page === 1 ? root : path.join(root, prefix, `${page}`), 'index.html')
+  return concatPath(page === 1 ? root : path.join(root, prefix, `${page}`))
 }
 
 function genPage({
@@ -41,7 +48,7 @@ function genPage({
     currentPage: current,
     items,
     prevPage,
-    nextPage,
+    nextPage: concatPath(nextPage),
   }
 }
 
@@ -53,7 +60,7 @@ function parsePage({ pages, ...rst }) {
     }),
     data: pages,
     path:
-      path.join(rst.current === 1 ? base : path.join(base, rst.prefix, `${rst.current}`), 'index.html'),
+    concatPath(rst.current === 1 ? base : path.join(base, rst.prefix, `${rst.current}`)),
   }
 }
 /* istanbul ignore next */
