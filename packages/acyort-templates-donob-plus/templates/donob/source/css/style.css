@@ -468,7 +468,7 @@ table tr td :last-child {
 .toc {
   font-size: 13px;
   flex-shrink: 0;
-  width: 270px;
+  width: 235px;
   margin-left: -235px;
   padding-right: 35px;
 }
