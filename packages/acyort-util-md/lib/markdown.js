@@ -20,9 +20,9 @@ const defaultOptions = {
 function parseMd(content, opt = {}) {
   const { highlightOpt } = { ...defaultOptions, ...opt }
   const c = remark()
+    .use([slug, heading, autoheading])
     .use(prettier)
     .use(highlight, highlightOpt)
-    .use([slug, heading, autoheading])
     .use(html)
     .processSync(content)
   return c.contents

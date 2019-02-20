@@ -1,3 +1,16 @@
+## 1.5.0 (2019-02-19)
+
+#### :rocket: New Feature
+* `acyort-donob-renderer`, `acyort-templates-donob-plus`
+  * [#9](https://github.com/zWingz/acyort-donob-plugins/pull/9) feat: 🎸 add tags processor and templates ([@zWingz](https://github.com/zWingz))
+* `acyort-templates-donob-plus`
+  * [#8](https://github.com/zWingz/acyort-donob-plugins/pull/8) feat: 🎸 add post labels templates ([@zWingz](https://github.com/zWingz))
+* `acyort-donob-renderer`
+  * [#7](https://github.com/zWingz/acyort-donob-plugins/pull/7) feat: 🎸 add labels parser and return labels ([@zWingz](https://github.com/zWingz))
+
+#### Committers: 1
+- zWing ([@zWingz](https://github.com/zWingz))
+
 ## 1.4.0 (2019-02-15)
 
 #### :rocket: New Feature

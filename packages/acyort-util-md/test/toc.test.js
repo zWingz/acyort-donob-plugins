@@ -21,8 +21,8 @@ describe('test toc', () => {
   it('test toc repeat slugger', () => {
     const mdString = `
 ## heading1
-## heading1-1
-### heading1
+## **heading1-1**
+### \`heading1\`
 ## heading1-2
 ## 测试中文 啦啦啦
     `
