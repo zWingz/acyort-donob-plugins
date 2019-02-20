@@ -102,7 +102,6 @@ a {
   margin-top: -2px;
 }
 
-
 /* posts */
 #posts {
   padding-bottom: 50px;
@@ -468,14 +467,14 @@ table tr td :last-child {
 /* toc */
 .toc {
   font-size: 13px;
-  /* position: fixed; */
-  width: 235px;
-  /* transform: translateX(-100%); */
+  flex-shrink: 0;
+  width: 270px;
   margin-left: -235px;
   padding-right: 35px;
 }
 .stay {
   position: relative;
+  width: 235px;
 }
 .stay .toc-icon {
   content: '';
@@ -494,22 +493,28 @@ table tr td :last-child {
   position: fixed;
   top: 20px;
 }
+.toc ul {
+  padding-left: 10px;
+}
+.toc li {
+  line-height: 1.5;
+  overflow: hidden;
+}
 .toc a {
+  display: block;
   color: rgba(0, 0, 0, 0.55);
   transition: color 0.1s ease;
   white-space: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .toc a:hover {
   color: #40a9ff;
 }
 .toc a.active {
   color: #40a9ff;
-}
-.toc ul {
-  padding-left: 10px;
-}
-.toc li {
-  line-height: 1.5;
 }
 
 @media screen and (max-width: 760px) {
