@@ -1,3 +1,12 @@
+## 1.5.1 (2019-02-20)
+
+#### :bug: Bug Fix
+* `acyort-templates-donob-plus`
+  * [#12](https://github.com/zWingz/acyort-donob-plugins/pull/12) fix: 🐛 fix toc width ([@zWingz](https://github.com/zWingz))
+
+#### Committers: 1
+- zWing ([@zWingz](https://github.com/zWingz))
+
 ## 1.5.0 (2019-02-20)
 
 #### :rocket: New Feature
