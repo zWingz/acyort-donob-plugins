@@ -97,9 +97,9 @@ describe('test processor', () => {
     it('test prev & next', () => {
       const getPage = (idx, type) => index[idx].pagination[`${type}Page`]
       expect(getPage(0, 'prev')).toEqual('')
-      expect(getPage(0, 'next')).toEqual('/page/2')
-      expect(getPage(1, 'prev')).toEqual('/')
-      expect(getPage(1, 'next')).toEqual('/page/3')
+      expect(getPage(0, 'next')).toEqual('/page/2/index.html')
+      expect(getPage(1, 'prev')).toEqual('/index.html')
+      expect(getPage(1, 'next')).toEqual('/page/3/index.html')
       expect(getPage(index.length - 1, 'next')).toEqual('')
     })
     it('test pagination items', () => {
@@ -110,11 +110,11 @@ describe('test processor', () => {
             url, page, active, placeholder,
           } = items[i]
           if (i === 0) {
-            expect(url).toBe('/')
+            expect(url).toBe('/index.html')
           } else if (placeholder) {
             expect(placeholder).toBe(true)
           } else {
-            expect(url).toBe(`/page/${page}`)
+            expect(url).toBe(`/page/${page}/index.html`)
           }
           if (!placeholder) {
             expect(active).toBe(page === pageItem.currentPage)

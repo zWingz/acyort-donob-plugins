@@ -23,7 +23,9 @@
   },
   "changelog": {
     "labels": {
-      "feat": ":rocket: New Feature"
+      "feat": ":rocket: New Feature",
+      "bug": ":bug: Bug Fix",
+      "doc": ":memo: Documentation"
     }
   }
 }

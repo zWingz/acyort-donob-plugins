@@ -50,7 +50,7 @@ Array [
         Object {
           "active": true,
           "page": 1,
-          "url": "/archives",
+          "url": "/archives/index.html",
         },
       ],
       "nextPage": "",
@@ -96,7 +96,7 @@ Array [
         Object {
           "active": true,
           "page": 1,
-          "url": "/",
+          "url": "/index.html",
         },
       ],
       "nextPage": "",
@@ -159,8 +159,11 @@ Array [
     "id": 2,
     "labels": Array [
       Object {
+        "color": undefined,
+        "description": undefined,
         "id": "label-1",
-        "name": "label-name-1",
+        "name": "Label Name 1",
+        "nodeId": undefined,
         "url": "/tags/label-1",
       },
     ],
@@ -207,8 +210,11 @@ Array [
     "id": 4,
     "labels": Array [
       Object {
+        "color": undefined,
+        "description": undefined,
         "id": "label-1",
-        "name": "label-name-1",
+        "name": "Label Name 1",
+        "nodeId": undefined,
         "url": "/tags/label-1",
       },
     ],
@@ -244,7 +250,7 @@ Array [
   Object {
     "author": "issues creator",
     "categories": Array [
-      "label-name-1",
+      "Label Name 1",
     ],
     "date": "2018-10-19T11:07:18Z",
     "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
@@ -268,7 +274,7 @@ Array [
   Object {
     "author": "issues creator",
     "categories": Array [
-      "label-name-1",
+      "Label Name 1",
     ],
     "date": "2016-10-19T11:07:18Z",
     "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
@@ -347,7 +353,7 @@ Array [
   Object {
     "author": "issues creator",
     "categories": Array [
-      "label-name-1",
+      "Label Name 1",
     ],
     "date": "2018-10-19T11:07:18Z",
     "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
@@ -360,7 +366,7 @@ Array [
   Object {
     "author": "issues creator",
     "categories": Array [
-      "label-name-1",
+      "Label Name 1",
     ],
     "date": "2018-10-19T11:07:18Z",
     "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
@@ -373,7 +379,7 @@ Array [
   Object {
     "author": "issues creator",
     "categories": Array [
-      "label-name-1",
+      "Label Name 1",
     ],
     "date": "2018-10-19T11:07:18Z",
     "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
@@ -386,7 +392,7 @@ Array [
   Object {
     "author": "issues creator",
     "categories": Array [
-      "label-name-1",
+      "Label Name 1",
     ],
     "date": "2018-10-19T11:07:18Z",
     "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
@@ -399,7 +405,7 @@ Array [
   Object {
     "author": "issues creator",
     "categories": Array [
-      "label-name-1",
+      "Label Name 1",
     ],
     "date": "2018-10-19T11:07:18Z",
     "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
@@ -412,7 +418,7 @@ Array [
   Object {
     "author": "issues creator",
     "categories": Array [
-      "label-name-1",
+      "Label Name 1",
     ],
     "date": "2018-10-19T11:07:18Z",
     "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
@@ -491,7 +497,7 @@ Array [
   Object {
     "author": "issues creator",
     "categories": Array [
-      "label-name-1",
+      "Label Name 1",
     ],
     "date": "2016-10-19T11:07:18Z",
     "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
@@ -504,7 +510,7 @@ Array [
   Object {
     "author": "issues creator",
     "categories": Array [
-      "label-name-1",
+      "Label Name 1",
     ],
     "date": "2016-10-19T11:07:18Z",
     "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
@@ -517,7 +523,7 @@ Array [
   Object {
     "author": "issues creator",
     "categories": Array [
-      "label-name-1",
+      "Label Name 1",
     ],
     "date": "2016-10-19T11:07:18Z",
     "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
@@ -530,7 +536,7 @@ Array [
   Object {
     "author": "issues creator",
     "categories": Array [
-      "label-name-1",
+      "Label Name 1",
     ],
     "date": "2016-10-19T11:07:18Z",
     "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
@@ -543,7 +549,7 @@ Array [
   Object {
     "author": "issues creator",
     "categories": Array [
-      "label-name-1",
+      "Label Name 1",
     ],
     "date": "2016-10-19T11:07:18Z",
     "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
@@ -556,7 +562,7 @@ Array [
   Object {
     "author": "issues creator",
     "categories": Array [
-      "label-name-1",
+      "Label Name 1",
     ],
     "date": "2016-10-19T11:07:18Z",
     "description": "<h2 id=\\"header\\" class=\\"heading\\"><a href=\\"#header\\" aria-hidden=\\"true\\"><span class=\\"icon icon-link\\"></span></a>Header</h2>
