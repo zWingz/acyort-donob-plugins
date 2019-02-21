@@ -1,3 +1,12 @@
+## 1.5.2 (2019-02-21)
+
+#### :bug: Bug Fix
+* `acyort-donob-renderer`
+  * [#13](https://github.com/zWingz/acyort-donob-plugins/pull/13) fix: 🐛 fix tag name ([@zWingz](https://github.com/zWingz))
+
+#### Committers: 1
+- zWing ([@zWingz](https://github.com/zWingz))
+
 ## 1.5.1 (2019-02-20)
 
 #### :bug: Bug Fix
