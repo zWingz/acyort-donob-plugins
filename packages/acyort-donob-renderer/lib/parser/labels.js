@@ -50,7 +50,7 @@ function generateTags({ pageSize, tagsDir }) {
       paginator.map(page => ({
         ...page,
         data: {
-          ...lodash.pick(each, ['id', 'color', 'description']),
+          ...lodash.pick(each, ['id', 'color', 'description', 'name']),
           posts: page.data,
         },
       })),
