@@ -73,7 +73,7 @@ describe('test plugin', () => {
   const rssPath = join(tempDir, 'rss.xml')
   const date = global.Date
   beforeAll(() => {
-    const mockedDate = new Date(2019, 1, 22)
+    const mockedDate = new Date(Date.UTC(2019, 1, 21, 16, 0, 0))
     global.Date = class extends Date {
       constructor() {
         return mockedDate
