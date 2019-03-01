@@ -1,5 +1,8 @@
 # acyort-donob-plugins
 
+[![CircleCI](https://circleci.com/gh/zWingz/acyort-donob-plugins.svg?style=svg)](https://circleci.com/gh/zWingz/acyort-donob-plugins)
+[![codecov](https://codecov.io/gh/zWingz/acyort-donob-plugins/branch/master/graph/badge.svg)](https://codecov.io/gh/zWingz/acyort-donob-plugins)
+
 [DEMO](https://zwing.site)
 
 ## Usage
