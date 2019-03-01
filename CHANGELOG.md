@@ -1,3 +1,15 @@
+## 1.5.3 (2019-03-01)
+
+#### :rocket: New Feature
+* `acyort-templates-donob-plus`, `acyort-util-md`
+  * [#14](https://github.com/zWingz/acyort-donob-plugins/pull/14) feat: 🎸 support custom-block use ':::' ([@zWingz](https://github.com/zWingz))
+
+#### :house: Internal
+* [#15](https://github.com/zWingz/acyort-donob-plugins/pull/15) ci: 🎡 add circleci ([@zWingz](https://github.com/zWingz))
+
+#### Committers: 1
+- zWing ([@zWingz](https://github.com/zWingz))
+
 ## 1.5.2 (2019-02-21)
 
 #### :bug: Bug Fix
