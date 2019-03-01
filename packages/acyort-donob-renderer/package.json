@@ -1,11 +1,11 @@
 {
   "name": "acyort-donob-renderer",
   "description": "acyort renderer for donob renderer",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "acyort-util-md": "^1.5.0",
+    "acyort-util-md": "^1.5.3",
     "autoprefixer": "^9.4.4",
     "cssnano": "^4.1.8",
     "fs-extra": "^7.0.1",
