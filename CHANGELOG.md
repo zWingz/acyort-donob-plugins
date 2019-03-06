@@ -6,10 +6,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ## [1.5.4](https://github.com/zWingz/acyort-donob-plugins/compare/v1.5.3...v1.5.4) (2019-03-06)
 
 
-### Bug Fixes
+#### :bug: Bug Fix
 
-* 🐛 fix fetcher token ([e9af1ae](https://github.com/zWingz/acyort-donob-plugins/commit/e9af1ae))
-
+* `acyort-plugin-fetch`
+  * [#16](https://github.com/zWingz/acyort-donob-plugins/pull/16) fix: 🐛 fix fetcher token ([@zWingz](https://github.com/zWingz))
 
 
 
