@@ -15,7 +15,7 @@
 # fetch config
 repository: # optional, used in gitalk and acyort-plugin-fetch
 author: # issues creator, default repo owner
-gitToken:  # your github token
+gitToken:  # set github token if repo is private
 issuesPageSize: # issues per_page, default: 20
 issuesCache: # cache issues
 ```
