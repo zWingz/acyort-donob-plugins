@@ -72,7 +72,7 @@ describe('test listIssues', () => {
     expect(d).toEqual([])
   })
   it('error when missing repository or gitToken', async () => {
-    expect(fetch()).rejects.toThrow('missing repository or gitToken')
+    expect(fetch()).rejects.toThrow('missing repository')
   })
   it('issuesCache', async () => {
     fs.removeSync(join(__dirname, '../lib/issues.json'))
