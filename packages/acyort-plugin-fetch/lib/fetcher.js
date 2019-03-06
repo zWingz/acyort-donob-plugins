@@ -9,8 +9,8 @@ function fetch(config = {}) {
   const {
     repository, author: creator, gitToken, issuesPageSize = 20, issuesCache = false,
   } = config
-  if (!(repository && gitToken)) {
-    const msg = 'missing repository or gitToken'
+  if (!repository) {
+    const msg = 'missing repository'
     ora(msg).fail()
     return Promise.reject(new Error(msg))
   }
@@ -25,7 +25,7 @@ function fetch(config = {}) {
     return Promise.resolve(require(cacheFile)) // eslint-disable-line
   }
   const octokit = new Octokit({
-    auth: gitToken.split('#').join(''),
+    auth: gitToken ? gitToken.split('#').join('') : undefined,
   })
   let result = []
   return new Promise((resolve) => {
