@@ -55,8 +55,13 @@ a {
 /* header */
 .header {
   position: relative;
+  display: flex;
+  flex-wrap: nowrap;
   border-bottom: 1px solid #eee;
   overflow: hidden;
+  height: 44px;
+  line-height: 44px;
+  align-items: center;
 }
 .header:before {
   position: absolute;
@@ -69,9 +74,7 @@ a {
 }
 .header a {
   color: #444;
-  padding: 18px 20px 16px;
-  display: inline-block;
-  vertical-align: middle;
+  padding: 0 20px;
   font-family: sans-serif;
   border-right: 1px solid #eee;
 }
@@ -84,22 +87,23 @@ a {
   letter-spacing: 0.5px;
 }
 .menu {
-  display: inline-block;
-  margin-top: 2px;
-  vertical-align: middle;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+}
+.menu a {
+  font-size: 14px;
 }
 .social {
-  position: absolute;
-  right: 0;
-  top: 3px;
-}
-.social a:first-child {
   border-left: 1px solid #eee;
+}
+.social a {
+  display: flex;
+  align-items: center;
 }
 .social svg {
   width: 20px;
   height: 20px;
-  margin-top: -2px;
 }
 
 /* posts */
@@ -117,10 +121,7 @@ a {
 .list li {
   margin-bottom: 70px;
 }
-.list li > p {
-  color: #999;
-  font-size: 14px;
-}
+
 .list li > a {
   display: inline-block;
   margin: 10px 0 20px 0;
@@ -309,6 +310,7 @@ a {
 .time {
   color: #999;
   font-size: 14px;
+  display: block;
 }
 .comments {
   margin: 70px 0 0;
@@ -550,24 +552,42 @@ table tr td :last-child {
 }
 
 @media screen and (max-width: 760px) {
+  #ribbon {
+    display: none;
+  }
   .toc {
     display: none;
   }
+  .header {
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: #fff;
+  }
+  .main {
+    padding-top: 40px;
+  }
   .header a {
     font-size: 14px;
-    padding: 16px 20px 14px;
+    padding: 0 12px;
+  }
+  .logo {
+    font-size: 18px !important;
+  }
+  .center {
+    width: 85%;
   }
   .social {
     display: none;
   }
-  .list {
-    margin-top: 50px;
-  }
   .list li {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   .list li > a {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
   }
   .list li > div p {
@@ -600,15 +620,12 @@ table tr td :last-child {
   }
   .entry a {
     display: block;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     line-height: 1.6;
   }
   .entry span {
     float: none;
     font-size: 13px;
-  }
-  #post {
-    margin-top: 50px;
   }
   .title {
     font-size: 24px;
@@ -616,7 +633,19 @@ table tr td :last-child {
   .content {
     margin-top: 20px;
   }
-  .content p {
+  .content-container {
+    margin-top: 50px;
+  }
+  .post-content code {
+    font-size: 12px;
+  }
+  .content {
     font-size: 14px;
+  }
+  .tags-list {
+    width: 100%;
+  }
+  .tags-item {
+    font-size: 18px;
   }
 }
