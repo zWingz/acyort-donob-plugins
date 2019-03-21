@@ -642,4 +642,10 @@ table tr td :last-child {
   .content {
     font-size: 14px;
   }
+  .tags-list {
+    width: 100%;
+  }
+  .tags-item {
+    font-size: 18px;
+  }
 }
