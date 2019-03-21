@@ -2,12 +2,12 @@
 
 <div id="posts">
   {% set tag = page.tags %}
-  <h2 class="tags-name">
+  <h1 class="tags-name title">
     <span style="border-color: #{{tag.color}}">
       Tags 
     </span>
     - {{ tag.name }}
-  </h2>
+  </h1>
 
   {% for post in tag.posts %}
     <div class="entry">

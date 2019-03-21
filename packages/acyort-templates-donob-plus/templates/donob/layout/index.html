@@ -11,7 +11,7 @@
 {% for p in page.posts %}
 
 <li>
-<p>{{ _time(p.created, 'MMMM DD, YYYY') }}</p>
+<time class='time'>{{ _time(p.created, 'MMMM DD, YYYY') }}</time>
 <a href="{{ _url(p.url) }}">{{ p.title }}</a>
 <!-- <div>{{ p.excerpt }}</div> -->
 </li>

@@ -1,11 +1,11 @@
-<div class="header">
+<header class="header">
     <a class="logo" href="{{ _url() }}">{{ config.title }}</a><!--
 
- --><div class="menu">
+ --><nav class="menu">
         {% for m in config.menu -%}
         <a href="{{ _url(m) }}">{{ loop.key }}</a>
         {%- endfor %}
-    </div>
+    </nav>
 
     <div class="social">
         <a target="_blank" href="https://github.com/{{ config.repository }}/issues"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -16,4 +16,4 @@
 </svg></a>
         {% endif %}
     </div>
-</div>
+</header>
