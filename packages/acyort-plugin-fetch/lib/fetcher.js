@@ -7,7 +7,11 @@ const fs = require('fs-extra')
 function fetch(config = {}) {
   const cacheFile = join(__dirname, 'issues.json')
   const {
-    repository, author: creator, gitToken, issuesPageSize = 20, issuesCache = false,
+    repository,
+    author: creator,
+    gitToken,
+    issuesPageSize = 20,
+    issuesCache = false,
   } = config
   if (!repository) {
     const msg = 'missing repository'
@@ -24,8 +28,16 @@ function fetch(config = {}) {
     spinner.succeed('Fetch issues completed')
     return Promise.resolve(require(cacheFile)) // eslint-disable-line
   }
+  let auth
+  if (gitToken) {
+    if (gitToken.includes('#')) {
+      auth = gitToken.split('#').join('')
+    } else {
+      auth = gitToken
+    }
+  }
   const octokit = new Octokit({
-    auth: gitToken ? gitToken.split('#').join('') : undefined,
+    auth: auth ? `token ${auth}` : undefined,
   })
   let result = []
   return new Promise((resolve) => {
