@@ -8,6 +8,43 @@ describe('test listIssues', () => {
   const gitToken = '123#12312321'
   const creator = 'craetor'
   const issuesPageSize = '20'
+  it('test token', async () => {
+    const token1 = gitToken
+    const token2 = '12312312312'
+    nock('https://api.github.com')
+      .get(`/repos/${repository}/issues`)
+      .query(() => true)
+      .reply(200, function cb() {
+        expect(this.req.headers.authorization[0]).toEqual(
+          `token ${token1.split('#').join('')}`,
+        )
+      })
+    await fetch({
+      repository,
+      gitToken: token1,
+      issuesPageSize,
+      author: creator,
+    })
+    nock('https://api.github.com')
+      .get(`/repos/${repository}/issues`)
+      .query(() => true)
+      .reply(200, function cb() {
+        expect(this.req.headers.authorization[0]).toEqual(`token ${token2}`)
+      })
+    await fetch({
+      repository,
+      gitToken: token2,
+    })
+    nock('https://api.github.com')
+      .get(`/repos/${repository}/issues`)
+      .query(() => true)
+      .reply(200, function cb() {
+        expect(this.req.headers.authorization).toEqual(undefined)
+      })
+    await fetch({
+      repository,
+    })
+  })
   it('test octokit listForRepo', async () => {
     const testQuery = jest.fn()
     const data = []
@@ -54,6 +91,7 @@ describe('test listIssues', () => {
         return true
       })
       .reply(200, (url, body, cb) => cb(null, [200, index ? data2 : data]))
+    // .reply(200, (url, body, cb) => cb(null, [200, index ? data2 : data]))
     const d = await fetch({
       repository,
       gitToken,
@@ -67,7 +105,8 @@ describe('test listIssues', () => {
       .query(true)
       .reply(500, 'error in api')
     const d = await fetch({
-      repository, gitToken,
+      repository,
+      gitToken,
     })
     expect(d).toEqual([])
   })
@@ -82,11 +121,13 @@ describe('test listIssues', () => {
       .query(true)
       .reply(200, data)
     await fetch({
-      repository, gitToken, issuesCache: true,
+      repository,
+      issuesCache: true,
     })
     nock.cleanAll()
     const cached = await fetch({
-      repository, gitToken, issuesCache: true,
+      repository,
+      issuesCache: true,
     })
     expect(cached).toEqual(data)
     fs.removeSync(join(__dirname, '../lib/issues.json'))
