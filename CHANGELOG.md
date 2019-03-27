@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.5.6 (2019-03-27)
+
+#### :rocket: New Feature
+* `acyort-plugin-fetch`
+  * [#18](https://github.com/zWingz/acyort-donob-plugins/pull/18) feat: 🎸 support fetch private repo ([@zWingz](https://github.com/zWingz))
+
+#### Committers: 1
+- zWing ([@zWingz](https://github.com/zWingz))
+
+
 ## 1.5.5 (2019-03-21)
 
 #### :rocket: New Feature
