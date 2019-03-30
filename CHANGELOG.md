@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.6.2 (2019-03-30)
+
+#### :rocket: New Feature
+* `acyort-templates-donob-plus`
+  * [#20](https://github.com/zWingz/acyort-donob-plugins/pull/20) fix: 🐛 set baidu-key in config ([@zWingz](https://github.com/zWingz))
+
+#### Committers: 1
+- zWing ([@zWingz](https://github.com/zWingz))
+
 ## 1.6.1 (2019-03-30)
 
 #### :rocket: New Feature
