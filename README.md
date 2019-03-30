@@ -50,6 +50,10 @@ favicon: # favicon.ico, copy to public/favicon.ico
 ``` yaml
 # config.yml
 template: acyort-templates-donob-plus
+title: # blog title
+description: # blog description
+
+baidu: # baidu-tongji key
 ```
 
 ### acyort-plugin-rss

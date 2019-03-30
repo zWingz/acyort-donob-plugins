@@ -14,6 +14,8 @@ AcyOrt theme donob-plus
 title: # blog title
 description: # blog description
 
+baidu: # baidu-tongji key
+
 plugins:
   - acyort-plugin-fetch-issues
   - acyort-donob-renderer
