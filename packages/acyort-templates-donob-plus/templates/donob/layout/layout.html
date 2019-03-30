@@ -7,18 +7,21 @@
       content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <meta name="description" content="{{ config.description }}" />
+    <link rel="stylesheet" href="{{ _url('css/prism.css') }}" />
     <link rel="stylesheet" href="{{ _url('css/style.css') }}" />
-    <title>{% block title %}{% endblock %}</title>
     {% block head %}{% endblock head%}
+    <title>{% block title %}{% endblock %}</title>
+    {% if config.baidu %}
     <script>
       var _hmt = _hmt || []
       ;(function() {
         var hm = document.createElement('script')
-        hm.src = 'https://hm.baidu.com/hm.js?6650629ba7ddbfe98e2f63700c2e6923'
+        hm.src = 'https://hm.baidu.com/hm.js?{{config.baidu}}'
         var s = document.getElementsByTagName('script')[0]
         s.parentNode.insertBefore(hm, s)
       })()
     </script>
+    {% endif %}
   </head>
 
   <body>
