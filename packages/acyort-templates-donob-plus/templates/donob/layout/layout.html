@@ -1,28 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="description" content="{{ config.description }}" />
+    <link rel="stylesheet" href="{{ _url('css/style.css') }}" />
+    <title>{% block title %}{% endblock %}</title>
+    {% block head %}{% endblock head%}
+    <script>
+      var _hmt = _hmt || []
+      ;(function() {
+        var hm = document.createElement('script')
+        hm.src = 'https://hm.baidu.com/hm.js?6650629ba7ddbfe98e2f63700c2e6923'
+        var s = document.getElementsByTagName('script')[0]
+        s.parentNode.insertBefore(hm, s)
+      })()
+    </script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="{{ config.description }}" />
-  <link rel="stylesheet" href="{{ _url('css/style.css') }}" />
-  <title>{% block title %}{% endblock %}</title>
-  {% block head %}{% endblock head%}
-</head>
+  <body>
+    <canvas id="ribbon"></canvas>
+    <main class="main">
+      {% include 'partials/header.html' %}
+      <div class="content-container center">
+        {% block content %}{% endblock %}
+      </div>
+    </main>
 
-<body>
-<canvas id='ribbon'></canvas>
-<main class="main">
-{% include 'partials/header.html' %}
-<div class='content-container center'>
-  {% block content %}{% endblock %}
-</div>
-
-</main>
-
-{% include 'partials/footer.html' %}
-
-{% block script %}{% endblock %}
-<script defer src="{{ _url('script/ribbon.js') }}"></script>
-</body>
+    {% include 'partials/footer.html' %} {% block script %}{% endblock %}
+    <script defer src="{{ _url('script/ribbon.js') }}"></script>
+  </body>
 </html>

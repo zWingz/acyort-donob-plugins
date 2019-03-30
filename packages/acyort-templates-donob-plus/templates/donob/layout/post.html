@@ -38,14 +38,14 @@
 
 {% block script %}
 <script src="{{ _url('script/post.js') }}"></script>
+{% if page.gitalk %}
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script>
-  {% if page.gitalk %}
   const gitalkConfig = JSON.parse('{{ page.gitalk|json }}')
   var gitalk = new Gitalk({
     ...gitalkConfig
   })
   gitalk.render('gitalk-container')
-  {% endif %}
 </script>
+{% endif %}
 {% endblock %}
