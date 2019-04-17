@@ -32,6 +32,7 @@
   "dependencies": {
     "gatsby-remark-prismjs": "3.2.2",
     "github-slugger": "^1.2.1",
+    "gray-matter": "^4.0.2",
     "markdown-toc": "^1.2.0",
     "prettier": "^1.16.4",
     "prismjs": "^1.15.0",
