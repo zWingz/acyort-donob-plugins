@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.5.4 (2019-04-17)
+
+#### :rocket: New Feature
+
+- `acyort-donob-renderer`, `acyort-templates-donob-plus`
+  - [#25](https://github.com/zWingz/acyort-donob-plugins/pull/25) Feature/add frontmatter ([@zWingz](https://github.com/zWingz))
+- `acyort-util-md`
+  - [#22](https://github.com/zWingz/acyort-donob-plugins/pull/22) feat(markdown): add front-matter ([@zWingz](https://github.com/zWingz))
+
+#### :bug: Bug Fix
+
+- `acyort-util-md`
+  - [#24](https://github.com/zWingz/acyort-donob-plugins/pull/24) fix(markdown): fix types ([@zWingz](https://github.com/zWingz))
+  - [#23](https://github.com/zWingz/acyort-donob-plugins/pull/23) fix(markdown): fix export and types ([@zWingz](https://github.com/zWingz))
+
+#### Committers: 1
+
+- zWing ([@zWingz](https://github.com/zWingz))
+
 ## 1.6.3 (2019-03-30)
 
 #### :bug: Bug Fix
