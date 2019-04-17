@@ -1,6 +1,7 @@
 // const issues = require('./fixtures/issues')
 const { parseMd } = require('acyort-util-md')
-const { issues, mockPages } = require('./fixtures/issues')
+const yaml = require('yaml')
+const { issues, mockPages, mockIssues } = require('./fixtures/issues')
 const processor = require('../lib/processor')
 
 const postsDir = 'fdsaf'
@@ -48,31 +49,25 @@ describe('test processor', () => {
     clientId,
     clientSecret,
   }
+  const defaultConfig = {
+    postsDir,
+    archivesDir,
+    tagsDir,
+    pageSize: {
+      posts: postPageSize,
+      archives: archivesPageSize,
+    },
+    gitalk,
+    repository,
+  }
   const {
     posts, archives, index, pages,
   } = processor(testIssues, {
-    config: {
-      postsDir,
-      archivesDir,
-      tagsDir,
-      pageSize: {
-        posts: postPageSize,
-        archives: archivesPageSize,
-      },
-      gitalk,
-      repository,
-    },
+    config: defaultConfig,
   })
   describe('test posts processor', () => {
     it('posts length', () => {
       expect(posts).toHaveLength(testPosts.length)
-      expect(posts[0].body).toEqual(
-        parseMd(posts[0].raw, {
-          highlightOpt: {
-            showLineNumbers: false,
-          },
-        }),
-      )
     })
     it('posts path', () => {
       const p = posts[0]
@@ -86,6 +81,34 @@ describe('test processor', () => {
           owner: repository.split('/')[0],
           repo: repository.split('/')[1],
         })
+      })
+    })
+    it('test front matter', () => {
+      const issue = mockIssues('2019-04-17')
+      const frontMatter = {
+        keywords: ['fdsaf', 'f123', 'fsijoi'],
+        description: 'this is desc',
+        otherData1: {
+          dd: 11,
+        },
+        otherData2: '123123',
+      }
+      const yml = yaml.stringify(frontMatter)
+      issue.body = `
+---
+${yml}
+---
+This is content
+`
+      const { posts: newPosts } = processor([issue], {
+        config: defaultConfig,
+      })
+      const p = newPosts[0]
+      expect(p.keywords).toEqual(frontMatter.keywords)
+      expect(p.description).toEqual(frontMatter.description)
+      expect(p.frontMatter).toEqual({
+        otherData1: frontMatter.otherData1,
+        otherData2: frontMatter.otherData2,
       })
     })
   })
