@@ -37,7 +37,7 @@ function postParse(issue, config) {
         updated,
       },
     }),
-    keywords,
+    keywords: keywords.join(','),
     description,
     created,
     updated,

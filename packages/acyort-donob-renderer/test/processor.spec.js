@@ -104,7 +104,7 @@ This is content
         config: defaultConfig,
       })
       const p = newPosts[0]
-      expect(p.keywords).toEqual(frontMatter.keywords)
+      expect(p.keywords).toEqual(frontMatter.keywords.join(','))
       expect(p.description).toEqual(frontMatter.description)
       expect(p.frontMatter).toEqual({
         otherData1: frontMatter.otherData1,

@@ -138,7 +138,7 @@ Array [
     "frontMatter": Object {},
     "gitalk": false,
     "id": 1,
-    "keywords": Array [],
+    "keywords": "",
     "labels": Array [],
     "number": 101,
     "path": "/posts/1.html",
@@ -162,7 +162,7 @@ Array [
     "frontMatter": Object {},
     "gitalk": false,
     "id": 2,
-    "keywords": Array [],
+    "keywords": "",
     "labels": Array [
       Object {
         "color": undefined,
@@ -195,7 +195,7 @@ Array [
     "frontMatter": Object {},
     "gitalk": false,
     "id": 3,
-    "keywords": Array [],
+    "keywords": "",
     "labels": Array [],
     "number": 103,
     "path": "/posts/3.html",
@@ -219,7 +219,7 @@ Array [
     "frontMatter": Object {},
     "gitalk": false,
     "id": 4,
-    "keywords": Array [],
+    "keywords": "",
     "labels": Array [
       Object {
         "color": undefined,
