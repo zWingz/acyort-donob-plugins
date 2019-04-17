@@ -1,5 +1,5 @@
 const path = require('path')
-const { parseMd } = require('acyort-util-md')
+const { parseMd, frontMatter } = require('acyort-util-md')
 const { parseLabels } = require('./labels')
 
 function postParse(issue, config) {
@@ -18,6 +18,8 @@ function postParse(issue, config) {
   } = config
   const url = path.join('/', postsDir, `${id.toString()}.html`)
   const [owner, repo] = repository.split('/')
+  const postOptionalData = frontMatter(body)
+  const { keywords = [], description = '', ...rst } = postOptionalData
   return {
     id,
     url,
@@ -28,9 +30,15 @@ function postParse(issue, config) {
       labels,
       tagsDir,
       post: {
-        id, url, title, created, updated,
+        id,
+        url,
+        title,
+        created,
+        updated,
       },
     }),
+    keywords: keywords.join(','),
+    description,
     created,
     updated,
     raw: body,
@@ -44,13 +52,16 @@ function postParse(issue, config) {
       homePage,
       avatar,
     },
-    gitalk: gitalk ? {
-      owner,
-      repo,
-      admin: [owner],
-      ...gitalk,
-      number,
-    } : false,
+    gitalk: gitalk
+      ? {
+        owner,
+        repo,
+        admin: [owner],
+        ...gitalk,
+        number,
+      }
+      : false,
+    frontMatter: rst,
   }
 }
 

@@ -40,6 +40,7 @@ function mockPages() {
 }
 
 module.exports = {
+  mockIssues,
   issues: [
     mockIssues('2018-11-20'),
     mockIssues('2018-10-19'),
