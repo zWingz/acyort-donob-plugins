@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## 1.5.4 (2019-04-17)
+## 1.6.4 (2019-04-17)
 
 #### :rocket: New Feature
 
