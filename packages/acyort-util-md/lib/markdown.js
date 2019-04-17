@@ -3,6 +3,7 @@ const slug = require('remark-slug')
 const html = require('remark-html')
 const autoheading = require('remark-autolink-headings')
 const container = require('remark-container')
+const { frontMatter } = require('./front-matter')
 const highlight = require('./highlight')
 const prettier = require('./prettier')
 const heading = require('./headings')
@@ -18,8 +19,9 @@ const defaultOptions = {
  * @param {object} [opt={}] parser options
  * @returns
  */
-function parseMd(content, opt = {}) {
+function parseMd(md, opt = {}) {
   const { highlightOpt } = { ...defaultOptions, ...opt }
+  const { content } = frontMatter(md)
   const c = remark()
     .use(container, {
       className: 'custom-block',

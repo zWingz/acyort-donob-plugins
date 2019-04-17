@@ -67,4 +67,14 @@ const b=123;
     expect(/"b"/.test(dom)).toBeFalsy()
     expect(/'b'/.test(dom)).toBeTruthy()
   })
+  it('test parse with front-matter', () => {
+    const md = `
+---
+title: Blog
+---
+This is content`
+    const content = parseMd(md)
+    const $ = cheerio.load(content)
+    expect($('p').text()).toEqual('This is content')
+  })
 })
