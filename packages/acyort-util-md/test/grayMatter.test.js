@@ -8,7 +8,7 @@ title: Blog
 data2: dada
 ---
 My awesome blog.`
-    const { data } = frontMatter(str)
+    const data = frontMatter(str)
     expect(data.title).toBe('Blog')
     expect(data.data2).toBe('dada')
   })
