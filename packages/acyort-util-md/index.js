@@ -5,5 +5,7 @@ const { parseMd } = require('./lib/markdown')
 module.exports = {
   toc,
   parseMd,
-  frontMatter,
+  frontMatter(arg) {
+    return frontMatter(arg).data
+  },
 }
