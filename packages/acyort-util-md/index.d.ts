@@ -15,6 +15,6 @@ declare module 'acyort-util-md' {
   export function frontMatter(
     md: string
   ): {
-    [k: string]: string | number
+    [k: string]: any
   }
 }

@@ -5,11 +5,20 @@ describe('test frontMatter', () => {
     const str = `
 ---
 title: Blog
-data2: dada
+data2: 
+    - 1
+    - 2
+data3: 
+    dd: 1
+    ff: 2
 ---
 My awesome blog.`
     const data = frontMatter(str)
     expect(data.title).toBe('Blog')
-    expect(data.data2).toBe('dada')
+    expect(data.data2).toEqual([1, 2])
+    expect(data.data3).toEqual({
+      dd: 1,
+      ff: 2,
+    })
   })
 })
