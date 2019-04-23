@@ -125,4 +125,5 @@ data1: some text
 data2:
   - listItem1
   - listItem2
+---
 ```
