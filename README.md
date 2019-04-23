@@ -5,7 +5,9 @@
 
 [DEMO](https://zwing.site)
 
-## Usage
+## Plugins
+
+[detail](https://zwing.site/posts/417715171.html)
 
 ### acyort-plugin-fetch-issues
 
@@ -15,14 +17,14 @@
 # fetch config
 repository: # optional, used in gitalk and acyort-plugin-fetch
 author: # issues creator, default repo owner
-gitToken:  # set github token if repo is private
+gitToken: # set github token if repo is private
 issuesPageSize: # issues per_page, default: 20
 issuesCache: # cache issues
 ```
 
 ### acyort-donob-renderer
 
-``` yaml
+```yaml
 template: acyort-templates-donob-plus
 
 title: ''
@@ -33,7 +35,6 @@ archivesDir: # default archives
 pageSize:
   archives: # default 10
   posts: # default 10
-
 
 gitalk: # default false
   clientID:
@@ -47,7 +48,7 @@ favicon: # favicon.ico, copy to public/favicon.ico
 
 ### acyort-templates-donob-plus
 
-``` yaml
+```yaml
 # config.yml
 template: acyort-templates-donob-plus
 title: # blog title
@@ -71,9 +72,9 @@ rssDataFrom: # plugin to provide rssData, default acyort-donob-renderer
 
 see [gh-pages](https://github.com/tschaub/gh-pages)
 
-``` yaml
+```yaml
 ghPages:
-  # gh-pages config
+# gh-pages config
 
 plugins:
   - acyort-plugin-ghpages
@@ -82,3 +83,22 @@ plugins:
 ### acyort-util-md
 
 parser for `markdown`
+
+## Markdown Extensions
+
+See [acyort-util-md](https://github.com/zWingz/acyort-donob-plugins/blob/master/packages/acyort-util-md/README.md) for more details
+
+### front-matter
+
+```text
+---
+keywords:
+  - key1
+  - key2
+description: posts desc
+rstData1:
+rstData2:
+---
+# This is heading
+This is content
+```

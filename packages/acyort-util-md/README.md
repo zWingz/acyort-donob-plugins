@@ -10,13 +10,15 @@
 ## Usage
 
 ```javascript
-const { toc, parseMd } = require('acyort-util-md');
+const { toc, parseMd, frontMatter } = require('acyort-util-md');
 const md = '#heading'
 const tocHTML = toc(md)
 const contentHTML = parseMd(md, {
   // see https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/#how-to-use
   highlightOpt: {}
 })
+// format yaml front-matter
+const data = frontMatter(md)
 ```
 
 ## Types
@@ -34,9 +36,15 @@ interface parseMdOption {
 }
 
 declare module 'acyort-util-md' {
-  export function parseMd(content: string, opt?: parseMdOption): string;
-  export function toc(md: string): string;
+  export function parseMd(content: string, opt?: parseMdOption): string
+  export function toc(md: string): string
+  export function frontMatter(
+    md: string
+  ): {
+    [k: string]: any
+  }
 }
+
 ```
 
 ## Markdown Extensions
@@ -105,4 +113,16 @@ output
   <p class="remark-container-title">TIP</p>
   <p>this is content</p>
 </div>
+```
+
+### front-matter
+
+use [gray-matter](https://github.com/jonschlinkert/gray-matter) to format `yaml`
+
+``` text
+---
+data1: some text
+data2:
+  - listItem1
+  - listItem2
 ```

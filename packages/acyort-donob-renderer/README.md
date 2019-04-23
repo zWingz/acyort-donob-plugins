@@ -44,6 +44,41 @@ plugins:
 - set your config
 - run `yarn dev`
 
+## Markdown Extensions
+
+See [acyort-util-md](https://github.com/zWingz/acyort-donob-plugins/blob/master/packages/acyort-util-md/README.md) for more details
+
+### front-matter
+
+```text
+---
+keywords:
+  - key1
+  - key2
+description: posts desc
+rstData1:
+rstData2:
+# ...other data
+---
+# This is heading
+This is content
+```
+
+you can get `posts-item` as
+
+```js
+{
+  // ...
+  keywords: 'key1,key2', // split by ','
+  description: '',
+  frontMatter: {
+    rstData1: '',
+    rstData2: '',
+    // ...other data
+  }
+}
+```
+
 ## Related
 
 - [gitalk](https://github.com/gitalk/gitalk)
