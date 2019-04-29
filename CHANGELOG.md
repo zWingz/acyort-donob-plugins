@@ -3,13 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.6.6 (2019-04-29)
+
+#### :rocket: New Feature
+
+- `acyort-templates-donob-plus`
+  - [#27](https://github.com/zWingz/acyort-donob-plugins/pull/27) feat: 🎸 update highline-code-font-size to 14px ([@zWingz](https://github.com/zWingz))
+
+#### Committers: 1
+
+- zWing ([@zWingz](https://github.com/zWingz))
+
 ## 1.6.5 (2019-04-23)
 
 #### :rocket: New Feature
-* `acyort-templates-donob-plus`
-  * [#26](https://github.com/zWingz/acyort-donob-plugins/pull/26) feat: 🎸 set page description default value as page.title ([@zWingz](https://github.com/zWingz))
+
+- `acyort-templates-donob-plus`
+  - [#26](https://github.com/zWingz/acyort-donob-plugins/pull/26) feat: 🎸 set page description default value as page.title ([@zWingz](https://github.com/zWingz))
 
 #### Committers: 1
+
 - zWing ([@zWingz](https://github.com/zWingz))
 
 ## 1.6.4 (2019-04-17)
