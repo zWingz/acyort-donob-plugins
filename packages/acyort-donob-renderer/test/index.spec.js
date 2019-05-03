@@ -25,14 +25,20 @@ describe('test register plugins', () => {
       get,
       set,
     },
-    copySource,
+    util: {
+      copySource,
+    },
     workflow: {
       register,
     },
     config: {
-      base,
-      public: publicDir,
-      favicon,
+      get() {
+        return {
+          base,
+          public: publicDir,
+          favicon,
+        }
+      },
     },
     helper: {
       register: helperRegister,

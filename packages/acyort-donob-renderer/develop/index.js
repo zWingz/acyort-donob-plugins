@@ -1,11 +1,11 @@
 const acyort = require('acyort')
-const config = require('acyort/lib/config')
+const getConfig = require('acyort/lib/config/get')
 const fetcher = require('acyort-plugin-fetch-issues')
 
 const renderer = require('..')
 const path = require('path')
 
-const ins = acyort(config(path.join(__dirname)))
+const ins = acyort(getConfig(path.join(__dirname)))
 fetcher({
   ...ins,
   store: {
@@ -20,4 +20,4 @@ renderer({
     set: ins.store.set.bind({ context: ins.store, namespace: 'plugin:acyort-donob-renderer' }),
   },
 })
-ins.process()
+ins.workflow.start()

@@ -7,11 +7,11 @@ module.exports = (acyort) => {
     fullName: 'fetch',
     description: 'fetch github issues',
     action() {
-      fetcher(this.config)
+      fetcher(this.config.get())
     },
   })
   acyort.workflow.register(async () => {
-    const data = await fetcher.call(acyort, acyort.config)
+    const data = await fetcher.call(acyort, acyort.config.get())
     acyort.store.set('issues', data)
   })
 }

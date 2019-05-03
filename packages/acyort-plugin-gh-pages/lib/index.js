@@ -3,7 +3,7 @@ const ora = require('ora')
 const path = require('path')
 const dayjs = require('dayjs')
 
-function push(config) {
+module.exports = function push(config) {
   const { base, public: publicPath, ghPages = {} } = config
   const outputDir = path.join(base, publicPath)
   const spinner = ora({
@@ -19,19 +19,3 @@ function push(config) {
     }
   })
 }
-
-function AcyortPluginGhPages(acyort) {
-  acyort.cli.register('commands', {
-    name: 'ghpage',
-    fullName: 'ghpage',
-    description: 'publish to gh-pages',
-    action() {
-      push(this.config)
-    },
-  })
-  acyort.workflow.register(() => {
-    push.call(acyort, acyort.config)
-  })
-}
-AcyortPluginGhPages.name = 'acyort-plugin-ghpages'
-module.exports = AcyortPluginGhPages

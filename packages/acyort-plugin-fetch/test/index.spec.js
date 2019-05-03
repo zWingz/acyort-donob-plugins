@@ -10,7 +10,11 @@ const workflowRegister = jest.fn((fn) => {
 })
 
 const repository = 'zwing/repo'
-const config = { repository, gitToken: '1233#fdsa' }
+const config = {
+  get() {
+    return { repository, gitToken: '1233#fdsa' }
+  },
+}
 
 const acyort = {
   cli: {

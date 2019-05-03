@@ -1,15 +1,15 @@
 process.env.NODE_DEBUG = 'gh-pages'
-const config = require('acyort/lib/config/')
+const getConfig = require('acyort/lib/config/get')
 const path = require('path')
 const acyort = require('acyort')({
-  ...config(path.resolve(__dirname, './fixtures')),
+  ...getConfig(path.resolve(__dirname, './fixtures')),
   public: 'temp',
   template: 'ccc45',
 })
 const plugin = require('..')
 
 acyort.workflow.register(() => {
-  acyort.outputHTML({
+  acyort.util.outputHTML({
     template: 'index',
     path: 'index.html',
     data: {
@@ -18,4 +18,4 @@ acyort.workflow.register(() => {
   })
 })
 plugin(acyort)
-acyort.process()
+acyort.workflow.start()

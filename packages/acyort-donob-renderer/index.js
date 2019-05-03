@@ -16,7 +16,7 @@ module.exports = function ayrortDonobRenderer(acyort) {
       public: publicDir,
       favicon = '',
       repository = '',
-    } = acyort.config
+    } = acyort.config.get()
     const spinner = ora('Starting to process...')
     spinner.start()
     const data = acyort.store.get('issues', 'acyort-plugin-fetch-issues')
@@ -45,7 +45,7 @@ module.exports = function ayrortDonobRenderer(acyort) {
       text: 'Succeed to render html',
     })
     spinner.start('Starting to copy source...\n')
-    acyort.copySource()
+    acyort.util.copySource()
     /* istanbul ignore next */
     if (favicon) {
       const fav = join(base, favicon)

@@ -34,7 +34,7 @@
     "rss": "^1.2.2"
   },
   "devDependencies": {
-    "acyort": "^3.0.13",
+    "acyort": "^3.3.1",
     "acyort-donob-renderer": "^1.6.4",
     "acyort-plugin-fetch-issues": "^1.6.0",
     "jest": "^23.6.0",
