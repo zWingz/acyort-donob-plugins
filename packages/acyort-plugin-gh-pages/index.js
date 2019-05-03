@@ -1,5 +1,17 @@
-const run = require('./lib')
+const push = require('./lib')
 
-module.exports = (acyort) => {
-  run(acyort)
+function AcyortPluginGhPages(acyort) {
+  acyort.cli.register('commands', {
+    name: 'ghpage',
+    fullName: 'ghpage',
+    description: 'publish to gh-pages',
+    action() {
+      push(this.config.get())
+    },
+  })
+  acyort.workflow.register(() => {
+    push(acyort.config.get())
+  })
 }
+AcyortPluginGhPages.name = 'acyort-plugin-ghpages'
+module.exports = AcyortPluginGhPages

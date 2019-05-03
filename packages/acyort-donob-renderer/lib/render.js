@@ -18,7 +18,7 @@ function render(acyort, { data, template, contentKey }, globalData) {
         globalData,
       }
     }
-    acyort.outputHTML(opt)
+    acyort.util.outputHTML(opt)
   })
 }
 
@@ -52,7 +52,7 @@ module.exports = ({
   })
   const { data: tagsData } = tagsMain
   if (tagsData && tagsData.length) {
-    acyort.outputHTML({
+    acyort.util.outputHTML({
       template: 'tagsMain',
       path: tagsMain.path,
       data: {

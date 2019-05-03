@@ -4,7 +4,7 @@ menu:
   Archives: /archives
   About: /about
 
-template: ../../../acyort-templates-donob-plus/templates
+template: ../../../acyort-templates-donob-plus/templates/donob
 
 repository: zWingz/my-blog-config
 

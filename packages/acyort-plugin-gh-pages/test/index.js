@@ -9,7 +9,7 @@ const acyort = require('acyort')({
 const plugin = require('..')
 
 acyort.workflow.register(() => {
-  acyort.outputHTML({
+  acyort.util.outputHTML({
     template: 'index',
     path: 'index.html',
     data: {
@@ -18,4 +18,4 @@ acyort.workflow.register(() => {
   })
 })
 plugin(acyort)
-acyort.process()
+acyort.workflow.start()
