@@ -13,7 +13,7 @@ module.exports = function ayrortDonobRenderer(acyort) {
       rss: globalConfig,
       rssDataFrom = 'acyort-donob-renderer',
       base,
-    } = acyort.config
+    } = acyort.config.get()
     if (!url || !globalConfig) {
       return
     }

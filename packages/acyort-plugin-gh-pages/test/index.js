@@ -1,8 +1,8 @@
 process.env.NODE_DEBUG = 'gh-pages'
-const config = require('acyort/lib/config/')
+const getConfig = require('acyort/lib/config/get')
 const path = require('path')
 const acyort = require('acyort')({
-  ...config(path.resolve(__dirname, './fixtures')),
+  ...getConfig(path.resolve(__dirname, './fixtures')),
   public: 'temp',
   template: 'ccc45',
 })

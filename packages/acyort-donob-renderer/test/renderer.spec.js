@@ -14,7 +14,7 @@ const testFnc = (
   testArr,
   templateName,
   matchFnc,
-  { outputHTML },
+  acyort,
   globalData,
 ) => {
   /**
@@ -25,12 +25,13 @@ const testFnc = (
   const callMatch = (callArg) => {
     expect(matchFnc(callArg[0], testArr)).not.toEqual(-1)
   }
+  const { util: { outputHTML } } = acyort
   renderer(
     {
       [templateName]: testArr,
     },
     globalData,
-    { outputHTML },
+    acyort,
   )
   expect(outputHTML).toBeCalledTimes(testArr.length)
   // expect(outputHTML)
@@ -49,7 +50,9 @@ describe('test renderer', () => {
   beforeEach(() => {
     outputHTML = jest.fn()
     acyort = {
-      outputHTML,
+      util: {
+        outputHTML,
+      },
     }
   })
   it('test renderer index', () => {

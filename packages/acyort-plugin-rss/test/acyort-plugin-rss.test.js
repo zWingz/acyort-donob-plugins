@@ -1,6 +1,7 @@
 const RssParser = require('rss-parser')
 const { join } = require('path')
 const acyort = require('acyort')
+const ConfigDefault = require('acyort/lib/config/defaults')
 const fs = require('fs-extra')
 const rss = require('../lib')
 const plugin = require('..')
@@ -48,7 +49,10 @@ describe('test rss', () => {
 })
 
 function exec(config, pluginRssConfig) {
-  const ins = acyort(config)
+  const ins = acyort({
+    ...ConfigDefault,
+    ...config,
+  })
   ins.store.store.push({
     key: 'plugin:test:rssData',
     data: {
@@ -65,7 +69,7 @@ function exec(config, pluginRssConfig) {
       }),
     },
   })
-  ins.process()
+  ins.workflow.start()
 }
 
 describe('test plugin', () => {
