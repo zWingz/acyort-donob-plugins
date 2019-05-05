@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.7.0 (2019-05-05)
+
+#### :house: Internal
+* `acyort-donob-renderer`, `acyort-plugin-fetch`, `acyort-plugin-gh-pages`, `acyort-plugin-rss`, `acyort-templates-donob-plus`
+  * [#28](https://github.com/zWingz/acyort-donob-plugins/pull/28) Feat/support new versions ([@zWingz](https://github.com/zWingz))
+
+#### Committers: 1
+- zWing ([@zWingz](https://github.com/zWingz))
+
 ## 1.6.6 (2019-04-29)
 
 #### :rocket: New Feature

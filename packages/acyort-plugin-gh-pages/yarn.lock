@@ -77,14 +77,6 @@ acorn@^6.0.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.0.5.tgz#81730c0815f3f3b34d8efa95cb7430965f4d887a"
   integrity sha512-i33Zgp3XWtmZBMNvCr4azvOFeWVw1Rk6p3hfi3LUDvIFraOMywb1kAtrbi+med14m4Xfpqm3zRZMT+c0FNE7kg==
 
-acyort-plugin-rss@^1.6.4:
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/acyort-plugin-rss/-/acyort-plugin-rss-1.6.4.tgz#aed546093b7fc16bcb0dad339e6297ad15a6c98e"
-  integrity sha512-bsvuV58I6s/IjotOBwD3OgBlSrwA2Ix7gUZCydVuTjfkJQITL4DCkmhvgSazb5a7vw+io8Am8PLwbYL73483Dg==
-  dependencies:
-    fs-extra "^7.0.1"
-    rss "^1.2.2"
-
 acyort@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/acyort/-/acyort-3.3.1.tgz#951e1280f0592fac7fa8fd1a676fbb186316f0b7"
@@ -2546,22 +2538,10 @@ micromatch@^3.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
 
-mime-db@~1.25.0:
-  version "1.25.0"
-  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.25.0.tgz#c18dbd7c73a5dbf6f44a024dc0d165a1e7b1c392"
-  integrity sha1-wY29fHOl2/b0SgJNwNFloeexw5I=
-
 mime-db@~1.37.0:
   version "1.37.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.37.0.tgz#0b6a0ce6fdbe9576e25f1f2d2fde8830dc0ad0d8"
   integrity sha512-R3C4db6bgQhlIhPU48fUtdVmKnflq+hRdad7IyKhtFj06VPNVdk2RhiYL3UjQIlso8L+YxAtFkobT0VK+S/ybg==
-
-mime-types@2.1.13:
-  version "2.1.13"
-  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.13.tgz#e07aaa9c6c6b9a7ca3012c69003ad25a39e92a88"
-  integrity sha1-4HqqnGxrmnyjASxpADrSWjnpKog=
-  dependencies:
-    mime-db "~1.25.0"
 
 mime-types@^2.1.12, mime-types@~2.1.19:
   version "2.1.21"
@@ -3357,14 +3337,6 @@ rimraf@^2.6.2:
   dependencies:
     glob "^7.0.5"
 
-rss@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/rss/-/rss-1.2.2.tgz#50a1698876138133a74f9a05d2bdc8db8d27a921"
-  integrity sha1-UKFpiHYTgTOnT5oF0r3I240nqSE=
-  dependencies:
-    mime-types "2.1.13"
-    xml "1.0.1"
-
 rsvp@^3.3.3:
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-3.6.2.tgz#2e96491599a96cde1b515d5674a8f7a91452926a"
@@ -4121,11 +4093,6 @@ xml-name-validator@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-3.0.0.tgz#6ae73e06de4d8c6e47f9fb181f78d648ad457c6a"
   integrity sha512-A5CUptxDsvxKJEU3yO6DuWBSJz/qizqzJKOMIfUJHETbBw/sFaDxgd6fxm1ewUaM0jZ444Fc5vC5ROYurg/4Pw==
-
-xml@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/xml/-/xml-1.0.1.tgz#78ba72020029c5bc87b8a81a3cfcd74b4a2fc1e5"
-  integrity sha1-eLpyAgApxbyHuKgaPPzXS0ovweU=
 
 y18n@^3.2.1:
   version "3.2.1"

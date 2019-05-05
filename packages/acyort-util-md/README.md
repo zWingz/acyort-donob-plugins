@@ -1,7 +1,7 @@
 # `acyort-util-md`
 
 - use [remark](https://github.com/remarkjs/remark) to parse markdown
-- use [prismjs](https://github.com/PrismJS/prism) to hightlight
+- use [prismjs](https://github.com/PrismJS/prism) to highlight code
 - use [gatsby-remark-prismjs](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-remark-prismjs/README.md) adapted `remark` and `prismjs`
 - use [prettier](https://github.com/prettier/prettier) to format `code`
 - use [github-slugger](https://github.com/Flet/github-slugger) and [markdown-toc](https://github.com/jonschlinkert/markdown-toc) to generate `toc`
