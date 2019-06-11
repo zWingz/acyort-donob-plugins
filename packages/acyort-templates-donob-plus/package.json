@@ -16,6 +16,6 @@
     "acyort-donob-renderer": "^1.7.0",
     "acyort-plugin-fetch-issues": "^1.7.0",
     "acyort-plugin-rss": "^1.7.0",
-    "acyort-server": "^2.1.3"
+    "acyort-server": "^2.4.0"
   }
 }
