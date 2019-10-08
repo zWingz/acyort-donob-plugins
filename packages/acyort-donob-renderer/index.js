@@ -7,6 +7,8 @@ const processor = require('./lib/processor')
 const render = require('./lib/render')
 const mini = require('./lib/minify')
 
+console.log(112);
+
 module.exports = function ayrortDonobRenderer(acyort) {
   acyort.helper.register('_toc', toc)
   acyort.workflow.register(async () => {
