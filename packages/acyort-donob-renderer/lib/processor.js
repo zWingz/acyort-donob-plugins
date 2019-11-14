@@ -1,11 +1,11 @@
 const parser = require('./parser')
 
-function processor(issues, acyort = {}) {
+function processor(issues, acyortConfig = {}) {
   const config = {
     postsDir: 'posts',
     tagsDir: 'tags',
     archivesDir: 'archives',
-    ...acyort.config,
+    ...acyortConfig,
   }
   return parser(issues, config)
 }

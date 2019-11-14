@@ -62,9 +62,7 @@ describe('test processor', () => {
   }
   const {
     posts, archives, index, pages,
-  } = processor(testIssues, {
-    config: defaultConfig,
-  })
+  } = processor(testIssues, defaultConfig)
   describe('test posts processor', () => {
     it('posts length', () => {
       expect(posts).toHaveLength(testPosts.length)
@@ -100,9 +98,7 @@ ${yml}
 ---
 This is content
 `
-      const { posts: newPosts } = processor([issue], {
-        config: defaultConfig,
-      })
+      const { posts: newPosts } = processor([issue], defaultConfig)
       const p = newPosts[0]
       expect(p.keywords).toEqual(frontMatter.keywords.join(','))
       expect(p.description).toEqual(frontMatter.description)
