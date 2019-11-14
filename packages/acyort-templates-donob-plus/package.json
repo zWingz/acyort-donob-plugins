@@ -1,6 +1,6 @@
 {
   "name": "acyort-templates-donob-plus",
-  "version": "1.7.1",
+  "version": "1.7.2",
   "description": "acyort-templates",
   "scripts": {
     "dev": "acyort server"
@@ -13,9 +13,9 @@
   "license": "MIT",
   "devDependencies": {
     "acyort": "^3.3.1",
-    "acyort-donob-renderer": "^1.7.0",
+    "acyort-donob-renderer": "^1.7.2",
     "acyort-plugin-fetch-issues": "^1.7.0",
-    "acyort-plugin-rss": "^1.7.0",
+    "acyort-plugin-rss": "^1.7.2",
     "acyort-server": "^2.4.0"
   }
 }
