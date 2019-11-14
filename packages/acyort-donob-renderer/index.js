@@ -10,17 +10,18 @@ const mini = require('./lib/minify')
 module.exports = function ayrortDonobRenderer(acyort) {
   acyort.helper.register('_toc', toc)
   acyort.workflow.register(async () => {
+    const acyortConfig = acyort.config.get()
     /* istanbul ignore next */
     const {
       base,
       public: publicDir,
       favicon = '',
       repository = '',
-    } = acyort.config.get()
+    } = acyortConfig
     const spinner = ora('Starting to process...')
     spinner.start()
     const data = acyort.store.get('issues', 'acyort-plugin-fetch-issues')
-    const { rssItems, ...rst } = processor(data, acyort)
+    const { rssItems, ...rst } = processor(data, acyortConfig)
     const rssData = {
       items: rssItems,
       rssConfig: {
