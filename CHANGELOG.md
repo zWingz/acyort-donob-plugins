@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.7.3 (2019-11-15)
+
+#### :bug: Bug Fix
+* `acyort-templates-donob-plus`
+  * [#49](https://github.com/zWingz/acyort-donob-plugins/pull/49) fix(template): fix tag border style ([@zWingz](https://github.com/zWingz))
+
+#### Committers: 1
+- zWing ([@zWingz](https://github.com/zWingz))
+
 ## 1.7.2 (2019-11-14)
 
 #### :bug: Bug Fix
