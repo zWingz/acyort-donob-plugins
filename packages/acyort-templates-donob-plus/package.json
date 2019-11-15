@@ -1,6 +1,6 @@
 {
   "name": "acyort-templates-donob-plus",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "description": "acyort-templates",
   "scripts": {
     "dev": "acyort server"
