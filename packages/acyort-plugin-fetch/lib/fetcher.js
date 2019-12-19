@@ -12,6 +12,7 @@ function fetch(config = {}) {
     gitToken,
     issuesPageSize = 20,
     issuesCache = false,
+    issuesFilter,
   } = config
   if (!repository) {
     const msg = 'missing repository'
@@ -42,7 +43,7 @@ function fetch(config = {}) {
   let result = []
   return new Promise((resolve) => {
     async function load(page = 1) {
-      const { data, headers } = await octokit.issues
+      const { data = [], headers } = await octokit.issues
         .listForRepo({
           owner,
           repo,
@@ -63,7 +64,7 @@ function fetch(config = {}) {
             headers: {},
           }
         })
-      result = result.concat(data)
+      result = result.concat((data || []).filter(each => !issuesFilter || !new RegExp(issuesFilter).test(each.title)))
       const { link } = headers
       if (link && link.includes('rel="next"')) {
         spinner.stopAndPersist({

@@ -14,7 +14,7 @@ describe('test listIssues', () => {
     nock('https://api.github.com')
       .get(`/repos/${repository}/issues`)
       .query(() => true)
-      .reply(200, function cb() {
+      .reply(200, function cb(callback) {
         expect(this.req.headers.authorization[0]).toEqual(
           `token ${token1.split('#').join('')}`,
         )
@@ -47,7 +47,13 @@ describe('test listIssues', () => {
   })
   it('test octokit listForRepo', async () => {
     const testQuery = jest.fn()
-    const data = []
+    const data = [{
+      title: 'draft-title',
+    }, {
+      title: 'title1',
+    }, {
+      title: 'title2',
+    }]
     nock('https://api.github.com')
       .get(`/repos/${repository}/issues`)
       .query((query) => {
@@ -60,6 +66,7 @@ describe('test listIssues', () => {
       gitToken,
       issuesPageSize,
       author: creator,
+      issuesFilter: 'draft',
     })
     expect(testQuery).toBeCalledTimes(1)
     expect(testQuery).toBeCalledWith({
@@ -69,7 +76,7 @@ describe('test listIssues', () => {
       page: '1',
       creator,
     })
-    expect(d).toEqual(data)
+    expect(d).toEqual(data.slice(1))
   })
   it('test multi page', async () => {
     const testQuery = jest.fn()
