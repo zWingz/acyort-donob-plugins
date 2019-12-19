@@ -1,5 +1,14 @@
 # Change Log
 
+## 1.7.4 (2019-12-19)
+
+#### :rocket: New Feature
+* `acyort-plugin-fetch`
+  * [#51](https://github.com/zWingz/acyort-donob-plugins/pull/51) feat(fetch): add issues-filter ([@zWingz](https://github.com/zWingz))
+
+#### Committers: 1
+- zWing ([@zWingz](https://github.com/zWingz))
+
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
