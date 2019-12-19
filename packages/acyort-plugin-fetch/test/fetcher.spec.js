@@ -14,7 +14,7 @@ describe('test listIssues', () => {
     nock('https://api.github.com')
       .get(`/repos/${repository}/issues`)
       .query(() => true)
-      .reply(200, function cb(callback) {
+      .reply(200, function cb() {
         expect(this.req.headers.authorization[0]).toEqual(
           `token ${token1.split('#').join('')}`,
         )

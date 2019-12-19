@@ -27,7 +27,7 @@ function fetch(config = {}) {
   }).start()
   if (issuesCache && fs.existsSync(cacheFile)) {
     spinner.succeed('Fetch issues completed')
-    return Promise.resolve(require(cacheFile)) // eslint-disable-line
+    return Promise.resolve(require(cacheFile)); // eslint-disable-line
   }
   let auth
   if (gitToken) {
@@ -64,7 +64,11 @@ function fetch(config = {}) {
             headers: {},
           }
         })
-      result = result.concat((data || []).filter(each => !issuesFilter || !new RegExp(issuesFilter).test(each.title)))
+      result = result.concat(
+        (data || []).filter(
+          each => !issuesFilter || !new RegExp(issuesFilter).test(each.title),
+        ),
+      )
       const { link } = headers
       if (link && link.includes('rel="next"')) {
         spinner.stopAndPersist({
