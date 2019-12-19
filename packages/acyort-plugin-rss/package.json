@@ -1,6 +1,6 @@
 {
   "name": "acyort-plugin-rss",
-  "version": "1.7.2",
+  "version": "1.7.4",
   "description": "acyort plugin for rss",
   "keywords": [
     "acyort",
@@ -35,8 +35,8 @@
   },
   "devDependencies": {
     "acyort": "^3.3.1",
-    "acyort-donob-renderer": "^1.7.2",
-    "acyort-plugin-fetch-issues": "^1.7.0",
+    "acyort-donob-renderer": "^1.7.4",
+    "acyort-plugin-fetch-issues": "^1.7.4",
     "jest": "^23.6.0",
     "nodemon": "^1.18.9",
     "rss-parser": "^3.6.2"
