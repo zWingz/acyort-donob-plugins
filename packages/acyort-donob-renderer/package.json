@@ -13,7 +13,7 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-postcss": "^8.0.0",
     "gulp-terser": "^1.1.7",
-    "highlight.js": "^9.13.1",
+    "highlight.js": "^10.4.1",
     "lodash": "^4.17.11",
     "log-symbols": "^2.2.0",
     "ora": "^3.0.0"
